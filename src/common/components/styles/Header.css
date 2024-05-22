@@ -1,0 +1,31 @@
+/* Header.css */
+
+  .header-contact .nav-link, 
+  .header-social .nav-link {
+    padding: 0 10px;
+  }
+  
+  .header-top-bar-light{
+    height: 45px;
+  }
+
+  .header-top-bar-dark {
+    background-color: #444;
+    color: #fff;
+    padding: 10px 0;
+    height: 55px;
+  }
+  
+  .header-top-bar-dark .nav-link {
+    color: #fff;
+    padding: 0 10px;
+  }
+  
+  .header-social .nav-link i {
+    font-size: 20px;
+  }
+  
+  .header-social .nav-link {
+    padding: 0 5px;
+  }
+  
