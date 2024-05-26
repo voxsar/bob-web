@@ -1,0 +1,111 @@
+/* Shop All styles */
+
+.shop-all-btn {
+    margin: 30px 0px;
+    padding: 12px 24px;
+    fill: #3b3b3b;
+    color: #3b3b3b;
+    background-color: #fff;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #3b3b3b;
+    border-radius: 3px;
+    box-shadow: none;
+    text-decoration: none;
+    transition: 0.3s ease-in-out;
+}
+
+.shop-all-btn:hover {
+    color: white;
+    background-color: #3b3b3b;
+}
+
+.shop-category {
+    text-decoration: none;
+    color: inherit;
+    text-align: center;
+}
+
+.shop-category:hover img {
+    opacity: 0.7;
+}
+
+.shop-category h4 {
+    margin-top: 10px;
+}
+
+.shop-category-container {
+    margin: 100px 0px;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 31px;
+    align-items: center;
+}
+
+
+/* Shop by trimester styles */
+
+.shop-trimester-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+/* Nursery in a box styles */
+.nursery-box-container {
+    height: 830px;
+}
+
+.nursery-box-top-div {
+    background-color: #C49B87;
+    color: white;
+    font-size: 28px;
+    font-weight: 500;
+    padding: 20px;
+    text-align: center;
+    border-radius: 15px 15px 0 0;
+}
+
+.video-background-container {
+    border-radius: 0 0 15px 15px;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.video-background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.shop-nursery-btn{
+    position: relative;
+    z-index: 1;
+    font-size: 25px;
+    font-weight: 400;
+    text-transform: none;
+    line-height: 1em;
+    letter-spacing: 1px;
+    color: #cd9595;
+    background-color: #e8d3ca;
+    border-style: none;
+    border-radius: 20px;
+    padding: 20px;
+    align-self: flex-end;
+    margin-bottom: 4%;
+    transition: 0.3s ease;
+}
+
+.shop-nursery-btn:hover{
+    color: #fff;
+    background-color: #cd9595;
+}

@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "most_loved_products",
+  "info": {
+    "singularName": "most-loved-product",
+    "pluralName": "most-loved-products",
+    "displayName": "Bob's most Loved Products",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "productName": {
+      "type": "string"
+    },
+    "productImage": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "productLink": {
+      "type": "blocks"
+    }
+  }
+}

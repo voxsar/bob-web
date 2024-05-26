@@ -1,31 +1,221 @@
 /* Header.css */
 
-  .header-contact .nav-link, 
-  .header-social .nav-link {
-    padding: 0 10px;
-  }
-  
-  .header-top-bar-light{
-    height: 45px;
-  }
+.header-contact .nav-link,
+.header-social .nav-link {
+  padding: 0 10px;
+}
 
-  .header-top-bar-dark {
-    background-color: #444;
-    color: #fff;
-    padding: 10px 0;
-    height: 55px;
-  }
-  
-  .header-top-bar-dark .nav-link {
-    color: #fff;
-    padding: 0 10px;
-  }
-  
-  .header-social .nav-link i {
-    font-size: 20px;
-  }
-  
-  .header-social .nav-link {
-    padding: 0 5px;
-  }
-  
+.header-contact {
+  margin-right: 21px;
+}
+
+.header-top-bar-light {
+  height: 45px;
+}
+
+.header-top-light-container {
+  max-width: 1365px;
+  width: 100%;
+}
+
+.header-top-bar-dark {
+  background-color: #444;
+  color: #fff;
+  padding: 10px 0;
+  height: 55px;
+}
+
+.header-top-bar-dark i {
+  margin-right: 12px !important;
+}
+
+.header-top-bar-dark .nav-link {
+  color: #fff;
+  padding: 0 10px;
+}
+
+.header-social .nav-link i {
+  font-size: 20px;
+}
+
+.header-social .nav-link {
+  padding: 0 5px;
+}
+
+.toggle-button {
+  margin-right: 10px;
+  min-width: 130px;
+  border-radius: 0;
+}
+
+.toggle-button.btn-dark:hover {
+  background-color: #212529;
+}
+
+.mr-auto {
+  display: flex;
+  align-items: center;
+}
+
+.toggle-button+.toggle-button {
+  margin-left: -11px;
+}
+
+.search-form {
+  display: flex;
+  align-items: center;
+}
+
+.category-select {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 10px;
+  border-radius: 25px;
+  padding: 5px 17px;
+  min-width: 253px;
+}
+
+.category-select .btn {
+  text-align: left;
+}
+
+.search-input {
+  width: 250px;
+  /* Adjust the width as necessary */
+  margin-right: 10px;
+  padding: 5px 10px;
+}
+
+.search-button {
+  border-radius: 25px;
+}
+
+.header-app-logo {
+  transition: 0.2s ease-in;
+  margin: 24px;
+}
+
+.header-app-logo:hover {
+  transform: scale(1.1);
+
+}
+
+/* nav bar styles */
+
+.app-main-navbar-cmp,
+.app-main-bottom-navbar {
+  justify-content: space-between;
+}
+
+.nav-underline .nav-link {
+  color: var(--bg-dark);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: -0.22px;
+  text-transform: uppercase;
+}
+
+.app-main-navbar-cmp.nav-underline .nav-link.active {
+  border-color: #A15914 !important;
+  font-weight: 400 !important;
+}
+
+.nav-underline .nav-link:focus,
+.nav-underline .nav-link:hover {
+  border-color: #A15914 !important;
+}
+
+.nav-item-hover:hover .dropdown-menu {
+  display: block !important;
+}
+
+.nav-item-hover .dropdown-menu {
+  margin-top: 0;
+}
+
+/* bottom nav */
+
+.app-main-bottom-navbar.nav-underline .nav-link.active {
+  border-color: #ab989c !important;
+  font-weight: 400 !important;
+}
+
+.app-main-bottom-navbar.nav-underline .nav-link:focus,
+.app-main-bottom-navbar.nav-underline .nav-link:hover {
+  border-color: #ab989c !important;
+}
+
+.app-main-bottom-navbar.nav-underline .nav-link.active {
+  font-weight: 400 !important;
+}
+
+/* Mega menu styles */
+
+/* .mega-menu{
+  max-width: 1053.17px;
+  height: 639.45px;
+  background-color: #f8f8f8;
+  box-shadow: 2px 8px 23px 3px rgba(0, 0, 0, .2);
+} */
+
+.mega-menu .dropdown-menu {
+  transform: translate(-62%, -7%);
+  padding: 40px;
+  width: 1100px;
+  height: 639.45px;
+  background-color: #f8f8f8;
+  box-shadow: 2px 8px 23px 3px rgba(0, 0, 0, .2);
+  z-index: 1050;
+}
+
+.mega-menu .close-button {
+  position: absolute;
+  top: 10px;
+  /* Adjust as needed for padding */
+  right: 10px;
+  /* Adjust as needed for padding */
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.mega-menu .dropdown-menu ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.mega-menu .dropdown-menu h6 {
+  font-size: 12px;
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.mega-menu .dropdown-menu ul li {
+  margin-bottom: 5px;
+  font-size: 10px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+
+.mega-menu .dropdown-menu ul li a {
+  text-decoration: none;
+  color: inherit;
+  letter-spacing: 1px;
+}
+
+.mega-menu .dropdown-menu ul li:hover {
+  background-color: #3f444b;
+  color: white;
+}
+
+.mega-menu-container .col {
+  padding: 10px !important;
+}
+
+.mega-menu-container .col:not(:last-child) {
+  border-right: 1px solid #e8d3ca;
+}
