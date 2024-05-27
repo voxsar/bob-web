@@ -79,3 +79,24 @@
 .location-address {
     width: 56% !important;
 }
+
+.footer-bottom-dark-container{
+    color: #F8F8F8;
+    background-color: #444;
+    height: 67px;
+}
+
+.footer-bottom-dark{
+    display: flex;
+    gap: 22px;
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.footer-bottom-dark a{
+    text-decoration: none;
+    color: #F8F8F8;
+    font-weight: 300;
+}

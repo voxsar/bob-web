@@ -15,7 +15,7 @@ const Carousel = ({ containerStyle, slideStyle, content = [] }) => {
       navigation={true}
       loop={true}
       modules={[Navigation, Autoplay]}
-      style={{ height: '700px', margin: '20px 0px' }}
+      style={{ height: '700px', margin: '20px 0px', padding: '10px' }}
       autoplay={{
         delay: 5500,
         disableOnInteraction: false,
