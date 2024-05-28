@@ -5,7 +5,6 @@ import Carousel from '../../common/components/Carousel';
 import ShopAll from './shopAll';
 import ProductGrid from '../../common/components/ProductGrid';
 import { bestSellingProd, bobMostLoved, featuredProducts, moreToRead, productBrands, products, recommendedProd, topCarouselContent } from '../../common/data';
-import CustomCarousel from '../../common/components/CustomCarousel';
 import { Row, Col } from 'react-bootstrap';
 import info1 from '../../assets/icons/info1.webp';
 import info2 from '../../assets/icons/info2.webp';
