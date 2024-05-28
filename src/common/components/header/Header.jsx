@@ -31,7 +31,7 @@ const Header = () => {
           <Nav>
             <Nav.Link href="#">Sign Up For Our Newsletter</Nav.Link>
           </Nav>
-          <Nav className="ml-auto">
+          <Nav className="ml-auto nav-dark-link">
             <Nav.Link href="#"><i className="fas fa-award"></i>Loyalty Points</Nav.Link>
             <Nav.Link href="#"><i className="fas fa-gift"></i>Gift Cards</Nav.Link>
             <Nav.Link href="#"><i className="fas fa-map-marker-alt"></i>Track Your Order</Nav.Link>

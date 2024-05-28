@@ -52,13 +52,13 @@ const FooterTop = () => {
             <div className='h-divider'></div>
 
             <Row className='footer-bottom-row'>
-                <Col lg={4}>
+                <Col lg={2}>
                     <Row>
-                        <Col>
+                        <Col className='p-0'>
                             <p><i class="fa-solid fa-location-arrow"></i> Find Your Store</p>
                         </Col>
-                        <Col>
-                            <p><i class="fa-solid fa-ticket"></i> Gift Cards</p>
+                        <Col className='p-0'>
+                            <p><i class="fa-solid fa-ticket"></i>  Gift Cards</p>
                         </Col>
                     </Row>
 
