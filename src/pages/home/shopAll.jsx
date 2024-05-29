@@ -3,9 +3,6 @@ import { Container, Row, Col } from 'react-bootstrap';
 
 const ShopAll = () => {
     return (
-        <>
-           
-
             <Container className='shop-category-container'>
             <a href='/' className='shop-all-btn'>
                 Shop All
@@ -84,7 +81,6 @@ const ShopAll = () => {
                     </Col>
                 </Row>
             </Container>
-        </>
     );
 }
 

@@ -24,3 +24,7 @@
     color: hsla(0, 0%, 93.3%, .9);
     transform: scale(0.5);
 }
+
+.swiper-pagination-bullet-active{
+    background-color: black!important;
+}

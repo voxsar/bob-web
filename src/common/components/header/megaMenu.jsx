@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import { Container, Row, Col, Dropdown } from 'react-bootstrap';
 import { NavLink } from 'react-router-dom';
+import { BRAND_LOGOS } from '../../../assets/assets';
 
 const MegaMenu = () => {
   const [show, setShow] = useState(false);
@@ -25,8 +26,8 @@ const MegaMenu = () => {
           &times;
         </button>
         <Container className='mega-menu-container'>
-          <Row>
-            <Col>
+          <Row className='mb-3'>
+            <Col className='mega-menu-col'>
               <h6>Baby Health & Safety</h6>
               <ul>
                 <li><NavLink to="/monitors">Monitors</NavLink></li>
@@ -38,7 +39,7 @@ const MegaMenu = () => {
                 <li><NavLink to="/pacifiers-and-soothers">Pacifiers and Soothers</NavLink></li>
               </ul>
             </Col>
-            <Col>
+            <Col className='mega-menu-col'>
               <h6>Bath & Potty</h6>
               <ul>
                 <li><NavLink to="/bath">Bath</NavLink></li>
@@ -46,7 +47,7 @@ const MegaMenu = () => {
                 <li><NavLink to="/potty-training">Potty Training</NavLink></li>
               </ul>
             </Col>
-            <Col>
+            <Col className='mega-menu-col'>
               <h6>Gear</h6>
               <ul>
                 <li><NavLink to="/strollers">Strollers</NavLink></li>
@@ -58,7 +59,7 @@ const MegaMenu = () => {
                 <li><NavLink to="/stroller-wagons">Stroller Wagons</NavLink></li>
               </ul>
             </Col>
-            <Col>
+            <Col className='mega-menu-col'>
               <h6>Nursery & Sleep Essentials</h6>
               <ul>
                 <li><NavLink to="/rugs">Rugs</NavLink></li>
@@ -72,7 +73,7 @@ const MegaMenu = () => {
                 <li><NavLink to="/bouncers-swings">Bouncers + Swings</NavLink></li>
               </ul>
             </Col>
-            <Col>
+            <Col className='mega-menu-col'>
               <h6>Nursery & Sleep Essentials Continued</h6>
               <ul>
                 <li><NavLink to="/dressers-and-case-pieces">Dressers and Case Pieces</NavLink></li>
@@ -87,7 +88,7 @@ const MegaMenu = () => {
                 <li><NavLink to="/seating">Seating</NavLink></li>
               </ul>
             </Col>
-            <Col>
+            <Col className='mega-menu-col'>
               <h6>Clothing & Accessories</h6>
               <ul>
                 <li><NavLink to="/diaper-bags">Diaper Bags</NavLink></li>
@@ -104,8 +105,8 @@ const MegaMenu = () => {
             </Col>
           </Row>
 
-          <Row>
-            <Col>
+          <Row className='mb-3'>
+            <Col className='mega-menu-col'>
               <h6>Top Registry Products</h6>
               <ul>
                 <li><NavLink to="/gear">Gear</NavLink></li>
@@ -117,7 +118,7 @@ const MegaMenu = () => {
                 <li><NavLink to="/nursing">Nursing</NavLink></li>
               </ul>
             </Col>
-            <Col>
+            <Col className='mega-menu-col'>
               <h6>Meal Time</h6>
               <ul>
                 <li><NavLink to="/cleaning">Cleaning</NavLink></li>
@@ -129,7 +130,7 @@ const MegaMenu = () => {
                 <li><NavLink to="/formula">Formula</NavLink></li>
               </ul>
             </Col>
-            <Col>
+            <Col className='mega-menu-col'>
               <h6>Breastfeeding</h6>
               <ul>
                 <li><NavLink to="/breast-pumps">Breast Pumps</NavLink></li>
@@ -137,14 +138,14 @@ const MegaMenu = () => {
                 <li><NavLink to="/breastfeeding-accessories">Breastfeeding Accessories</NavLink></li>
               </ul>
             </Col>
-            <Col>
+            <Col className='mega-menu-col'>
               <h6>Gifts</h6>
               <ul>
                 <li><NavLink to="/gift-cards">Gift Cards</NavLink></li>
                 <li><NavLink to="/gifts-for-mom">Gifts For Mom</NavLink></li>
               </ul>
             </Col>
-            <Col>
+            <Col className='mega-menu-col'>
               <h6>Toys & Play</h6>
               <ul>
                 <li><NavLink to="/pack-n-plays">Pack n' Plays</NavLink></li>
@@ -154,13 +155,19 @@ const MegaMenu = () => {
                 <li><NavLink to="/bouncers-swings">Bouncers + Swings</NavLink></li>
               </ul>
             </Col>
-            <Col>
+            <Col className='mega-menu-col'>
               <h6>Maternity & Postpartum</h6>
               <ul>
                 <li><NavLink to="/maternity">Maternity</NavLink></li>
                 <li><NavLink to="/shop-by-trimester">Shop By Trimester</NavLink></li>
               </ul>
             </Col>
+          </Row>
+
+          <Row className='mega-menu-brand-row'>
+            {BRAND_LOGOS.map((logo, i)=>(
+              <Col><img src={logo} alt='logo' className='menu-brand-logo' height={i ===9 ? '31px' :'66px'}/></Col>
+            ))}
           </Row>
         </Container>
       </Dropdown.Menu>

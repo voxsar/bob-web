@@ -1,5 +1,5 @@
 // import Swiper core and required modules
-import { Navigation, Autoplay } from 'swiper/modules';
+import { Navigation, Autoplay, Pagination } from 'swiper/modules';
 import './styles/Carousel.css'
 import { Swiper, SwiperSlide } from 'swiper/react';
 
@@ -9,20 +9,36 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 
-const Carousel = ({ containerStyle, slideStyle, content = [] }) => {
+const Carousel = ({ containerStyle, slideStyle, imgStyle, textStyle, subTextStyle, slideWrapperStyle, content = [], isSlideSkip = false,
+   customComponent, isPagination, isNavigation = true, slidesPerView, spaceBetween, isTitled=false }) => {
+  const paginationSettings = isPagination ? {
+    clickable: true
+  } : false;
   return (
     <Swiper
-      navigation={true}
+      navigation={isNavigation}
       loop={true}
-      modules={[Navigation, Autoplay]}
-      style={{ height: '700px', margin: '20px 0px', padding: '10px' }}
+      pagination={paginationSettings}
+      slidesPerView={isPagination ? slidesPerView : 1}
+      slidesPerGroupSkip={isSlideSkip ? slidesPerView : undefined}
+      slidesPerGroup={isSlideSkip ? slidesPerView : undefined}
+      spaceBetween={isPagination ? spaceBetween : 1}
+      modules={[Navigation, Autoplay, Pagination]}
       autoplay={{
         delay: 5500,
         disableOnInteraction: false,
       }}
+      className={containerStyle}
     >
       {content.map((slide, i) => (
-        <SwiperSlide key={slide.slideId} ><img key={i} src={slide.imageURL} alt='slider content' /></SwiperSlide>
+        <SwiperSlide key={slide.slideId} className={slideStyle} >
+          {isTitled ? <div className={`d-flex flex-column ${slideWrapperStyle ? slideWrapperStyle : ''}`}>
+            <a href={slide?.navLink}><img key={i} src={slide.imageURL} className={imgStyle} alt='slider content' /></a>
+            <p className={textStyle}>{slide?.slideTitle}</p>
+           {slide?.slideSubTitle ? <p className={subTextStyle}>{slide?.slideSubTitle}</p> : ''}
+           {customComponent}
+          </div> : (<a href={slide?.navLink}><img key={i} src={slide.imageURL} alt='slider content' /></a>)}
+        </SwiperSlide>
       ))}
     </Swiper>
   );
