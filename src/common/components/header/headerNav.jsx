@@ -8,6 +8,7 @@ const HeaderNav = ({ isDesktop = true, toggleDrawer }) => {
             <Nav className={`${isDesktop ? 'app-main-navbar-cmp' : 'app-main-navbar-mobile flex-column'}`} variant="underline" defaultActiveKey="/">
                 <Nav.Item>
                     <NavLink to="/" className='nav-link' onClick={toggleDrawer}>Home</NavLink>
+                    
                 </Nav.Item>
                 <div className="nav-item-hover">
                     <NavDropdown className='nav-item-main' title="Shop" id="nav-dropdown">
@@ -27,7 +28,7 @@ const HeaderNav = ({ isDesktop = true, toggleDrawer }) => {
                     <NavLink to="/serviceAreas" className='nav-link' onClick={toggleDrawer}>FSA/HSA Approved Items</NavLink>
                 </Nav.Item>
                 <Nav.Item>
-                    <NavLink to="/aboutUs" className='nav-link' onClick={toggleDrawer}>Nursery Design Center</NavLink>
+                    <NavLink to="/Nursery" className='nav-link' onClick={toggleDrawer}>Nursery Design Center</NavLink>
                 </Nav.Item>
                 <Nav.Item>
                     <NavLink to="/contactUs" className='nav-link' onClick={toggleDrawer}>REGISTRIES</NavLink>
@@ -39,7 +40,7 @@ const HeaderNav = ({ isDesktop = true, toggleDrawer }) => {
                     <NavLink to="/faqs" className='nav-link' onClick={toggleDrawer}>event spaces</NavLink>
                 </Nav.Item>
                 <Nav.Item>
-                    <NavLink to="/estimateTow" className='nav-link' onClick={toggleDrawer}>About us</NavLink>
+                    <NavLink to="/AboutUs" className='nav-link' onClick={toggleDrawer}>About us</NavLink>
                 </Nav.Item>
                 <Nav.Item>
                     <NavLink to="/privacyPolicy" className='nav-link' onClick={toggleDrawer}>Contact us</NavLink>
