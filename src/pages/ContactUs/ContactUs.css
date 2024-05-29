@@ -1,0 +1,51 @@
+.heading-section {
+    display: flex;
+    justify-content: center;
+    font-family: "Poppins",Poppins;
+    padding: 60px;
+    font-size: 32px;
+    font-weight: 500
+}
+
+.contact-form {
+    padding: 40px;
+}
+
+.send-button {
+    width: 450px;
+}
+
+.social-section {
+    padding-top: 80px;
+    display: flex;
+    
+    
+}
+
+.header-social {
+    color: #4E4E4E;
+}
+
+.thanking-section {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 75px;
+}
+
+.little-falls {
+    padding: 10px;
+}
+
+.saint-cloud {
+    padding: 10px;
+}
+
+.social-section {
+    padding: 30px;
+    align-items: center;
+}
+
+.address-section{
+    padding-top: 200px;
+}
