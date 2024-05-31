@@ -362,40 +362,6 @@ export interface AdminTransferTokenPermission extends Schema.CollectionType {
   };
 }
 
-export interface ApiMostLovedProductMostLovedProduct
-  extends Schema.CollectionType {
-  collectionName: 'most_loved_products';
-  info: {
-    singularName: 'most-loved-product';
-    pluralName: 'most-loved-products';
-    displayName: "Bob's most Loved Products";
-    description: '';
-  };
-  options: {
-    draftAndPublish: true;
-  };
-  attributes: {
-    productName: Attribute.String;
-    productImage: Attribute.Media;
-    productLink: Attribute.Blocks;
-    createdAt: Attribute.DateTime;
-    updatedAt: Attribute.DateTime;
-    publishedAt: Attribute.DateTime;
-    createdBy: Attribute.Relation<
-      'api::most-loved-product.most-loved-product',
-      'oneToOne',
-      'admin::user'
-    > &
-      Attribute.Private;
-    updatedBy: Attribute.Relation<
-      'api::most-loved-product.most-loved-product',
-      'oneToOne',
-      'admin::user'
-    > &
-      Attribute.Private;
-  };
-}
-
 export interface PluginUploadFile extends Schema.CollectionType {
   collectionName: 'files';
   info: {
@@ -822,6 +788,67 @@ export interface PluginI18NLocale extends Schema.CollectionType {
   };
 }
 
+export interface ApiBlogBlog extends Schema.CollectionType {
+  collectionName: 'blogs';
+  info: {
+    singularName: 'blog';
+    pluralName: 'blogs';
+    displayName: 'Blog';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    blogTitle: Attribute.String;
+    blogContent: Attribute.RichText;
+    blogPublishedDate: Attribute.Date;
+    blogPublishedBy: Attribute.String;
+    blogComments: Attribute.Text;
+    blogCoverImage: Attribute.Media;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<'api::blog.blog', 'oneToOne', 'admin::user'> &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<'api::blog.blog', 'oneToOne', 'admin::user'> &
+      Attribute.Private;
+  };
+}
+
+export interface ApiMostLovedProductMostLovedProduct
+  extends Schema.CollectionType {
+  collectionName: 'most_loved_products';
+  info: {
+    singularName: 'most-loved-product';
+    pluralName: 'most-loved-products';
+    displayName: "Bob's most Loved Products";
+    description: '';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    productName: Attribute.String;
+    productImage: Attribute.Media;
+    productLink: Attribute.Blocks;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::most-loved-product.most-loved-product',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::most-loved-product.most-loved-product',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
 declare module '@strapi/types' {
   export module Shared {
     export interface ContentTypes {
@@ -832,7 +859,6 @@ declare module '@strapi/types' {
       'admin::api-token-permission': AdminApiTokenPermission;
       'admin::transfer-token': AdminTransferToken;
       'admin::transfer-token-permission': AdminTransferTokenPermission;
-      'api::most-loved-product.most-loved-product': ApiMostLovedProductMostLovedProduct;
       'plugin::upload.file': PluginUploadFile;
       'plugin::upload.folder': PluginUploadFolder;
       'plugin::content-releases.release': PluginContentReleasesRelease;
@@ -841,6 +867,8 @@ declare module '@strapi/types' {
       'plugin::users-permissions.role': PluginUsersPermissionsRole;
       'plugin::users-permissions.user': PluginUsersPermissionsUser;
       'plugin::i18n.locale': PluginI18NLocale;
+      'api::blog.blog': ApiBlogBlog;
+      'api::most-loved-product.most-loved-product': ApiMostLovedProductMostLovedProduct;
     }
   }
 }
