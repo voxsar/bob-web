@@ -2,12 +2,12 @@ import React from 'react';
 import { Container, Row, Col, Card, div } from 'react-bootstrap';
 import './styles/ProductGrid.css'
 
-const ProductGrid = ({ products }) => {
+const ProductGrid = ({ products, isSmallScreen }) => {
   return (
     <div className='mt-5'>
-      <div className='d-flex flex-row align-items-center justify-content-between mb-2' style={{ padding: '0px 70px' }}>
+      <div className='d-flex flex-row align-items-center justify-content-lg-between justify-content-center mb-2' style={{ padding: '0px 70px' }}>
         <div></div>
-        <h2 className='ps-5 pb-5'>You May Also Like</h2>
+        <h2 className='ps-lg-5 pb-lg-5'>You May Also Like</h2>
         <a href='/' className='shop-all-btn'>
           Shop All
         </a>
@@ -15,7 +15,7 @@ const ProductGrid = ({ products }) => {
 
       <div className='product-grid-container'>
         <Row>
-          <Col lg={3}>
+          <Col lg={3} className='grid-column'>
             <Card className='mb-5'>
               <Card.Img variant="top" src={products[0]?.image} />
               <Card.Body>
@@ -43,7 +43,7 @@ const ProductGrid = ({ products }) => {
               </Card.Body>
             </Card>
           </Col>
-          <Col lg={6}>
+          <Col lg={6} xs={12} className='grid-column'>
             <Card className='product-middle-card'>
               <Card.Img variant="top" src={products[2]?.image} />
               <Card.Body>
@@ -58,28 +58,28 @@ const ProductGrid = ({ products }) => {
               </Card.Body>
             </Card>
           </Col>
-          <Col lg={3}>
-            <Card className='mb-5'>
+          <Col lg={3} xs={12} className='grid-column'>
+            <Card className='align-items-center'>
               <Card.Img variant="top" src={products[3]?.image} />
               <Card.Body>
                 <Row className='align-items-center'>
-                  <Col lg={7}>
+                  <Col lg={7} xs={7} className='pe-0'>
                     <Card.Title><a href='/'>{products[3]?.name}</a></Card.Title>
                   </Col>
-                  <Col lg={5}>
+                  <Col lg={5} xs={5}>
                     <div className='product-price'><a href='/'>${products[3]?.price.toFixed(2)}</a></div>
                   </Col>
                 </Row>
               </Card.Body>
             </Card>
-            <Card>
+            <Card className='align-items-center'>
               <Card.Img variant="top" src={products[4]?.image} />
               <Card.Body>
                 <Row className='align-items-center'>
-                  <Col lg={7}>
+                  <Col lg={7} xs={7} className='pe-0'>
                     <Card.Title><a href='/'>{products[4]?.name}</a></Card.Title>
                   </Col>
-                  <Col lg={5}>
+                  <Col lg={5} xs={5}>
                     <div className='product-price'><a href='/'>${products[4]?.price.toFixed(2)}</a></div>
                   </Col>
                 </Row>

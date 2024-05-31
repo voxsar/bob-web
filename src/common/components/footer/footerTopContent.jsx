@@ -8,52 +8,52 @@ const FooterTopContent = () => {
                 <Row>
                     <Col lg={6}>
                         <Row>
-                            <Col lg={1}>
+                            <Col lg={1} xs={2}>
                                 <i class="fas fa-search-location"></i>
                             </Col>
-                            <Col lg={11}>
+                            <Col lg={11} xs={10}>
                                 <div>
                                     <h5>Little Falls</h5>
                                     <p className="location-address">47 East Broadway, Little Falls, MN 56345</p>
                                     <p><a href="https://maps.app.goo.gl/u8WYH8zr6LPfUaC3A" />
-                                    Find on Google Maps  <i class="fa-solid fa-arrow-up-right-from-square"></i></p>
+                                        Find on Google Maps  <i class="fa-solid fa-arrow-up-right-from-square"></i></p>
                                 </div>
                             </Col>
                         </Row>
                         <Row>
-                            <Col lg={1}>
+                            <Col lg={1} xs={2}>
                                 <i class="fas fa-phone"></i>
                             </Col>
-                            <Col lg={11} style={{ paddingTop: '3px', fontSize: '16px' }}>
+                            <Col lg={11} xs={10} style={{ paddingTop: '3px', fontSize: '16px' }}>
                                 <p><a>(320) 639-2229</a></p>
                             </Col>
                         </Row>
 
                         <hr />
                         <Row>
-                            <Col lg={1}>
+                            <Col lg={1} xs={2}>
                                 <i class="fas fa-search-location"></i>
                             </Col>
-                            <Col lg={11}>
+                            <Col lg={11} xs={10}>
                                 <div>
                                     <h5>St. Cloud</h5>
                                     <p className="location-address">710 W Germain St. Saint Cloud Minnesota, 56301</p>
                                     <p><a href="https://maps.app.goo.gl/u8WYH8zr6LPfUaC3A" />
-                                    Find on Google Maps  <i class="fa-solid fa-arrow-up-right-from-square"></i></p>
+                                        Find on Google Maps  <i class="fa-solid fa-arrow-up-right-from-square"></i></p>
                                 </div>
                             </Col>
                         </Row>
                         <Row>
-                            <Col lg={1}>
+                            <Col lg={1} xs={2}>
                                 <i class="fas fa-phone"></i>
                             </Col>
-                            <Col lg={11} style={{ paddingTop: '3px', fontSize: '16px' }}>
+                            <Col lg={11} xs={10} style={{ paddingTop: '3px', fontSize: '16px' }}>
                                 <p><a>(320) 639-2229</a></p>
                             </Col>
                         </Row>
 
                     </Col>
-                    <Col lg={1}></Col>
+                    <Col className="mb-4" lg={1}></Col>
                     <Col lg={4}>
                         <h5>Our Services</h5>
                         <ul>
@@ -99,8 +99,8 @@ const FooterTopContent = () => {
             <Col lg={3}>
                 <h5>Sign up for Our Newsletter</h5>
                 <p>Sign Up For Our Newsletter and receive early access to New Arrivals, Sales, Events + more</p>
-                <Row><FormControl type="text" placeholder="Email" className="search-input" />
-                    <Button variant="outline-dark" style={{ width: '72px' }}>Send</Button></Row>
+                <Row><FormControl type="text" placeholder="Email" className="search-input mb-3" />
+                    <Button variant="outline-dark" className="mb-3" style={{ width: '20%' }}>Send</Button></Row>
                 <small>By signing up, you will receive offers, promotions and other commercial messages. You are also agreeing to babysonbroadway Privacy Policy. You may unsubscribe at any time.</small>
             </Col>
         </Row>

@@ -10,16 +10,18 @@ import info1 from '../../assets/icons/info1.webp';
 import info2 from '../../assets/icons/info2.webp';
 import info3 from '../../assets/icons/info3.webp';
 import info4 from '../../assets/icons/info4.webp';
+import useIsSmallScreen from '../../hooks/useIsSmallScreen';
 
 
 const Home = () => {
+  const isSmallScreen = useIsSmallScreen();
 
   return (
     <div className='page-wrapper'>
       <div className='top-carousel-wrapper'>
-        <Carousel content={topCarouselContent} containerStyle={'top-carousel-container'} />
+        <Carousel content={topCarouselContent} slidesPerView={1} spaceBetween={20} containerStyle={'top-carousel-container'} />
       </div>
-      <ShopAll />
+      <ShopAll isSmallScreen={isSmallScreen} />
       <ShopSection />
       <div className='space-div'></div>
 
@@ -32,18 +34,18 @@ const Home = () => {
         </div>
       </div>
 
-      {/* top 3 fav */}
+      {/* top 3 fav - featured products */}
       <div className='featured-prod-container'>
         <Row className='d-flex align-items-center'>
-          <Col lg={4} className='d-flex justify-content-center'>
+          <Col lg={4} xs={12} className='d-flex justify-content-center featured-logo-col'>
             <img src='https://bobshop-eeebddebdpcubfbv.z03.azurefd.net/wp-content/uploads/2024/02/MicrosoftTeams-image-768x663-removebg-preview.png' className='featured-logo' alt='toys-treat-logo' />
           </Col>
-          <Col lg={8}>
+          <Col lg={8} xs={12}>
             <Carousel
               content={featuredProducts}
               isNavigation={false}
               isPagination={true}
-              slidesPerView={3}
+              slidesPerView={ 3}
               isSlideSkip={true}
               spaceBetween={30}
               containerStyle={'featured-carousel-container'}
@@ -67,17 +69,15 @@ const Home = () => {
           isNavigation={false}
           slidesPerView={5}
           spaceBetween={20}
-          // containerStyle={'most-loved-carousel-container'}
           imgStyle={'brands-carousel-img'}
-          // slideStyle={'most-loved-carousel-slide'}
           isTitled={false} />
       </div>
 
       {/* Most loved products */}
       <div className='most-loved-prod-container'>
-        <div className='d-flex flex-row align-items-center justify-content-between mb-2'>
+        <div className='d-flex flex-row align-items-center justify-content-lg-between mb-2'>
           <div></div>
-          <h2 className='ps-5 pb-5'>BOB's Most Loved</h2>
+          <h2 className='ps-lg-5 pb-lg-5'>BOB's Most Loved</h2>
           <a href='/' className='shop-all-btn'>
             View All
           </a>
@@ -85,23 +85,24 @@ const Home = () => {
         <Carousel
           content={bobMostLoved}
           isPagination={true}
-          slidesPerView={5}
+          slidesPerView={isSmallScreen ? 1 : 5}
           spaceBetween={20}
           containerStyle={'most-loved-carousel-container'}
           imgStyle={'most-loved-carousel-img'}
           slideStyle={'most-loved-carousel-slide'}
+          textStyle={'most-loved-slide-txt'}
           isTitled={true} />
 
       </div>
 
       {/* product grid */}
-      <ProductGrid products={products} />
+      <ProductGrid products={products}/>
 
       {/* Best selling products */}
       <div className='recommended-prod-container'>
-        <div className='d-flex flex-row align-items-center justify-content-between mb-2'>
+        <div className='d-flex flex-row align-items-center justify-content-lg-between justify-content-center mb-2'>
           <div></div>
-          <h2 className='ps-5 pb-5'>Best Selling Products</h2>
+          <h2 className='ps-lg-5 pb-lg-5'>Best Selling Products</h2>
           <a href='/' className='shop-all-btn'>
             Shop All
           </a>
@@ -109,7 +110,7 @@ const Home = () => {
         <Carousel
           content={bestSellingProd}
           isPagination={true}
-          slidesPerView={4}
+          slidesPerView={isSmallScreen ? 1 : 4}
           spaceBetween={20}
           containerStyle={'best-selling-carousel-container'}
           imgStyle={'best-selling-carousel-img'}
@@ -120,18 +121,18 @@ const Home = () => {
 
       {/* Recommended */}
       <div className='recommended-prod-container'>
-        <div className='d-flex flex-row align-items-center justify-content-between mb-2'>
+        <div className='d-flex flex-row align-items-center justify-content-lg-between justify-content-center mb-2'>
           <div></div>
-          <h2 className='ps-5 pb-5'>Recommend Just For You</h2>
+          <h2 className='ps-lg-5 pb-lg-5'>Recommend Just For You</h2>
           <a href='/' className='shop-all-btn'>
             Shop All
           </a>
         </div>
-        <div>
-          <Row>
+        <div className='d-flex justify-content-center recommended-prod-row'>
+          <Row className='w-100'>
             {
               recommendedProd.map((prod) => (
-                <Col lg={4} className='p-0'>
+                <Col lg={4} xs={4} className='p-0'>
                   <a href='/'><img src={prod.prodUrl} alt='recommended product' className='recommended-img' /></a>
                   <a href='/' className='recommended-title'><p className='mt-4'>{prod.prodTitle}</p></a>
                 </Col>
@@ -143,9 +144,9 @@ const Home = () => {
 
       {/* More to read */}
       <div className='most-loved-prod-container'>
-        <div className='d-flex flex-row align-items-center justify-content-between mb-2'>
+        <div className='d-flex flex-row align-items-center justify-content-lg-between justify-content-center mb-2'>
           <div></div>
-          <h2 className='ps-5 pb-5'>More To Read</h2>
+          <h2 className='ps-lg-5 pb-lg-5'>More To Read</h2>
           <a href='/' className='shop-all-btn'>
             View All
           </a>
@@ -154,7 +155,7 @@ const Home = () => {
           content={moreToRead}
           isPagination={true}
           isNavigation={false}
-          slidesPerView={4}
+          slidesPerView={isSmallScreen ? 1 : 4}
           spaceBetween={20}
           slideWrapperStyle={'more-read-carousel-wrapper'}
           containerStyle={'more-read-carousel-container'}
@@ -172,7 +173,7 @@ const Home = () => {
       </div>
 
       {/* Gift card and Info */}
-      <div className='mt-5 mb-3 p-2'>
+      <div className='mt-5 mb-3 p-lg-2 gift-card-container'>
         <a href='/'><img src='https://bobshop-eeebddebdpcubfbv.z03.azurefd.net/wp-content/uploads/2024/03/2010.png' alt='gift-card' className='w-100' /></a>
       </div>
       <div className='recommended-prod-container bottom-info-container d-flex justify-content-center mb-5'>

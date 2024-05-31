@@ -52,3 +52,17 @@ a{
 .w-85{
     width: 85%!important;
 }
+
+@media (max-width: 769px) {
+    h2{
+        font-size: 20px!important;
+    }
+
+    p.section-description{
+        font-size: 12px!important;
+    }
+
+    .space-div{
+        display: none;
+    }
+}

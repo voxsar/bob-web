@@ -1,0 +1,80 @@
+.drawer-logo {
+    transform: scale(0.5);
+    margin-left: 30px;
+}
+
+.offcanvas-header .btn-close {
+    margin-top: -75px;
+}
+
+.offcanvas-body {
+    padding: 0;
+}
+
+.offcanvas-body .accordion-item {
+    border: none;
+}
+
+.offcanvas-body .accordion-button:not(.collapsed),
+.offcanvas-body .accordion-button:focus {
+    background-color: transparent;
+    box-shadow: none;
+    color: black;
+}
+
+.drawer-accordion-category .accordion-button {
+    font-size: 12px !important;
+    padding-bottom: 3px;
+}
+
+.drawer-accordion-category .accordion-body {
+    font-size: 12px !important;
+    font-weight: 300;
+}
+
+.drawer-accordion-category .accordion-body li {
+    margin-bottom: 10px;
+}
+
+.offcanvas-body .accordion-button::after {
+    content: "+" !important;
+    background-image: none !important;
+    height: auto !important;
+    font-size: 25px !important;
+}
+
+.offcanvas-body .accordion-button:not(.collapsed)::after {
+    content: "-" !important;
+    background-image: none !important;
+    transform: none !important;
+}
+
+.offcanvas-body .accordion-button {
+    font-size: 14px !important;
+}
+
+.drawer-divider {
+    background-color: #f1f1f1;
+    padding: 25px;
+}
+
+.drawer-main-nav-list li {
+    font-size: 14px !important;
+    margin-bottom: 12px;
+    font-weight: 300;
+}
+
+.drawer-btn {
+    border-width: 1px;
+    border-radius: 0;
+    padding: 10px 80px;
+    font-weight: 300;
+    text-transform: none;
+    line-height: 1em;
+    letter-spacing: 1px;
+    fill: #5c5c5c;
+    color: #5c5c5c;
+    background-color: #FFFFFF00;
+    border-style: solid;
+    border-color: #5c5c5c;
+}

@@ -4,8 +4,8 @@ import { NavLink } from "react-router-dom";
 const HeaderNav = ({ isDesktop = true, toggleDrawer }) => {
     return (
 
-        <Container style={{ paddingBottom: '50px'}}>
-            <Nav className={`${isDesktop ? 'app-main-navbar-cmp' : 'app-main-navbar-mobile flex-column'}`} variant="underline" defaultActiveKey="/">
+        <Container style={{ padding: '0px 0px 50px 0px'}}>
+            <Nav className='app-main-navbar-cmp' variant="underline" defaultActiveKey="/">
                 <Nav.Item>
                     <NavLink to="/" className='nav-link' onClick={toggleDrawer}>Home</NavLink>
                 </Nav.Item>

@@ -51,6 +51,34 @@
     gap: 31px;
     align-items: center;
 }
+.shop-category-container-mobile{
+    height: 498px!important;
+}
+
+.shop-category-container-mobile p{
+    font-size: 14px;
+    margin-top: 12px;
+}
+
+.shop-category-container-mobile .swiper-button-prev,.shop-category-container-mobile .swiper-button-next{
+    top: 41%;
+    background-color: white;
+    border-radius: 90px;
+    padding: 10px 22px;
+    transform: scale(0.6);
+}
+
+.shop-category-container-mobile .swiper-button-prev{
+    left: 11%;
+}
+
+.shop-category-container-mobile .swiper-button-next{
+    right: 11%;
+}
+
+.shop-category-container-mobile .swiper-button-prev::after,.shop-category-container-mobile .swiper-button-next::after {
+    color: #3b3b3b;
+}
 
 
 /* Shop by trimester styles */
@@ -192,7 +220,7 @@
 
 .most-loved-carousel-container .swiper-button-prev,
 .most-loved-carousel-container .swiper-button-next {
-    top: 36% !important;
+    top: 40% !important;
 }
 
 .most-loved-carousel-container {
@@ -338,4 +366,182 @@
 /* bottom info styles */
 .bottom-info-container p{
     font-size: 20px;
+}
+
+@media (max-width: 769px) {
+    .top-carousel-wrapper{
+        padding: 0px;
+    }
+    .recommended-prod-container{
+        padding: 20px;
+        margin-top: 20px;
+    }
+
+    .nursery-box-container{
+        padding: 0;
+    }
+
+    .shop-trimester-container{
+        margin-top: 30px;
+        background-color: #F8F8F8;
+        padding: 25px 10px;
+    }
+
+    .featured-prod-container, .most-loved-prod-container{
+        padding: 20px;
+    }
+
+    .nursery-box-container{
+        max-height: inherit!important;
+    }
+
+    .featured-logo {
+        transform: scale(1.2);
+        margin-top: 20px;
+    }
+
+    .featured-carousel-img {
+        width: 105px;
+        height: 115px;
+        object-fit: cover;
+        object-position: center center;
+        border: none;
+        margin-bottom: 20px;
+        border-radius: 0px;
+    }
+
+    .featured-carousel-container{
+        height: 290px!important;
+    }
+
+
+    .featured-logo-col{
+        height: 200px!important;
+    }
+
+    .recommended-img{
+        height: auto!important;
+        padding: 0px 5px!important;
+    }
+
+    .recommended-title{
+        color: #3f3f3f;
+        font-size: 12px;
+        margin-top: 0px!important;
+    }
+
+    .nursery-box-top-div{
+        font-size: 20px!important;
+        border-radius: 0;
+    }
+
+    .shop-nursery-btn{
+        font-size: 10px;
+        padding: 11px;
+    }
+
+    .video-background-container{
+        height: 210px!important;
+        border-radius: 0px;
+    }
+
+    .brand-section-container{
+        margin-bottom: 65px;
+    }
+
+    .shop-all-btn, .gift-card-container{
+        display: none;
+    }
+
+    .most-loved-prod-container .flex-row{
+        justify-content: center;
+        border-top: 1px solid white;
+        border-bottom: 1px solid white;
+        padding: 20px 0;
+        color: black;
+    }
+
+    .most-loved-carousel-img{
+        border-width: 3px;
+        border-radius: 4%;
+    }
+
+    .most-loved-carousel-container{
+        height: 100%!important;
+        padding: 0px 20px;
+    }
+
+    .most-loved-carousel-container .swiper-pagination{
+        margin-top: 20px!important;
+    }
+
+    .most-loved-carousel-slide{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .swiper-button-prev,.swiper-button-next{
+        top: 40%!important;
+        background-color: white;
+        border-radius: 90px;
+        padding: 10px 22px;
+        transform: scale(0.6);
+    }
+    
+   .swiper-button-prev{
+        left: 0%;
+    }
+    
+   .swiper-button-next{
+        right: 0%;
+    }
+
+    .recommended-prod-container .swiper-button-prev{
+        left: 2%;
+    }
+    
+    .recommended-prod-container .swiper-button-next{
+        right: 2%;
+    }
+    
+   .swiper-button-prev::after,.swiper-button-next::after {
+        color: #3b3b3b;
+    }
+
+    .most-loved-slide-txt{
+        font-size: 15px!important;
+        margin-bottom: 50px;
+    }
+
+    .best-selling-carousel-text{
+        font-size: 14px!important;
+    }
+
+    .recommended-prod-row{
+        margin-top: 30px;
+    }
+
+    .bottom-info-container .row {
+        gap: 50px;
+    }
+
+    .top-carousel-container .swiper-button-next, .top-carousel-container .swiper-button-prev{
+        display: none;
+    }
+    
+}
+
+@media (min-width: 1242px) and (max-width: 2000px) {
+    .nursery-box-container{
+        max-height: 978px!important;
+    }
+
+    .more-read-carousel-container {
+        height: 715px !important;
+    }
+
+    .most-loved-carousel-container {
+        height: 438px!important;
+    }
 }

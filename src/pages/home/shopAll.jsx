@@ -1,8 +1,29 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
+import Carousel from '../../common/components/Carousel';
+import { prodCategory } from '../../common/data';
 
-const ShopAll = () => {
-    return (
+const ShopAll = ({isSmallScreen}) => {
+
+    return isSmallScreen ? (
+        <div className='mt-5 d-flex flex-column align-items-center'>
+            <Carousel
+             content={prodCategory}
+             isPagination={true}
+             isSmallScreen={true}
+             slidesPerView={1.5}
+             spaceBetween={10}
+             slideWrapperStyle={'shop-category'}
+             containerStyle={'shop-category-container-mobile'}
+             imgStyle={'shop-category-img'}
+             isTitled={true} 
+             centeredSlides={true}
+            />
+              <a href='/' className='shop-all-btn mt-3'>
+                Shop All
+            </a>
+        </div>
+    ) : (
             <Container className='shop-category-container'>
             <a href='/' className='shop-all-btn'>
                 Shop All

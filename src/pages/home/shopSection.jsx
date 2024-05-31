@@ -62,9 +62,9 @@ const ShopSection = () => {
         <div className='shop-trimester-container'>
             <h2>Shop By Trimester</h2>
             <p className='section-description'>Explore carefully selected items tailored for each stage of your journey - from pregnancy to baby's first year. Click to find essentials perfect for you and your little one.</p>
-            <Row>
+            <Row className='flip-card-row'>
                 {TrimesterData.map((data) => (
-                   <Col>
+                   <Col className='flip-card-col'>
                     <FlipCard title={data.title} list={data.list} cardImg={data.image} />
                    </Col>
                 ))}

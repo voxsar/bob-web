@@ -17,6 +17,12 @@ import logo16 from './icons/logo-16.png';
 import logo17 from './icons/logo-17.png';
 import logo18 from './icons/logo-18.png';
 
+import header1 from './images/header-img-1.png';
+import header2 from './images/header-img-2.png';
+import header3 from './images/header-img-3.png';
+import header4 from './images/header-img-4.png';
+import header5 from './images/header-img-5.png';
+
 
 export const BRAND_LOGOS = [
     logo1,
@@ -38,3 +44,11 @@ export const BRAND_LOGOS = [
     logo17,
     logo18,
 ]
+
+export const HEADER_IMAGES = {
+    header1,
+    header2,
+    header3,
+    header4,
+    header5,
+}
