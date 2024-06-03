@@ -66,7 +66,7 @@ const FooterTop = () => {
                 <Col></Col>
                 <Col lg={5}>
                     <Row>
-                        <Col lg={6} className='d-flex align-items-center'>
+                        <Col lg={6} className='d-flex align-items-center footer-podcast-txt'>
                             <p>Listen to the Rolling In the Deep Podcast</p>
                         </Col>
                         <Col lg={6}>

@@ -31,7 +31,7 @@ const FlipCard = ({title = '', list = [], cardImg}) => {
         </div>
       </div>
     </div>
-    <p className='fw-semibold'>{title}</p>
+    <p className='fw-semibold flip-card-title'>{title}</p>
    </>
   );
 };

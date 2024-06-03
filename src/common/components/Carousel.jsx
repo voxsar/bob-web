@@ -9,20 +9,37 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 
-const Carousel = ({ containerStyle, slideStyle, imgStyle, textStyle, subTextStyle, slideWrapperStyle, content = [], isSlideSkip = false,
-   customComponent, isPagination, isNavigation = true, slidesPerView, spaceBetween, isTitled=false }) => {
+const Carousel = ({
+  containerStyle,
+  slideStyle,
+  imgStyle,
+  textStyle,
+  subTextStyle,
+  isSmallScreen = false,
+  slideWrapperStyle,
+  centeredSlides,
+  content = [],
+  isSlideSkip = false,
+  customComponent,
+  isPagination,
+  isNavigation = true,
+  slidesPerView,
+  spaceBetween,
+  isTitled = false }) => {
   const paginationSettings = isPagination ? {
     clickable: true
   } : false;
   return (
     <Swiper
+      isSmallScreen={isSmallScreen}
+      centeredSlides={centeredSlides}
       navigation={isNavigation}
       loop={true}
       pagination={paginationSettings}
-      slidesPerView={isPagination ? slidesPerView : 1}
+      slidesPerView={slidesPerView}
       slidesPerGroupSkip={isSlideSkip ? slidesPerView : undefined}
       slidesPerGroup={isSlideSkip ? slidesPerView : undefined}
-      spaceBetween={isPagination ? spaceBetween : 1}
+      spaceBetween={spaceBetween}
       modules={[Navigation, Autoplay, Pagination]}
       autoplay={{
         delay: 5500,
@@ -35,8 +52,8 @@ const Carousel = ({ containerStyle, slideStyle, imgStyle, textStyle, subTextStyl
           {isTitled ? <div className={`d-flex flex-column ${slideWrapperStyle ? slideWrapperStyle : ''}`}>
             <a href={slide?.navLink}><img key={i} src={slide.imageURL} className={imgStyle} alt='slider content' /></a>
             <p className={textStyle}>{slide?.slideTitle}</p>
-           {slide?.slideSubTitle ? <p className={subTextStyle}>{slide?.slideSubTitle}</p> : ''}
-           {customComponent}
+            {slide?.slideSubTitle ? <p className={subTextStyle}>{slide?.slideSubTitle}</p> : ''}
+            {customComponent}
           </div> : (<a href={slide?.navLink}><img key={i} src={slide.imageURL} alt='slider content' /></a>)}
         </SwiperSlide>
       ))}

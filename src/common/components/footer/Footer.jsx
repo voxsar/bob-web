@@ -19,7 +19,7 @@ const Footer = () => {
 
       <Container className='footer-bottom-light-container'>
         <p className='footer-bottom-text'>Copyright © 2024 Baby's On Broadway. All Rights Reserved.</p>
-        <p className='footer-bottom-text'>Website Designed and Developed by 10X TEK</p>
+        <p className='footer-bottom-text mb-3'>Website Designed and Developed by 10X TEK</p>
       </Container>
     </div>
   );

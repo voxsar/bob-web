@@ -1,12 +1,23 @@
-import React from 'react';
-import { Container, Navbar, Nav, NavDropdown } from 'react-bootstrap';
+import React, {useState} from 'react';
+import { Container, Navbar, Nav, NavDropdown, Col } from 'react-bootstrap';
 import '../styles/Header.css';
 import HeaderSearch from './headerSearch';
 import logo from '../../../assets/bob-logo.png';
 import HeaderNav from './headerNav';
 import HeaderNavBottom from './headerNavBottom';
+import Carousel from '../Carousel';
+import { headerImages } from '../../data';
+import Drawer from '../Drawer';
+import useIsSmallScreen from '../../../hooks/useIsSmallScreen';
 
 const Header = () => {
+  const [isDrawerOpen, setIsDrawerOpen] = useState(false);
+  const isSmallScreen = useIsSmallScreen();
+
+  const toggleDrawer = () => {
+      setIsDrawerOpen(!isDrawerOpen);
+  };
+
   return (
     <>
       <Navbar className='header-top-bar-light'>
@@ -46,10 +57,21 @@ const Header = () => {
 
       <Container className='d-flex justify-content-center'>
         <img src={logo} className='header-app-logo' alt='app-logo' />
+       {isSmallScreen && ( <Col className="d-flex justify-content-center align-items-center" xs={2}>
+                    <button onClick={toggleDrawer} className="header-more-btn"><i class="fa-solid fa-bars"></i></button>
+                </Col>)}
       </Container>
-
+      <Drawer  isOpen={isDrawerOpen} onClose={toggleDrawer} />
       <HeaderNav />
-      <HeaderNavBottom/>
+      <Carousel
+             content={headerImages}
+             isPagination={true}
+             isNavigation={false}
+             slidesPerView={1}
+             spaceBetween={10}
+             containerStyle={'top-header-carousel'}
+            />
+     {!isSmallScreen && <HeaderNavBottom/>} 
     </>
   );
 }
