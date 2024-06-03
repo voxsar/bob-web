@@ -34,8 +34,8 @@ function ContactUs() {
             <div className="contact-form">
               <Form noValidate validated={validated} onSubmit={handleSubmit}>
                 <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
-                  <Form.Control required type="text" name="form_fields[name]" placeholder="Name" />
-                  <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
+                  <Form.Control type="text" name="form_fields[name]" placeholder="Name" required />
+                  <Form.Control.Feedback type="invalid">Name is Required</Form.Control.Feedback>
                 </Form.Group>
                 <Form.Group className="mb-3" controlId="exampleForm.ControlInput2">
                   <Form.Control required type="email" placeholder="Email" />
@@ -44,9 +44,9 @@ function ContactUs() {
                   </Form.Control.Feedback>
                 </Form.Group>
                 <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
-                  <Form.Control as="textarea" placeholder="Message" rows={3} />
+                  <Form.Control as="textarea" placeholder="Message" rows={3} required />
                   <Form.Control.Feedback type="invalid">
-                    Please enter a message.
+                  Message is Required
                   </Form.Control.Feedback>
                 </Form.Group>
                 <Button className="send-button" variant="secondary" type="submit">
