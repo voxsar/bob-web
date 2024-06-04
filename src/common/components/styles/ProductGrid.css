@@ -1,69 +1,83 @@
-.product-grid-container .card, .product-grid-container .card-img-top {
-  border-radius: 0!important;
+.product-grid-container .card,
+.product-grid-container .card-img-top {
+  border-radius: 0 !important;
   border: none;
 }
 
-.product-grid-container .product-price{
+.product-grid-container .product-price {
   border-radius: 27px;
   border: 3px solid #3b3b3b;
   padding: 12px 24px;
   max-width: 120px;
 }
 
-.product-grid-container .card-title{
-  font-size: 14px!important;
-  font-weight: 400!important;
+.product-grid-container .card-title {
+  font-size: 14px !important;
+  font-weight: 400 !important;
 }
 
-.product-middle-card{
+.product-middle-card {
   margin-top: 60px;
 }
 
-.product-grid-container{
+.product-grid-container {
   padding: 0px 57px;
 }
 
 @media (max-width: 769px) {
-  .product-grid-container{
+  .product-grid-container {
     padding: 0px 20px;
   }
 
-  .product-grid-container .row .grid-column:first-child{
+  .product-grid-container .row .grid-column:first-child {
     display: none;
   }
 
-  .product-grid-container .row .grid-column:nth-child(2){
+  .product-grid-container .row .grid-column:nth-child(2) {
     display: flex;
     justify-content: center;
   }
 
-  .product-grid-container .row .grid-column:nth-child(3){
+  .product-grid-container .row .grid-column:nth-child(3) {
     display: flex;
     flex-direction: row;
   }
 
-  .product-grid-container .card-title, .product-grid-container .product-price{
-    font-size: 12px!important;
+  .product-grid-container .card-title,
+  .product-grid-container .product-price {
+    font-size: 12px !important;
     border: none;
   }
 
-  .product-grid-container .row .grid-column:nth-child(3) .card-img-top{
+  .product-grid-container .row .grid-column:nth-child(3) .card-img-top {
     height: 134px;
     width: 140px;
     margin: 5px;
   }
 
-  .product-grid-container .product-price{
+  .product-grid-container .product-price {
     padding: 0;
   }
 
-  .product-grid-container .card{
+  .product-grid-container .card {
     border: 0.5px solid #e8d3ca;
     margin: 10px 3px;
     width: 227px;
   }
 
-  .product-grid-container .card-body{
+  .product-grid-container .card-body {
     padding: 6px;
+  }
+}
+
+@media (min-width: 1023px) and (max-width: 1300px) {
+
+  .product-grid-container .card-body .col-lg-5 {
+    padding: 0 !important;
+  }
+
+  .product-grid-container .card-body .product-price {
+    padding: 4px 9px;
+    border-width: 2px;
   }
 }

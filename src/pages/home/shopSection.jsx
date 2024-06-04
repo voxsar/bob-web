@@ -14,7 +14,7 @@ const TrimesterData = [
     },
     {
         title: 'Second Trimester',
-        image: 'https://bobshop-eeebddebdpcubfbv.z03.azurefd.net/wp-content/uploads/2024/03/Untitled-design-1.png.webp' ,
+        image: 'https://bobshop-eeebddebdpcubfbv.z03.azurefd.net/wp-content/uploads/2024/03/Untitled-design-1.png.webp',
         list: [
             "Maternity Wear",
             "Body Pillows",
@@ -57,16 +57,16 @@ const TrimesterData = [
     }
 ]
 
-const ShopSection = () => {
+const ShopSection = ({ isSmallScreen }) => {
     return (
         <div className='shop-trimester-container'>
             <h2>Shop By Trimester</h2>
             <p className='section-description'>Explore carefully selected items tailored for each stage of your journey - from pregnancy to baby's first year. Click to find essentials perfect for you and your little one.</p>
             <Row className='flip-card-row'>
                 {TrimesterData.map((data) => (
-                   <Col className='flip-card-col'>
-                    <FlipCard title={data.title} list={data.list} cardImg={data.image} />
-                   </Col>
+                    <Col className='flip-card-col'>
+                        <FlipCard title={data.title} list={data.list} cardImg={data.image} isSmallScreen={isSmallScreen} />
+                    </Col>
                 ))}
 
             </Row>

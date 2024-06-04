@@ -36,19 +36,6 @@
     margin-bottom: 10px;
 }
 
-.offcanvas-body .accordion-button::after {
-    content: "+" !important;
-    background-image: none !important;
-    height: auto !important;
-    font-size: 25px !important;
-}
-
-.offcanvas-body .accordion-button:not(.collapsed)::after {
-    content: "-" !important;
-    background-image: none !important;
-    transform: none !important;
-}
-
 .offcanvas-body .accordion-button {
     font-size: 14px !important;
 }

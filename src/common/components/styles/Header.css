@@ -308,3 +308,9 @@
     margin-top: 20px;
   }
 }
+
+@media (min-width: 1023px) and (max-width: 1300px) {
+  .nav-underline .nav-link {
+    font-size: 12px !important;
+  }
+}

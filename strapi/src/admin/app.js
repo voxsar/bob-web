@@ -1,18 +1,18 @@
 const config = {
- translations: {
-  en: {
-    "app.components.LeftMenu.navbrand.title": "Store Dashboard",
+  translations: {
+    en: {
+      "app.components.LeftMenu.navbrand.title": "Store Dashboard",
 
-    "app.components.LeftMenu.navbrand.workplace": "BOB retail",
+      "app.components.LeftMenu.navbrand.workplace": "BOB retail",
 
-    "Auth.form.welcome.title": "Welcome to Dashboard ",
+      "Auth.form.welcome.title": "Welcome to Dashboard ",
 
-    "Auth.form.welcome.subtitle": "Login to your admin account",
+      "Auth.form.welcome.subtitle": "Login to your admin account",
 
-    "Settings.profile.form.section.experience.interfaceLanguageHelp":
-      "Preference changes will apply only to you.",
-  },
- }
+      "Settings.profile.form.section.experience.interfaceLanguageHelp":
+        "Preference changes will apply only to you.",
+    },
+  }
 };
 
 const bootstrap = (app) => {
