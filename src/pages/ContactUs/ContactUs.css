@@ -49,3 +49,8 @@
 .address-section{
     padding-top: 200px;
 }
+
+.contact-form-section {
+    display: flex;
+    justify-content: center;
+}
