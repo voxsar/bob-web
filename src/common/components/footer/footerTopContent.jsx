@@ -6,12 +6,12 @@ const FooterTopContent = () => {
         <Row className="footer-content-row">
             <Col lg={5}>
                 <Row>
-                    <Col lg={6}>
+                    <Col lg={6} className="footer-content-col-1">
                         <Row>
-                            <Col lg={1} xs={2}>
+                            <Col lg={2} xs={2}>
                                 <i class="fas fa-search-location"></i>
                             </Col>
-                            <Col lg={11} xs={10}>
+                            <Col lg={10} xs={10}>
                                 <div>
                                     <h5>Little Falls</h5>
                                     <p className="location-address">47 East Broadway, Little Falls, MN 56345</p>
@@ -21,20 +21,20 @@ const FooterTopContent = () => {
                             </Col>
                         </Row>
                         <Row>
-                            <Col lg={1} xs={2}>
+                            <Col lg={2} xs={2}>
                                 <i class="fas fa-phone"></i>
                             </Col>
-                            <Col lg={11} xs={10} style={{ paddingTop: '3px', fontSize: '16px' }}>
+                            <Col lg={10} xs={10} style={{ paddingTop: '3px', fontSize: '16px' }}>
                                 <p><a>(320) 639-2229</a></p>
                             </Col>
                         </Row>
 
                         <hr />
                         <Row>
-                            <Col lg={1} xs={2}>
+                            <Col lg={2} xs={2}>
                                 <i class="fas fa-search-location"></i>
                             </Col>
-                            <Col lg={11} xs={10}>
+                            <Col lg={10} xs={10}>
                                 <div>
                                     <h5>St. Cloud</h5>
                                     <p className="location-address">710 W Germain St. Saint Cloud Minnesota, 56301</p>
@@ -44,10 +44,10 @@ const FooterTopContent = () => {
                             </Col>
                         </Row>
                         <Row>
-                            <Col lg={1} xs={2}>
+                            <Col lg={2} xs={2}>
                                 <i class="fas fa-phone"></i>
                             </Col>
-                            <Col lg={11} xs={10} style={{ paddingTop: '3px', fontSize: '16px' }}>
+                            <Col lg={10} xs={10} style={{ paddingTop: '3px', fontSize: '16px' }}>
                                 <p><a>(320) 639-2229</a></p>
                             </Col>
                         </Row>

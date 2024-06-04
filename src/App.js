@@ -6,6 +6,7 @@ import Footer from './common/components/footer/Footer';
 import AboutUs from './pages/AboutUs/AboutUs';
 import ContactUs from './pages/ContactUs/ContactUs';
 import Faq from './pages/FAQ/Faq';
+import EventSpaces from './pages/eventSpaces/EventSpaces';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <Route path="/AboutUs" element={<AboutUs />} />
           <Route path="/ContactUs" element={<ContactUs />} />
           <Route path="/Faq" element={<Faq />} />
+          <Route path="/event-spaces" element={<EventSpaces />} />
         </Routes>
         <Footer />
       </div>
