@@ -37,7 +37,7 @@ const HeaderNav = ({ isDesktop = true, toggleDrawer }) => {
                     <NavLink to="/blogs" className='nav-link' onClick={toggleDrawer}>BOB Defenders</NavLink>
                 </Nav.Item>
                 <Nav.Item>
-                    <NavLink to="/event" className='nav-link' onClick={toggleDrawer}>event spaces</NavLink>
+                    <NavLink to="/faqs" className='nav-link' onClick={toggleDrawer}>event spaces</NavLink>
                 </Nav.Item>
                 <Nav.Item>
                     <NavLink to="/AboutUs" className='nav-link' onClick={toggleDrawer}>About us</NavLink>

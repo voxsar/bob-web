@@ -7,6 +7,7 @@ import AboutUs from './pages/AboutUs/AboutUs';
 import ContactUs from './pages/ContactUs/ContactUs';
 import Faq from './pages/FAQ/Faq';
 import Product from './pages/Product/Product';
+import EventSpaces from './pages/eventSpaces/EventSpaces';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <Route path="/ContactUs" element={<ContactUs />} />
           <Route path="/Faq" element={<Faq />} />
           <Route path="/Product" element={<Product />} />
+          <Route path="/event-spaces" element={<EventSpaces />} />
         </Routes>
         <Footer />
       </div>

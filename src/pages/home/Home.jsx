@@ -22,7 +22,7 @@ const Home = () => {
         <Carousel content={topCarouselContent} slidesPerView={1} spaceBetween={20} containerStyle={'top-carousel-container'} />
       </div>
       <ShopAll isSmallScreen={isSmallScreen} />
-      <ShopSection />
+      <ShopSection isSmallScreen={isSmallScreen} />
       <div className='space-div'></div>
 
       {/* Nursery in a box */}
@@ -45,7 +45,7 @@ const Home = () => {
               content={featuredProducts}
               isNavigation={false}
               isPagination={true}
-              slidesPerView={ 3}
+              slidesPerView={3}
               isSlideSkip={true}
               spaceBetween={30}
               containerStyle={'featured-carousel-container'}
@@ -96,7 +96,7 @@ const Home = () => {
       </div>
 
       {/* product grid */}
-      <ProductGrid products={products}/>
+      <ProductGrid products={products} />
 
       {/* Best selling products */}
       <div className='recommended-prod-container'>
