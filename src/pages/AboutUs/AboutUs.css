@@ -9,7 +9,7 @@
 }
 
 .title {
-  padding-top: 80px;
+  padding-top: 8%;
 }
 
 .title-divider {
@@ -26,8 +26,8 @@
 }
 
 .ajourny-img {
-  padding-top: 60px;
-  padding-left: 60px;
+  padding-top: 6%;
+  padding-left: 6%;
 }
 
 .ajourny-img:hover {
@@ -87,35 +87,35 @@
 }
 
 .ajourney-paragraph {
-  padding-top: 60px;
-  padding-right: 150px;
+  padding-top: 6%;
+  padding-right: 15%;
 }
 
 .acommunity-paragraph {
-  padding-top: 200px;
-  padding-left: 60px;
+  padding-top: 20%;
+  padding-left: 6%;
 }
 
 .acommunity-img {
-  padding-top: 100px;
-  padding-right: 20px;
+  padding-top: 10%;
+  padding-right: 2%;
 }
 
 .rolling-img {
-  padding-top: 60px;
-  padding-left: 20px;
+  padding-top: 6%;
+  padding-left: 2%;
 }
 
 .rolling-paragraph {
-  padding-top: 120px;
-  padding-right: 20px;
+  padding-top: 12%;
+  padding-right: 2%;
 }
 
 .rolling-section {
-  padding-bottom: 200px;
+  padding-bottom: 15%;
 }
 
 .e-con-inner {
-  padding-top: 80px;
+  padding-top: 20%;
   font-weight: bold;
 }

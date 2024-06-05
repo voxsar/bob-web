@@ -12,7 +12,7 @@ function Faq() {
           <Col>
             <div className="faq-image">
               <img
-              style={{width:1000,height:500,display:"flex", marginLeft:150}}
+              style={{width:"80%",height:500,display:"flex", marginLeft:150}}
                 data-lazyloaded="1"
                 data-placeholder-resp="2560x1707"
                 src="https://bobshop-eeebddebdpcubfbv.z03.azurefd.net/wp-content/uploads/2024/03/FAQs.png"

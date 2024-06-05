@@ -2,13 +2,13 @@
     display: flex;
     justify-content: center;
     font-family: "Poppins",Poppins;
-    padding: 60px;
+    padding: 6%;
     font-size: 32px;
     font-weight: 500
 }
 
 .contact-form {
-    padding: 40px;
+    padding: 4%;
 }
 
 .send-button {
@@ -16,7 +16,7 @@
 }
 
 .social-section {
-    padding-top: 80px;
+    padding-top: 8%;
     display: flex;
     
     
@@ -30,24 +30,24 @@
     display: flex;
     justify-content: center;
     text-align: center;
-    padding: 75px;
+    padding: 8%;
 }
 
 .little-falls {
-    padding: 10px;
+    padding-left: 20%;
 }
 
 .saint-cloud {
-    padding: 10px;
+    padding-left: 20%;
 }
 
 .social-section {
-    padding: 30px;
+    padding: 10%;
     align-items: center;
 }
 
 .address-section{
-    padding-top: 200px;
+    padding-top: 20%;
 }
 
 .contact-form-section {
