@@ -20,7 +20,7 @@ function ContactUs() {
 
   return (
     <div className="ContactUs-Container">
-      <div className="heading-section">
+      <div className="heading-section text-center">
         <Row>
           <Col>Contact Us</Col>
         </Row>
@@ -28,7 +28,6 @@ function ContactUs() {
 
       <div className="contact-form-section">
         <Row>
-          <Col></Col>
           <Col></Col>
           <Col>
             <div className="contact-form">
@@ -46,14 +45,19 @@ function ContactUs() {
                 <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
                   <Form.Control as="textarea" placeholder="Message" rows={3} required />
                   <Form.Control.Feedback type="invalid">
-                  Message is Required
+                    Message is Required
                   </Form.Control.Feedback>
                 </Form.Group>
-                <Button className="send-button" variant="secondary" type="submit">
-                  Send
-                </Button>
+                <div className="send-button-container">
+                  <Button className="send-button" variant="secondary" type="submit">
+                    Send
+                  </Button>
+                </div>
+
               </Form>
-            </div>
+            </div></Col>
+          <Col>
+
           </Col>
         </Row>
       </div>
@@ -129,28 +133,28 @@ function ContactUs() {
           </Col>
           <Col>
 
-          <div className="social-section">
-            <Nav className="ml-auto header-social">
-              <Nav.Link href="#" style={{ color: "#5c5c5c" }}>
-                <i className="fab fa-facebook-f"></i>
-              </Nav.Link>
-              <Nav.Link href="#" style={{ color: "#5c5c5c" }}>
-                <i className="fab fa-instagram"></i>
-              </Nav.Link>
-              <Nav.Link href="#" style={{ color: "#5c5c5c" }}>
-                <i className="fab fa-twitter"></i>
-              </Nav.Link>
-              <Nav.Link href="#" style={{ color: "#5c5c5c" }}>
-                <i className="fab fa-youtube"></i>
-              </Nav.Link>
-              <Nav.Link href="#" style={{ color: "#5c5c5c" }}>
-                <i className="fab fa-tiktok"></i>
-              </Nav.Link>
-              <Nav.Link href="#" style={{ color: "#5c5c5c" }}>
-                <i className="fab fa-pinterest"></i>
-              </Nav.Link>
-            </Nav>
-          </div>
+            <div className="social-section">
+              <Nav className="ml-auto header-social">
+                <Nav.Link href="#" style={{ color: "#5c5c5c" }}>
+                  <i className="fab fa-facebook-f"></i>
+                </Nav.Link>
+                <Nav.Link href="#" style={{ color: "#5c5c5c" }}>
+                  <i className="fab fa-instagram"></i>
+                </Nav.Link>
+                <Nav.Link href="#" style={{ color: "#5c5c5c" }}>
+                  <i className="fab fa-twitter"></i>
+                </Nav.Link>
+                <Nav.Link href="#" style={{ color: "#5c5c5c" }}>
+                  <i className="fab fa-youtube"></i>
+                </Nav.Link>
+                <Nav.Link href="#" style={{ color: "#5c5c5c" }}>
+                  <i className="fab fa-tiktok"></i>
+                </Nav.Link>
+                <Nav.Link href="#" style={{ color: "#5c5c5c" }}>
+                  <i className="fab fa-pinterest"></i>
+                </Nav.Link>
+              </Nav>
+            </div>
           </Col>
         </Row>
       </div>

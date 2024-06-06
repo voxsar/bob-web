@@ -13,9 +13,9 @@ function AboutUs() {
           </Col>
           <Col xs={4}>
             <div className="heading">
-                <h3>Our Story: <br />
-              The Heartbeat of Baby's on Broadway</h3>
-              
+              <h3>Our Story: <br />
+                The Heartbeat of Baby's on Broadway</h3>
+
             </div>
           </Col>
           <Col>
@@ -54,7 +54,7 @@ function AboutUs() {
                     Cloud, Minnesota, Baby &#8217;s on Broadway stands as a
                     testament to a mother &#8217;s love, ambition, and the
                     unfiltered truth of parenting. Here, our founder Adelle
-                    &#8217;s story unfolds – a tale of transforming motherhood
+                    &#8217;s story unfolds - a tale of transforming motherhood
                     &#8217;s raw and real experiences into a community
                     cornerstone.
                   </p>
@@ -78,7 +78,7 @@ function AboutUs() {
                     acknowledged and embraced. Leaving behind a 12-year career
                     in real estate, Adelle dove headfirst into the unknown
                     waters of entrepreneurship, driven by a vision to create
-                    more than just a store – a haven for honest motherhood.
+                    more than just a store - a haven for honest motherhood.
                   </p>
                 </div>
               </div>
@@ -94,7 +94,7 @@ function AboutUs() {
                   <p>
                     At Baby &#8217;s on Broadway, we don &#8217;t just sell
                     products; we share experiences. We understand that parenting
-                    is a beautiful mess – filled with joyous highs and
+                    is a beautiful mess - filled with joyous highs and
                     challenging lows. Our shelves are stocked not only with
                     carefully selected items but also with stories of sleepless
                     nights, first steps, and everything in between. As a
@@ -242,9 +242,9 @@ function AboutUs() {
                 <div class="e-con-inner">
                   <Row>
                     <Col lg={6} className="d-flex align-items-center">
-                      <p>Listen to the Rolling In the Deep Podcast</p>
+                      <p className="m-0">Listen to the Rolling In the Deep Podcast</p>
                     </Col>
-                    <Col lg={4}>
+                    <Col lg={5}>
                       <Row className="social-media-row">
                         <Col className="icon-col">
                           <a

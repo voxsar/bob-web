@@ -1,7 +1,7 @@
 .heading-section {
     display: flex;
     justify-content: center;
-    font-family: "Poppins",Poppins;
+    font-family: "Poppins", Poppins;
     padding: 6%;
     font-size: 32px;
     font-weight: 500
@@ -12,14 +12,19 @@
 }
 
 .send-button {
-    width: 450px;
+    width: 100%;
+}
+
+.send-button-container {
+    display: flex;
+    justify-content: center;
 }
 
 .social-section {
     padding-top: 8%;
     display: flex;
-    
-    
+
+
 }
 
 .header-social {
@@ -46,8 +51,8 @@
     align-items: center;
 }
 
-.address-section{
-    padding-top: 20%;
+.address-section {
+    padding-top: 10%;
 }
 
 .contact-form-section {
