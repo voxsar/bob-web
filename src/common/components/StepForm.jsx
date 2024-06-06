@@ -1,7 +1,7 @@
 import React from 'react';
 import { useForm } from 'react-hook-form';
 import { Container, Form, Button, Row, Col, ProgressBar } from 'react-bootstrap';
-import './styles/StepForm.css'; 
+import './styles/StepForm.css';
 
 const StepForm = () => {
   const { register, handleSubmit, formState: { errors } } = useForm();
@@ -24,7 +24,7 @@ const StepForm = () => {
         {steps.map((step, index) => (
           <div key={index} className={`step ${activeStep >= index ? 'active' : ''}`}>
             <span>{index + 1}. {step}</span>
-            {index < steps.length - 1 && <div className="divider"></div>}
+            {<div className="divider"></div>}
           </div>
         ))}
       </div>
@@ -32,9 +32,9 @@ const StepForm = () => {
         {activeStep === 0 && (
           <div>
             <Form.Group as={Row} className="mb-3" controlId="formFirstName">
-              <Form.Label column sm={2}>First Name</Form.Label>
+              <Form.Label column sm={2}>Event Space</Form.Label>
               <Col sm={10}>
-                <Form.Control type="text" placeholder="Enter first name" {...register('firstName', { required: true })} />
+                <Form.Control type="text" placeholder="Select event space" {...register('firstName', { required: true })} />
                 {errors.firstName && <span className="text-danger">This field is required</span>}
               </Col>
             </Form.Group>
@@ -86,7 +86,7 @@ const StepForm = () => {
             </Button>
           )}
           {activeStep < steps.length - 1 && (
-            <Button variant="primary" onClick={handleNext}>
+            <Button className='shop-all-btn' variant="primary" onClick={handleNext}>
               Next
             </Button>
           )}
