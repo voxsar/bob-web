@@ -178,3 +178,7 @@
     padding:2%;
 }
 
+.pairswell-img-container {
+    display: flex;
+    flex-direction: row;
+}

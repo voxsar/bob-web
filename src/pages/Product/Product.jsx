@@ -662,105 +662,158 @@ function Product() {
         </div>
       </Row>
       <Row>
-      <div class="elementor-widget-container">
-                        <div class="elementor-loop-container elementor-grid product_related">
-                        
-		<div data-elementor-type="loop-item" data-elementor-id="32610" class="elementor elementor-32610 e-loop-item e-loop-item-13604 post-13604 product type-product status-publish has-post-thumbnail product_cat-accessories-gear product_cat-bugaboo-accessories product_cat-bugaboo  instock taxable shipping-taxable purchasable product-type-simple" data-elementor-post-type="elementor_library" data-custom-edit-handle="1">
-			<div class="elementor-element elementor-element-4d218c0 e-con-full e-flex e-con e-parent" data-id="4d218c0" data-element_type="container" data-settings="{&quot;jet_parallax_layout_list&quot;:[]}">
-				<div class="elementor-element elementor-element-db81d40 e-flex e-con-boxed e-con e-child" data-id="db81d40" data-element_type="container" data-settings="{&quot;jet_parallax_layout_list&quot;:[],&quot;background_background&quot;:&quot;classic&quot;}">
-					<div class="e-con-inner">
-						<div class="elementor-element elementor-element-43d849e elementor-widget elementor-widget-theme-post-featured-image elementor-widget-image" data-id="43d849e" data-element_type="widget" data-widget_type="theme-post-featured-image.default">
-							<div class="elementor-widget-container">
-								<a class="product_action_href" href="https://babysonbroadway.com/product/fridababy-dermafrida-the-skinsoother/"><img src="https://babysonbroadway.com/wp-content/uploads/2023/12/3868019969.webp" alt="3868019969.webp" /></a>
-							</div>
-						</div>
-						<div class="elementor-element elementor-element-4c76160 elementor-widget__width-initial elementor-widget elementor-widget-woocommerce-product-title elementor-page-title elementor-widget-heading" data-id="4c76160" data-element_type="widget" data-widget_type="woocommerce-product-title.default">
-							<div class="elementor-widget-container">
-								<h2 class="entry-title elementor-heading-title elementor-size-default"><a href="product_permalink">FridaBaby | DermaFrida the Skinsoother</a></h2>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	
-		<div data-elementor-type="loop-item" data-elementor-id="32610" class="elementor elementor-32610 e-loop-item e-loop-item-13604 post-13604 product type-product status-publish has-post-thumbnail product_cat-accessories-gear product_cat-bugaboo-accessories product_cat-bugaboo  instock taxable shipping-taxable purchasable product-type-simple" data-elementor-post-type="elementor_library" data-custom-edit-handle="1">
-			<div class="elementor-element elementor-element-4d218c0 e-con-full e-flex e-con e-parent" data-id="4d218c0" data-element_type="container" data-settings="{&quot;jet_parallax_layout_list&quot;:[]}">
-				<div class="elementor-element elementor-element-db81d40 e-flex e-con-boxed e-con e-child" data-id="db81d40" data-element_type="container" data-settings="{&quot;jet_parallax_layout_list&quot;:[],&quot;background_background&quot;:&quot;classic&quot;}">
-					<div class="e-con-inner">
-						<div class="elementor-element elementor-element-43d849e elementor-widget elementor-widget-theme-post-featured-image elementor-widget-image" data-id="43d849e" data-element_type="widget" data-widget_type="theme-post-featured-image.default">
-							<div class="elementor-widget-container">
-								<a class="product_action_href" href="https://babysonbroadway.com/product/earth-mama-organic-diaper-balm/"><img src="https://babysonbroadway.com/wp-content/uploads/2023/12/3587597072.png" alt="3587597072.png" /></a>
-							</div>
-						</div>
-						<div class="elementor-element elementor-element-4c76160 elementor-widget__width-initial elementor-widget elementor-widget-woocommerce-product-title elementor-page-title elementor-widget-heading" data-id="4c76160" data-element_type="widget" data-widget_type="woocommerce-product-title.default">
-							<div class="elementor-widget-container">
-								<h2 class="entry-title elementor-heading-title elementor-size-default"><a href="product_permalink">Earth Mama Organic Diaper Balm</a></h2>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	
-		<div data-elementor-type="loop-item" data-elementor-id="32610" class="elementor elementor-32610 e-loop-item e-loop-item-13604 post-13604 product type-product status-publish has-post-thumbnail product_cat-accessories-gear product_cat-bugaboo-accessories product_cat-bugaboo  instock taxable shipping-taxable purchasable product-type-simple" data-elementor-post-type="elementor_library" data-custom-edit-handle="1">
-			<div class="elementor-element elementor-element-4d218c0 e-con-full e-flex e-con e-parent" data-id="4d218c0" data-element_type="container" data-settings="{&quot;jet_parallax_layout_list&quot;:[]}">
-				<div class="elementor-element elementor-element-db81d40 e-flex e-con-boxed e-con e-child" data-id="db81d40" data-element_type="container" data-settings="{&quot;jet_parallax_layout_list&quot;:[],&quot;background_background&quot;:&quot;classic&quot;}">
-					<div class="e-con-inner">
-						<div class="elementor-element elementor-element-43d849e elementor-widget elementor-widget-theme-post-featured-image elementor-widget-image" data-id="43d849e" data-element_type="widget" data-widget_type="theme-post-featured-image.default">
-							<div class="elementor-widget-container">
-								<a class="product_action_href" href="https://babysonbroadway.com/product/zoey-naturals-head-to-toe-wash/"><img src="https://babysonbroadway.com/wp-content/uploads/2023/12/31EGQCXOxL.jpg" alt="31EGQCXOx+L" /></a>
-							</div>
-						</div>
-						<div class="elementor-element elementor-element-4c76160 elementor-widget__width-initial elementor-widget elementor-widget-woocommerce-product-title elementor-page-title elementor-widget-heading" data-id="4c76160" data-element_type="widget" data-widget_type="woocommerce-product-title.default">
-							<div class="elementor-widget-container">
-								<h2 class="entry-title elementor-heading-title elementor-size-default"><a href="product_permalink">Zoey Naturals | Head-To-Toe Wash</a></h2>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	
-		<div data-elementor-type="loop-item" data-elementor-id="32610" class="elementor elementor-32610 e-loop-item e-loop-item-13604 post-13604 product type-product status-publish has-post-thumbnail product_cat-accessories-gear product_cat-bugaboo-accessories product_cat-bugaboo  instock taxable shipping-taxable purchasable product-type-simple" data-elementor-post-type="elementor_library" data-custom-edit-handle="1">
-			<div class="elementor-element elementor-element-4d218c0 e-con-full e-flex e-con e-parent" data-id="4d218c0" data-element_type="container" data-settings="{&quot;jet_parallax_layout_list&quot;:[]}">
-				<div class="elementor-element elementor-element-db81d40 e-flex e-con-boxed e-con e-child" data-id="db81d40" data-element_type="container" data-settings="{&quot;jet_parallax_layout_list&quot;:[],&quot;background_background&quot;:&quot;classic&quot;}">
-					<div class="e-con-inner">
-						<div class="elementor-element elementor-element-43d849e elementor-widget elementor-widget-theme-post-featured-image elementor-widget-image" data-id="43d849e" data-element_type="widget" data-widget_type="theme-post-featured-image.default">
-							<div class="elementor-widget-container">
-								<a class="product_action_href" href="https://babysonbroadway.com/product/8-sheep-organics-juniors-bedtime-lotion/"><img src="https://babysonbroadway.com/wp-content/uploads/2023/12/3491374897-e1707267054146.png" alt="3491374897.png" /></a>
-							</div>
-						</div>
-						<div class="elementor-element elementor-element-4c76160 elementor-widget__width-initial elementor-widget elementor-widget-woocommerce-product-title elementor-page-title elementor-widget-heading" data-id="4c76160" data-element_type="widget" data-widget_type="woocommerce-product-title.default">
-							<div class="elementor-widget-container">
-								<h2 class="entry-title elementor-heading-title elementor-size-default"><a href="product_permalink">8 Sheep Organics | Junior's Bedtime Lotion</a></h2>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	
-		<div data-elementor-type="loop-item" data-elementor-id="32610" class="elementor elementor-32610 e-loop-item e-loop-item-13604 post-13604 product type-product status-publish has-post-thumbnail product_cat-accessories-gear product_cat-bugaboo-accessories product_cat-bugaboo  instock taxable shipping-taxable purchasable product-type-simple" data-elementor-post-type="elementor_library" data-custom-edit-handle="1">
-			<div class="elementor-element elementor-element-4d218c0 e-con-full e-flex e-con e-parent" data-id="4d218c0" data-element_type="container" data-settings="{&quot;jet_parallax_layout_list&quot;:[]}">
-				<div class="elementor-element elementor-element-db81d40 e-flex e-con-boxed e-con e-child" data-id="db81d40" data-element_type="container" data-settings="{&quot;jet_parallax_layout_list&quot;:[],&quot;background_background&quot;:&quot;classic&quot;}">
-					<div class="e-con-inner">
-						<div class="elementor-element elementor-element-43d849e elementor-widget elementor-widget-theme-post-featured-image elementor-widget-image" data-id="43d849e" data-element_type="widget" data-widget_type="theme-post-featured-image.default">
-							<div class="elementor-widget-container">
-								<a class="product_action_href" href="https://babysonbroadway.com/product/earth-mama-baby-face-mineral-sunscreen-face-stick-spf-40/"><img src="https://babysonbroadway.com/wp-content/uploads/2023/12/1442942405.png" alt="1442942405.png" /></a>
-							</div>
-						</div>
-						<div class="elementor-element elementor-element-4c76160 elementor-widget__width-initial elementor-widget elementor-widget-woocommerce-product-title elementor-page-title elementor-widget-heading" data-id="4c76160" data-element_type="widget" data-widget_type="woocommerce-product-title.default">
-							<div class="elementor-widget-container">
-								<h2 class="entry-title elementor-heading-title elementor-size-default"><a href="product_permalink">Earth Mama BABY FACE Mineral Sunscreen Face Stick SPF 40</a></h2>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+        <div className="pairswell-img-container">
+          <Col>
+            <div
+              class="elementor-element elementor-element-4d218c0 e-con-full e-flex e-con e-parent"
+              data-id="4d218c0"
+              data-element_type="container"
+              data-settings='{"jet_parallax_layout_list":[]}'
+            >
+              <div
+                class="elementor-element elementor-element-db81d40 e-flex e-con-boxed e-con e-child"
+                data-id="db81d40"
+                data-element_type="container"
+                data-settings='{"jet_parallax_layout_list":[],"background_background":"classic"}'
+              >
+                <div class="e-con-inner">
+                  <div
+                    class="elementor-element elementor-element-43d849e elementor-widget elementor-widget-theme-post-featured-image elementor-widget-image"
+                    data-id="43d849e"
+                    data-element_type="widget"
+                    data-widget_type="theme-post-featured-image.default"
+                  >
+                    <div class="elementor-widget-container">
+                      <a
+                        class="product_action_href"
+                        href="https://babysonbroadway.com/product/earth-mama-organic-diaper-balm/"
+                      >
+                        <img
+                          src="https://babysonbroadway.com/wp-content/uploads/2023/12/3587597072.png"
+                          alt="3587597072.png"
+                        />
+                      </a>
                     </div>
+                  </div>
+                  <div
+                    class="elementor-element elementor-element-4c76160 elementor-widget__width-initial elementor-widget elementor-widget-woocommerce-product-title elementor-page-title elementor-widget-heading"
+                    data-id="4c76160"
+                    data-element_type="widget"
+                    data-widget_type="woocommerce-product-title.default"
+                  >
+                    <div class="elementor-widget-container">
+                      <h2 class="entry-title elementor-heading-title elementor-size-default">
+                        <a href="product_permalink">
+                          Earth Mama Organic Diaper Balm
+                        </a>
+                      </h2>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </Col>
+          <Col>
+            <div
+              class="elementor-element elementor-element-4d218c0 e-con-full e-flex e-con e-parent"
+              data-id="4d218c0"
+              data-element_type="container"
+              data-settings='{"jet_parallax_layout_list":[]}'
+            >
+              <div
+                class="elementor-element elementor-element-db81d40 e-flex e-con-boxed e-con e-child"
+                data-id="db81d40"
+                data-element_type="container"
+                data-settings='{"jet_parallax_layout_list":[],"background_background":"classic"}'
+              >
+                <div class="e-con-inner">
+                  <div
+                    class="elementor-element elementor-element-43d849e elementor-widget elementor-widget-theme-post-featured-image elementor-widget-image"
+                    data-id="43d849e"
+                    data-element_type="widget"
+                    data-widget_type="theme-post-featured-image.default"
+                  >
+                    <div class="elementor-widget-container">
+                      <a
+                        class="product_action_href"
+                        href="https://babysonbroadway.com/product/fridababy-dermafrida-the-skinsoother/"
+                      >
+                        <img
+                          src="https://babysonbroadway.com/wp-content/uploads/2023/12/3868019969.webp"
+                          alt="3868019969.webp"
+                        />
+                      </a>
+                    </div>
+                  </div>
+                  <div
+                    class="elementor-element elementor-element-4c76160 elementor-widget__width-initial elementor-widget elementor-widget-woocommerce-product-title elementor-page-title elementor-widget-heading"
+                    data-id="4c76160"
+                    data-element_type="widget"
+                    data-widget_type="woocommerce-product-title.default"
+                  >
+                    <div class="elementor-widget-container">
+                      <h2 class="entry-title elementor-heading-title elementor-size-default">
+                        <a href="product_permalink">
+                          FridaBaby | DermaFrida the Skinsoother
+                        </a>
+                      </h2>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </Col>
+          <Col>
+            <div
+              class="elementor-element elementor-element-4d218c0 e-con-full e-flex e-con e-parent"
+              data-id="4d218c0"
+              data-element_type="container"
+              data-settings='{"jet_parallax_layout_list":[]}'
+            >
+              <div
+                class="elementor-element elementor-element-db81d40 e-flex e-con-boxed e-con e-child"
+                data-id="db81d40"
+                data-element_type="container"
+                data-settings='{"jet_parallax_layout_list":[],"background_background":"classic"}'
+              >
+                <div class="e-con-inner">
+                  <div
+                    class="elementor-element elementor-element-43d849e elementor-widget elementor-widget-theme-post-featured-image elementor-widget-image"
+                    data-id="43d849e"
+                    data-element_type="widget"
+                    data-widget_type="theme-post-featured-image.default"
+                  >
+                    <div class="elementor-widget-container">
+                      <a
+                        class="product_action_href"
+                        href="https://babysonbroadway.com/product/zoey-naturals-head-to-toe-wash/"
+                      >
+                        <img
+                          src="https://babysonbroadway.com/wp-content/uploads/2023/12/31EGQCXOxL.jpg"
+                          alt="31EGQCXOx+L"
+                        />
+                      </a>
+                    </div>
+                  </div>
+                  <div
+                    class="elementor-element elementor-element-4c76160 elementor-widget__width-initial elementor-widget elementor-widget-woocommerce-product-title elementor-page-title elementor-widget-heading"
+                    data-id="4c76160"
+                    data-element_type="widget"
+                    data-widget_type="woocommerce-product-title.default"
+                  >
+                    <div class="elementor-widget-container">
+                      <h2 class="entry-title elementor-heading-title elementor-size-default">
+                        <a href="product_permalink">
+                          Zoey Naturals | Head-To-Toe Wash
+                        </a>
+                      </h2>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </Col>
+        </div>
       </Row>
     </div>
   );
