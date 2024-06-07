@@ -59,7 +59,7 @@ const EventSpaces = () => {
 
             </div>
             <h2 className='text-center mb-5 fadeIn'>Amenities</h2>
-            <Container className='m-0 p-4 vw-full amenities-container'>
+            <Container className='m-0 p-4 vw-full amenities-container d-flex justify-content-center'>
                 <Row className='w-100 event-space-text-tab p-3'>
                     <Col lg={6}>
                         <p className='event-tab-title fadeInRight'>St. Cloud, MN</p>

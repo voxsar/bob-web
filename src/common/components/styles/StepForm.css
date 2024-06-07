@@ -30,3 +30,52 @@
 .step.active .divider {
   background-color: black;
 }
+
+.day-check-form-container .form-check {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  padding-left: 0px;
+}
+
+.day-check-form-container .form-check .form-check-input {
+  margin-left: 0;
+  width: 2em;
+  height: 2em;
+  border-radius: 30px;
+}
+
+.day-check-form-container .col-md-2 {
+  width: fit-content;
+}
+
+.step-form .form-label {
+  font-weight: 600;
+}
+
+.react-international-phone-input-container .react-international-phone-input {
+  width: 100% !important;
+}
+
+.calendar-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.calendar-button {
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: flex;
+  align-items: center;
+}
+
+.calendar-button i {
+  margin-right: 10px;
+}

@@ -577,6 +577,9 @@ export const eventSpaceImgGallery = [
       "https://bobshop-eeebddebdpcubfbv.z03.azurefd.net/wp-content/uploads/2023/12/MicrosoftTeams-image-9.jpg",
       "https://bobshop-eeebddebdpcubfbv.z03.azurefd.net/wp-content/uploads/2023/12/MicrosoftTeams-image-8.jpg",
       "https://bobshop-eeebddebdpcubfbv.z03.azurefd.net/wp-content/uploads/2023/12/MicrosoftTeams-image-6.jpg",
+      "https://bobshop-eeebddebdpcubfbv.z03.azurefd.net/wp-content/uploads/2023/12/MicrosoftTeams-image-6.jpg",
+      "https://bobshop-eeebddebdpcubfbv.z03.azurefd.net/wp-content/uploads/2023/12/MicrosoftTeams-image-6.jpg",
+      "https://bobshop-eeebddebdpcubfbv.z03.azurefd.net/wp-content/uploads/2023/12/MicrosoftTeams-image-6.jpg",
     ]
   }
 ]
