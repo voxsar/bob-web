@@ -1,0 +1,53 @@
+.accordian-headline {
+    color: #3b3b3b;
+    font-family: "Poppins", Poppins;
+    font-size: 24px;
+    font-weight: 600;
+    text-transform: none;
+    font-style: normal;
+    line-height: 2%;
+    padding-top: 4%;
+    padding-left: 2%;
+}
+
+
+.what-ifiused {
+    padding-top: 4%;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+.faq-container .accordion-header button {
+    background-color: #f1f0ec;
+    font-weight: 500;
+}
+
+.faq-container .accordion-body {
+    background-color: #f1f0ec;
+}
+
+.faq-container .accordion-button:focus {
+    box-shadow: none;
+}
+
+.faq-container .accordion-button:not(.collapsed) {
+    color: inherit;
+}
+
+.faq-top-img {
+    height: 500px;
+    display: flex;
+}
+
+.faq-image-container {
+    display: flex;
+    justify-content: center;
+}
+
+
+@media (max-width: 769px) {
+    .faq-top-img {
+        margin-left: 0px;
+        height: auto;
+    }
+}

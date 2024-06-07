@@ -1,0 +1,121 @@
+
+.heading {
+  color: #3d3d3d;
+  font-family: "Poppins", Poppins;
+  font-weight: 500;
+  text-transform: uppercase;
+  line-height: 1.2em;
+  text-align: center;
+}
+
+.title {
+  padding-top: 8%;
+}
+
+.title-divider {
+  height: auto;
+  border: 1px solid #afafaf;
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+}
+
+.paragraph-content {
+  color: #995959;
+}
+
+.ajourny-img {
+  padding-top: 6%;
+  padding-left: 6%;
+}
+
+.ajourny-img:hover {
+  position: relative;
+  animation-name: elementor-animation-hang-sink, elementor-animation-hang;
+  animation-duration: 0.3s, 1.5s;
+  animation-delay: 0s, 0.3s;
+  animation-timing-function: ease-out, ease-in-out;
+  animation-iteration-count: 1, infinite;
+  animation-fill-mode: forwards;
+  animation-direction: normal, alternate;
+  transition-duration: 0.6s;
+}
+
+.acommunity-img:hover {
+  position: relative;
+  animation-name: elementor-animation-hang-sink, elementor-animation-hang;
+  animation-duration: 0.3s, 1.5s;
+  animation-delay: 0s, 0.3s;
+  animation-timing-function: ease-out, ease-in-out;
+  animation-iteration-count: 1, infinite;
+  animation-fill-mode: forwards;
+  animation-direction: normal, alternate;
+  transition-duration: 0.6s;
+}
+
+.rolling-img:hover {
+  position: relative;
+  animation-name: elementor-animation-hang-sink, elementor-animation-hang;
+  animation-duration: 0.3s, 1.5s;
+  animation-delay: 0s, 0.3s;
+  animation-timing-function: ease-out, ease-in-out;
+  animation-iteration-count: 1, infinite;
+  animation-fill-mode: forwards;
+  animation-direction: normal, alternate;
+  transition-duration: 0.6s;
+}
+
+@keyframes elementor-animation-hang {
+  0% {
+    transform: translateY(8px);
+  }
+
+  50% {
+    transform: translateY(4px);
+  }
+
+  100% {
+    transform: translateY(8px);
+  }
+}
+
+@keyframes elementor-animation-hang-sink {
+  100% {
+    transform: translateY(8px);
+  }
+}
+
+.ajourney-paragraph {
+  padding-top: 6%;
+  padding-right: 15%;
+}
+
+.acommunity-paragraph {
+  padding-top: 20%;
+  padding-left: 6%;
+}
+
+.acommunity-img {
+  padding-top: 10%;
+  padding-right: 2%;
+}
+
+.rolling-img {
+  padding-top: 6%;
+  padding-left: 2%;
+}
+
+.rolling-paragraph {
+  padding-top: 12%;
+  padding-right: 2%;
+}
+
+.rolling-section {
+  padding-bottom: 15%;
+}
+
+.e-con-inner {
+  padding-top: 20%;
+  font-weight: bold;
+}
