@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import './styles/GalleryGrid.css';
 import LightGallery from 'lightgallery/react';
 
@@ -17,12 +17,6 @@ const GalleryGrid = ({ imageList, tabKey }) => {
         console.log('lightGallery has been initialized');
     };
 
-
-    // useEffect(() => {
-
-
-
-    //   }, []);
     return (
         <div className="App">
             <LightGallery

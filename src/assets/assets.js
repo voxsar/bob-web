@@ -41,6 +41,8 @@ import tri4 from './images/trimesters/img4.webp';
 import tri5 from './images/trimesters/img5.webp';
 
 
+import testImg from './images/test/gallery.jpg';
+
 
 export const BRAND_LOGOS = [
     logo1,
@@ -91,3 +93,5 @@ export const TRIMESTER_IMAGES = {
     tri4,
     tri5
 }
+
+export const TEST_GALLERY_IMG = testImg;

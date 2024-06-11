@@ -1,4 +1,4 @@
-import { HEADER_IMAGES } from "../assets/assets";
+import { HEADER_IMAGES, TEST_GALLERY_IMG } from "../assets/assets";
 
 export const topCarouselContent = [
   {
@@ -612,31 +612,32 @@ export const eventSpaceImgGallery = [
     titleId: "stCloud",
     title: "St. Cloud, MN",
     images: [
-      "https://bobshop-eeebddebdpcubfbv.z03.azurefd.net/wp-content/uploads/2023/12/MicrosoftTeams-image-9.jpg",
-      "https://bobshop-eeebddebdpcubfbv.z03.azurefd.net/wp-content/uploads/2023/12/MicrosoftTeams-image-8.jpg",
-      "https://bobshop-eeebddebdpcubfbv.z03.azurefd.net/wp-content/uploads/2023/12/MicrosoftTeams-image-6.jpg",
-      "https://bobshop-eeebddebdpcubfbv.z03.azurefd.net/wp-content/uploads/2023/12/MicrosoftTeams-image-9.jpg",
-      "https://bobshop-eeebddebdpcubfbv.z03.azurefd.net/wp-content/uploads/2023/12/MicrosoftTeams-image-8.jpg",
-      "https://bobshop-eeebddebdpcubfbv.z03.azurefd.net/wp-content/uploads/2023/12/MicrosoftTeams-image-6.jpg",
-      "https://bobshop-eeebddebdpcubfbv.z03.azurefd.net/wp-content/uploads/2023/12/MicrosoftTeams-image-9.jpg",
-      "https://bobshop-eeebddebdpcubfbv.z03.azurefd.net/wp-content/uploads/2023/12/MicrosoftTeams-image-8.jpg",
-      "https://bobshop-eeebddebdpcubfbv.z03.azurefd.net/wp-content/uploads/2023/12/MicrosoftTeams-image-6.jpg",
-      "https://bobshop-eeebddebdpcubfbv.z03.azurefd.net/wp-content/uploads/2023/12/MicrosoftTeams-image-6.jpg",
+      TEST_GALLERY_IMG,
+      TEST_GALLERY_IMG,
+      TEST_GALLERY_IMG,
+      TEST_GALLERY_IMG,
+      TEST_GALLERY_IMG,
+      TEST_GALLERY_IMG,
+      TEST_GALLERY_IMG,
+      TEST_GALLERY_IMG,
+      TEST_GALLERY_IMG,
+      TEST_GALLERY_IMG,
     ]
   },
   {
     titleId: "littleFalls",
     title: "Little Falls, MN",
     images: [
-      "https://bobshop-eeebddebdpcubfbv.z03.azurefd.net/wp-content/uploads/2023/12/MicrosoftTeams-image-9.jpg",
-      "https://bobshop-eeebddebdpcubfbv.z03.azurefd.net/wp-content/uploads/2023/12/MicrosoftTeams-image-8.jpg",
-      "https://bobshop-eeebddebdpcubfbv.z03.azurefd.net/wp-content/uploads/2023/12/MicrosoftTeams-image-6.jpg",
-      "https://bobshop-eeebddebdpcubfbv.z03.azurefd.net/wp-content/uploads/2023/12/MicrosoftTeams-image-9.jpg",
-      "https://bobshop-eeebddebdpcubfbv.z03.azurefd.net/wp-content/uploads/2023/12/MicrosoftTeams-image-8.jpg",
-      "https://bobshop-eeebddebdpcubfbv.z03.azurefd.net/wp-content/uploads/2023/12/MicrosoftTeams-image-6.jpg",
-      "https://bobshop-eeebddebdpcubfbv.z03.azurefd.net/wp-content/uploads/2023/12/MicrosoftTeams-image-6.jpg",
-      "https://bobshop-eeebddebdpcubfbv.z03.azurefd.net/wp-content/uploads/2023/12/MicrosoftTeams-image-6.jpg",
-      "https://bobshop-eeebddebdpcubfbv.z03.azurefd.net/wp-content/uploads/2023/12/MicrosoftTeams-image-6.jpg",
+      TEST_GALLERY_IMG,
+      TEST_GALLERY_IMG,
+      TEST_GALLERY_IMG,
+      TEST_GALLERY_IMG,
+      TEST_GALLERY_IMG,
+      TEST_GALLERY_IMG,
+      TEST_GALLERY_IMG,
+      TEST_GALLERY_IMG,
+      TEST_GALLERY_IMG,
+      TEST_GALLERY_IMG,
     ]
   }
 ]

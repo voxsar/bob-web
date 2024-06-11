@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
 import './EventSpaces.css';
 import StepForm from '../../common/components/StepForm';
-import FetchDataComponent from '../../common/components/FetchDataComponent';
-import { Row, Col, Container, Tab, Tabs, Image, Modal, Button } from 'react-bootstrap';
+import { Row, Col, Container, Tab, Tabs } from 'react-bootstrap';
 import { eventSpaceImgGallery } from '../../common/data';
 import GalleryGrid from '../../common/components/GalleryGrid';
 import useScrollFadeIn from '../../hooks/useScrollFadeIn';
@@ -151,20 +150,20 @@ const EventSpaces = () => {
                             <h3 className='mb-4'>Recommendations for Caterers</h3>
                             <ul>
                                 <li>
-                                    <a href="https://julesbistrostcloud.com/" target="_blank"><span>Jules' Bistro</span></a>
+                                    <a href="https://julesbistrostcloud.com/" target="_blank" rel="noreferrer"><span>Jules' Bistro</span></a>
                                 </li>
                                 <li>
-                                    <a href="https://dolsieslunchbox.com/" target="_blank"><span>Dolsies Lunch Box Grille</span></a>
+                                    <a href="https://dolsieslunchbox.com/" target="_blank" rel="noreferrer"><span>Dolsies Lunch Box Grille</span></a>
                                 </li>
                                 <li>
-                                    <a href="http://arroymn.com/" target="_blank"><span>Arroy - Thai &amp; Filipino Restaurant</span></a>
+                                    <a href="http://arroymn.com/" target="_blank" rel="noreferrer"><span>Arroy - Thai &amp; Filipino Restaurant</span></a>
                                 </li>
                                 <li>
-                                    <a href="https://shortstopcustomcatering.com/" target="_blank"><span className="elementor-icon-list-text">Custom Catering by Short Stop</span>
+                                    <a href="https://shortstopcustomcatering.com/" target="_blank" rel="noreferrer"><span className="elementor-icon-list-text">Custom Catering by Short Stop</span>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="https://copperpony.com/" target="_blank"><span>Copper Pony</span></a>
+                                    <a href="https://copperpony.com/" target="_blank" rel="noreferrer"><span>Copper Pony</span></a>
                                 </li>
                             </ul>
                         </div>
@@ -250,8 +249,8 @@ const EventSpaces = () => {
                                     <li><p><b>Availability:</b></p>
                                         <ul>
                                             <li>The room is available on Saturdays and Sundays only, within operating business hours.</li>
-                                            <li>Saturday: 10:00 a.m – 5:00 p.m.</li>
-                                            <li>Sunday: 11:00 a.m – 4:00 p.m.</li>
+                                            <li>Saturday: 10:00 a.m - 5:00 p.m.</li>
+                                            <li>Sunday: 11:00 a.m - 4:00 p.m.</li>
                                         </ul>
                                     </li>
                                 </ul>
@@ -261,22 +260,22 @@ const EventSpaces = () => {
                             <h3 className='mb-4'>Recommendations for Caterers</h3>
                             <ul>
                                 <li>
-                                    <a href="https://www.attheblacknwhite.com/" target="_blank"><span>A.T. The Black &amp; White</span></a>
+                                    <a href="https://www.attheblacknwhite.com/" target="_blank" rel="noreferrer"><span>A.T. The Black &amp; White</span></a>
                                 </li>
                                 <li>
-                                    <a href="https://www.coborns.com/Cobstore2006?utm_source=google&amp;utm_medium=organic&amp;utm_campaign=gmb&amp;utm_content=little-falls-website" target="_blank"><span>Coborn's</span></a>
+                                    <a href="https://www.coborns.com/Cobstore2006?utm_source=google&amp;utm_medium=organic&amp;utm_campaign=gmb&amp;utm_content=little-falls-website" target="_blank" rel="noreferrer"><span>Coborn's</span></a>
                                 </li>
                                 <li>
-                                    <a href="https://www.sanchezburrito320.com/" target="_blank"><span>Sanchez Burrito</span></a>
+                                    <a href="https://www.sanchezburrito320.com/" target="_blank" rel="noreferrer"><span>Sanchez Burrito</span></a>
                                 </li>
                                 <li>
-                                    <a href="https://theroyalcateringlf.com/" target="_blank"><span>The Royal Restaurant &amp; Catering</span></a>
+                                    <a href="https://theroyalcateringlf.com/" target="_blank" rel="noreferrer"><span>The Royal Restaurant &amp; Catering</span></a>
                                 </li>
                                 <li>
-                                    <a href="https://www.subway.com/en-us/?utm_source=google&amp;utm_medium=cpc&amp;utm_term=subway_broad&amp;utm_content=brand&amp;utm_campaign=652725270201&amp;cid=0:0:00:0:nat-us:0&amp;0=0&amp;gad_source=1&amp;gclid=Cj0KCQiAwbitBhDIARIsABfFYIJEKNEU2N71IVFCBRfJcDzB-fLlfFBBv4ag5KLjR2c4mCbMiAAYPY4aAmXtEALw_wcB&amp;gclsrc=aw.ds" target="_blank"><span>Subway</span></a>
+                                    <a href="https://www.subway.com/en-us/?utm_source=google&amp;utm_medium=cpc&amp;utm_term=subway_broad&amp;utm_content=brand&amp;utm_campaign=652725270201&amp;cid=0:0:00:0:nat-us:0&amp;0=0&amp;gad_source=1&amp;gclid=Cj0KCQiAwbitBhDIARIsABfFYIJEKNEU2N71IVFCBRfJcDzB-fLlfFBBv4ag5KLjR2c4mCbMiAAYPY4aAmXtEALw_wcB&amp;gclsrc=aw.ds" target="_blank" rel="noreferrer"><span>Subway</span></a>
                                 </li>
                                 <li>
-                                    <a href="https://www.fallsballroom.com/" target="_blank"><span>The Falls Ballroom Banquet &amp; Catering Services</span></a>
+                                    <a href="https://www.fallsballroom.com/" target="_blank" rel="noreferrer"><span>The Falls Ballroom Banquet &amp; Catering Services</span></a>
                                 </li>
                             </ul>
                         </div>
