@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, Suspense, lazy } from 'react';
 import './Home.css'
 import ShopSection from './shopSection';
 import Carousel from '../../common/components/Carousel';
@@ -11,10 +11,15 @@ import info2 from '../../assets/icons/info2.webp';
 import info3 from '../../assets/icons/info3.webp';
 import info4 from '../../assets/icons/info4.webp';
 import useIsSmallScreen from '../../hooks/useIsSmallScreen';
+import nurseryVideo from '../../assets/videos/Nursery-In-A-Box-Product-Videosml.mp4'
 
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
+import { HEADER_IMAGES } from '../../assets/assets';
 
 const Home = () => {
   const isSmallScreen = useIsSmallScreen();
+  const [imgLoaded, setImgLoaded] = useState(false);
 
   return (
     <div className='page-wrapper'>
@@ -29,7 +34,7 @@ const Home = () => {
       <div className='nursery-box-container'>
         <div className='nursery-box-top-div'><p className='m-0'>Your Complete Nursery, One Box Away.</p></div>
         <div className='video-background-container'>
-          <video src="https://bobshop-eeebddebdpcubfbv.z03.azurefd.net/wp-content/uploads/2024/03/Nursery-In-A-Box-Product-Videosml.mp4#t=4" autoPlay loop muted playsInline className="video-background" />
+          <video src={nurseryVideo} autoPlay loop muted playsInline className="video-background" />
           <button className='shop-nursery-btn'>Shop Nursery In A Box</button>
         </div>
       </div>
@@ -131,9 +136,24 @@ const Home = () => {
         <div className='d-flex justify-content-center recommended-prod-row'>
           <Row className='w-100'>
             {
-              recommendedProd.map((prod) => (
-                <Col lg={4} xs={4} className='p-0'>
-                  <a href='/'><img src={prod.prodUrl} alt='recommended product' className='recommended-img' /></a>
+              recommendedProd.map((prod, i) => (
+                <Col key={i} lg={4} xs={4} className='p-0'>
+                  {/* need some work around */}
+                  <a href='/' >
+                    <div className='img-wrapper'>
+                      {!imgLoaded && <div className="loader-anim"></div>}
+                      <LazyLoadImage
+                        alt={'alt'}
+                        src={prod.prodUrl}
+                        className="recommended-img"
+                        placeholder={<div className="loader-anim"></div>}
+                        // onLoad={() => setImgLoaded(true)}
+                        effect='blur'
+                      />
+                    </div>
+
+                    {/* <img src={prod.prodUrl} alt='recommended product' className='recommended-img' /> */}
+                  </a>
                   <a href='/' className='recommended-title'><p className='mt-4'>{prod.prodTitle}</p></a>
                 </Col>
               ))
@@ -169,12 +189,11 @@ const Home = () => {
             </div>
           }
           isTitled={true} />
-
       </div>
 
       {/* Gift card and Info */}
       <div className='mt-5 mb-3 p-lg-2 gift-card-container'>
-        <a href='/'><img src='https://bobshop-eeebddebdpcubfbv.z03.azurefd.net/wp-content/uploads/2024/03/2010.png' alt='gift-card' className='w-100' /></a>
+        <a href='/'><img src={HEADER_IMAGES.header1} alt='gift-card' className='w-100' /></a>
       </div>
       <div className='recommended-prod-container bottom-info-container d-flex justify-content-center mb-5'>
         <Row className='w-85'>

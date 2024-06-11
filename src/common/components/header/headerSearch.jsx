@@ -11,12 +11,12 @@ const HeaderSearch = () => {
         <Navbar className="header-main">
             <Container>
                 <Nav className="mr-auto">
-                    <Button variant="dark" className="toggle-button" onClick={handleToggleClick}>SHOP BABY</Button>
-                    <Button variant="outline-dark" className="toggle-button">MEDICAL EQUIPMENT</Button>
+                    <Button variant="dark" className="toggle-button" >SHOP BABY</Button>
+                    <Button variant="outline-dark" onClick={handleToggleClick} className="toggle-button">MEDICAL EQUIPMENT</Button>
                 </Nav>
                 <div className='d-flex align-items-center'>
                     <MegaMenu />
-                    <Form inline className="ml-auto search-form">
+                    <Form className="ml-auto search-form">
                         <FormControl type="text" placeholder="Search products ..." className="search-input" />
                     </Form>
                 </div>

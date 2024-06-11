@@ -304,7 +304,64 @@ export const recommendedProd = [
   {
     prodUrl: 'https://bobshop-eeebddebdpcubfbv.z03.azurefd.net/wp-content/uploads/2024/03/top-registry-1024x1024.png',
     prodTitle: 'Top Registry Products'
-  }
+  },
+]
+
+export const recProd = [
+  {
+    prodUrl: 'https://bobshop-eeebddebdpcubfbv.z03.azurefd.net/wp-content/uploads/2024/03/furniture-1024x1024.png',
+    prodTitle: 'Nursery Furniture & Sleep'
+  },
+  {
+    prodUrl: 'https://bobshop-eeebddebdpcubfbv.z03.azurefd.net/wp-content/uploads/2024/03/gear-1024x1024.png',
+    prodTitle: 'Gear'
+  },
+  {
+    prodUrl: 'https://bobshop-eeebddebdpcubfbv.z03.azurefd.net/wp-content/uploads/2024/03/top-registry-1024x1024.png',
+    prodTitle: 'Top Registry Products'
+  },
+  {
+    prodUrl: 'https://bobshop-eeebddebdpcubfbv.z03.azurefd.net/wp-content/uploads/2024/03/top-registry-1024x1024.png',
+    prodTitle: 'Top Registry Products'
+  },
+  {
+    prodUrl: 'https://bobshop-eeebddebdpcubfbv.z03.azurefd.net/wp-content/uploads/2024/03/top-registry-1024x1024.png',
+    prodTitle: 'Top Registry Products'
+  },
+]
+
+export const recProdMob = [
+  {
+    slideId: 1,
+    navLink: '/',
+    imageURL: 'https://babysonbroadway.com/wp-content/uploads/2023/12/Liki_Premium_Storage_Bag_28Feb2019.webp',
+    slideTitle: 'Doona | Premium Storage Bag'
+  },
+  {
+    slideId: 2,
+    navLink: '/',
+    imageURL: 'https://babysonbroadway.com/wp-content/uploads/2023/12/Liki_Premium_Storage_Bag_28Feb2019.webp',
+    slideTitle: 'Doona | Premium Storage Bag'
+  },
+  {
+    slideId: 3,
+    navLink: '/',
+    imageURL: 'https://babysonbroadway.com/wp-content/uploads/2023/12/Liki_Premium_Storage_Bag_28Feb2019.webp',
+    slideTitle: 'Doona | Premium Storage Bag'
+  },
+  {
+    slideId: 4,
+    navLink: '/',
+    imageURL: 'https://babysonbroadway.com/wp-content/uploads/2023/12/Liki_Premium_Storage_Bag_28Feb2019.webp',
+    slideTitle: 'Doona | Premium Storage Bag'
+  },
+  {
+    slideId: 5,
+    navLink: '/',
+    imageURL: 'https://babysonbroadway.com/wp-content/uploads/2023/12/Liki_Premium_Storage_Bag_28Feb2019.webp',
+    slideTitle: 'Doona | Premium Storage Bag'
+  },
+
 ]
 
 export const bestSellingProd = [
@@ -584,8 +641,947 @@ export const eventSpaceImgGallery = [
   }
 ]
 
-// export const eventSpaceTabContent = [
-//   {
-//     mainTitle: "St. Cloud, MN"
-//   }
-// ]
+// sample fetched data from Medusa remove after integration
+export const productList = [
+  {
+    "id": "babyzen",
+    "created_at": "2024-06-06T16:33:04.415Z",
+    "updated_at": "2024-06-06T16:33:04.415Z",
+    "deleted_at": null,
+    "title": "Medusa T-Shirt",
+    "subtitle": null,
+    "description": "Reimagine the feeling of a classic T-shirt. With our cotton T-shirts, everyday essentials no longer have to be ordinary.",
+    "handle": "medusa-t-shirt",
+    "is_giftcard": false,
+    "status": "published",
+    "thumbnail": "https://medusa-public-images.s3.eu-west-1.amazonaws.com/tee-black-front.png",
+    "weight": 400,
+    "length": null,
+    "height": null,
+    "width": null,
+    "hs_code": null,
+    "origin_country": null,
+    "mid_code": null,
+    "material": null,
+    "type_id": null,
+    "discountable": true,
+    "external_id": null,
+    "metadata": null,
+    "collection": {
+      "id": "pcol_01HZQ6B3QS93FYBZSDYX4VKJSX",
+      "created_at": "2024-06-06T16:33:04.246Z",
+      "updated_at": "2024-06-06T16:33:04.246Z",
+      "deleted_at": null,
+      "title": "Merch",
+      "handle": "merch",
+      "metadata": null
+    },
+    "collection_id": "pcol_01HZQ6B3QS93FYBZSDYX4VKJSX",
+    "images": [
+      {
+        "id": "img_01HZQ6B3XNEDMT8N16W4WMY2DH",
+        "created_at": "2024-06-06T16:33:04.415Z",
+        "updated_at": "2024-06-06T16:33:04.415Z",
+        "deleted_at": null,
+        "url": "https://medusa-public-images.s3.eu-west-1.amazonaws.com/tee-black-front.png",
+        "metadata": null
+      },
+      {
+        "id": "img_01HZQ6B3XPC9RRQZCW405P1814",
+        "created_at": "2024-06-06T16:33:04.415Z",
+        "updated_at": "2024-06-06T16:33:04.415Z",
+        "deleted_at": null,
+        "url": "https://medusa-public-images.s3.eu-west-1.amazonaws.com/tee-black-back.png",
+        "metadata": null
+      },
+      {
+        "id": "img_01HZQ6B3XPMMP8BWKVYRJYX0BS",
+        "created_at": "2024-06-06T16:33:04.415Z",
+        "updated_at": "2024-06-06T16:33:04.415Z",
+        "deleted_at": null,
+        "url": "https://medusa-public-images.s3.eu-west-1.amazonaws.com/tee-white-front.png",
+        "metadata": null
+      },
+      {
+        "id": "img_01HZQ6B3XP4ZJJSHT8496TQJ5C",
+        "created_at": "2024-06-06T16:33:04.415Z",
+        "updated_at": "2024-06-06T16:33:04.415Z",
+        "deleted_at": null,
+        "url": "https://medusa-public-images.s3.eu-west-1.amazonaws.com/tee-white-back.png",
+        "metadata": null
+      }
+    ],
+    "options": [
+      {
+        "id": "opt_01HZQ6B3YT69FP4Y05G1WXM75Q",
+        "created_at": "2024-06-06T16:33:04.415Z",
+        "updated_at": "2024-06-06T16:33:04.415Z",
+        "deleted_at": null,
+        "title": "Size",
+        "product_id": "prod_01HZQ6B3Y0FCXDY1D0ZGZBND9F",
+        "metadata": null,
+        "values": [
+          {
+            "id": "optval_01HZQ6B404QREAKT5004XPMEX5",
+            "created_at": "2024-06-06T16:33:04.415Z",
+            "updated_at": "2024-06-06T16:33:04.415Z",
+            "deleted_at": null,
+            "value": "S",
+            "option_id": "opt_01HZQ6B3YT69FP4Y05G1WXM75Q",
+            "variant_id": "variant_01HZQ6B404GAHDD77EAEF19NXS",
+            "metadata": null
+          },
+          {
+            "id": "optval_01HZQ6B405B95BY6ZTR1R2NKRV",
+            "created_at": "2024-06-06T16:33:04.415Z",
+            "updated_at": "2024-06-06T16:33:04.415Z",
+            "deleted_at": null,
+            "value": "S",
+            "option_id": "opt_01HZQ6B3YT69FP4Y05G1WXM75Q",
+            "variant_id": "variant_01HZQ6B4056P3R8M7KT78C85BQ",
+            "metadata": null
+          },
+          {
+            "id": "optval_01HZQ6B406HKHFEJ93JB4RNREY",
+            "created_at": "2024-06-06T16:33:04.415Z",
+            "updated_at": "2024-06-06T16:33:04.415Z",
+            "deleted_at": null,
+            "value": "M",
+            "option_id": "opt_01HZQ6B3YT69FP4Y05G1WXM75Q",
+            "variant_id": "variant_01HZQ6B406530MW781DWT2R75D",
+            "metadata": null
+          },
+          {
+            "id": "optval_01HZQ6B406DEQ1T4MMPE5FCMF3",
+            "created_at": "2024-06-06T16:33:04.415Z",
+            "updated_at": "2024-06-06T16:33:04.415Z",
+            "deleted_at": null,
+            "value": "M",
+            "option_id": "opt_01HZQ6B3YT69FP4Y05G1WXM75Q",
+            "variant_id": "variant_01HZQ6B4061GFSAATS0VJ0EF01",
+            "metadata": null
+          },
+          {
+            "id": "optval_01HZQ6B407WJA0WZ5KH963F2BG",
+            "created_at": "2024-06-06T16:33:04.415Z",
+            "updated_at": "2024-06-06T16:33:04.415Z",
+            "deleted_at": null,
+            "value": "L",
+            "option_id": "opt_01HZQ6B3YT69FP4Y05G1WXM75Q",
+            "variant_id": "variant_01HZQ6B407B0FXEK8ECF93A9PK",
+            "metadata": null
+          },
+          {
+            "id": "optval_01HZQ6B407K9M5Y87474X2C8PA",
+            "created_at": "2024-06-06T16:33:04.415Z",
+            "updated_at": "2024-06-06T16:33:04.415Z",
+            "deleted_at": null,
+            "value": "L",
+            "option_id": "opt_01HZQ6B3YT69FP4Y05G1WXM75Q",
+            "variant_id": "variant_01HZQ6B407GP2J118NERJZ7M23",
+            "metadata": null
+          },
+          {
+            "id": "optval_01HZQ6B4089KFYY0SRVQHA1NBB",
+            "created_at": "2024-06-06T16:33:04.415Z",
+            "updated_at": "2024-06-06T16:33:04.415Z",
+            "deleted_at": null,
+            "value": "XL",
+            "option_id": "opt_01HZQ6B3YT69FP4Y05G1WXM75Q",
+            "variant_id": "variant_01HZQ6B408A194B4MM3SKNBCJH",
+            "metadata": null
+          },
+          {
+            "id": "optval_01HZQ6B409YJ5ZAY1CG78E4TEH",
+            "created_at": "2024-06-06T16:33:04.415Z",
+            "updated_at": "2024-06-06T16:33:04.415Z",
+            "deleted_at": null,
+            "value": "XL",
+            "option_id": "opt_01HZQ6B3YT69FP4Y05G1WXM75Q",
+            "variant_id": "variant_01HZQ6B4091W1CT1FB6GX42X9Q",
+            "metadata": null
+          }
+        ]
+      },
+      {
+        "id": "opt_01HZQ6B3YVVVNH2717RR4CK41E",
+        "created_at": "2024-06-06T16:33:04.415Z",
+        "updated_at": "2024-06-06T16:33:04.415Z",
+        "deleted_at": null,
+        "title": "Color",
+        "product_id": "prod_01HZQ6B3Y0FCXDY1D0ZGZBND9F",
+        "metadata": null,
+        "values": [
+          {
+            "id": "optval_01HZQ6B404111HSNB4PV72Y4EY",
+            "created_at": "2024-06-06T16:33:04.415Z",
+            "updated_at": "2024-06-06T16:33:04.415Z",
+            "deleted_at": null,
+            "value": "Black",
+            "option_id": "opt_01HZQ6B3YVVVNH2717RR4CK41E",
+            "variant_id": "variant_01HZQ6B404GAHDD77EAEF19NXS",
+            "metadata": null
+          },
+          {
+            "id": "optval_01HZQ6B405KSH289GBW0B02EQ9",
+            "created_at": "2024-06-06T16:33:04.415Z",
+            "updated_at": "2024-06-06T16:33:04.415Z",
+            "deleted_at": null,
+            "value": "White",
+            "option_id": "opt_01HZQ6B3YVVVNH2717RR4CK41E",
+            "variant_id": "variant_01HZQ6B4056P3R8M7KT78C85BQ",
+            "metadata": null
+          },
+          {
+            "id": "optval_01HZQ6B4065T5Z74X09KDYCYF5",
+            "created_at": "2024-06-06T16:33:04.415Z",
+            "updated_at": "2024-06-06T16:33:04.415Z",
+            "deleted_at": null,
+            "value": "Black",
+            "option_id": "opt_01HZQ6B3YVVVNH2717RR4CK41E",
+            "variant_id": "variant_01HZQ6B406530MW781DWT2R75D",
+            "metadata": null
+          },
+          {
+            "id": "optval_01HZQ6B4064Q755XK8B4W5BE12",
+            "created_at": "2024-06-06T16:33:04.415Z",
+            "updated_at": "2024-06-06T16:33:04.415Z",
+            "deleted_at": null,
+            "value": "White",
+            "option_id": "opt_01HZQ6B3YVVVNH2717RR4CK41E",
+            "variant_id": "variant_01HZQ6B4061GFSAATS0VJ0EF01",
+            "metadata": null
+          },
+          {
+            "id": "optval_01HZQ6B407Y77MZT2EHS2FM35G",
+            "created_at": "2024-06-06T16:33:04.415Z",
+            "updated_at": "2024-06-06T16:33:04.415Z",
+            "deleted_at": null,
+            "value": "Black",
+            "option_id": "opt_01HZQ6B3YVVVNH2717RR4CK41E",
+            "variant_id": "variant_01HZQ6B407B0FXEK8ECF93A9PK",
+            "metadata": null
+          },
+          {
+            "id": "optval_01HZQ6B407TBAAPWER7Y6R53B4",
+            "created_at": "2024-06-06T16:33:04.415Z",
+            "updated_at": "2024-06-06T16:33:04.415Z",
+            "deleted_at": null,
+            "value": "White",
+            "option_id": "opt_01HZQ6B3YVVVNH2717RR4CK41E",
+            "variant_id": "variant_01HZQ6B407GP2J118NERJZ7M23",
+            "metadata": null
+          },
+          {
+            "id": "optval_01HZQ6B408ERZ685DGBVVA6846",
+            "created_at": "2024-06-06T16:33:04.415Z",
+            "updated_at": "2024-06-06T16:33:04.415Z",
+            "deleted_at": null,
+            "value": "Black",
+            "option_id": "opt_01HZQ6B3YVVVNH2717RR4CK41E",
+            "variant_id": "variant_01HZQ6B408A194B4MM3SKNBCJH",
+            "metadata": null
+          },
+          {
+            "id": "optval_01HZQ6B409G1NBRCWXFAWSYKBD",
+            "created_at": "2024-06-06T16:33:04.415Z",
+            "updated_at": "2024-06-06T16:33:04.415Z",
+            "deleted_at": null,
+            "value": "White",
+            "option_id": "opt_01HZQ6B3YVVVNH2717RR4CK41E",
+            "variant_id": "variant_01HZQ6B4091W1CT1FB6GX42X9Q",
+            "metadata": null
+          }
+        ]
+      }
+    ],
+    "profiles": [
+      {
+        "id": "sp_01HZQ3BNV7HCGC9Z0B9AMBT38P",
+        "created_at": "2024-06-06T15:40:56.933Z",
+        "updated_at": "2024-06-06T15:40:56.933Z",
+        "deleted_at": null,
+        "name": "Default Shipping Profile",
+        "type": "default",
+        "metadata": null
+      }
+    ],
+    "profile_id": "sp_01HZQ3BNV7HCGC9Z0B9AMBT38P",
+    "tags": [],
+    "type": null,
+    "variants": [
+      {
+        "id": "variant_01HZQ6B404GAHDD77EAEF19NXS",
+        "created_at": "2024-06-06T16:33:04.415Z",
+        "updated_at": "2024-06-06T16:33:04.415Z",
+        "deleted_at": null,
+        "title": "S / Black",
+        "product_id": "prod_01HZQ6B3Y0FCXDY1D0ZGZBND9F",
+        "sku": null,
+        "barcode": null,
+        "ean": null,
+        "upc": null,
+        "variant_rank": 0,
+        "inventory_quantity": 100,
+        "allow_backorder": false,
+        "manage_inventory": true,
+        "hs_code": null,
+        "origin_country": null,
+        "mid_code": null,
+        "material": null,
+        "weight": null,
+        "length": null,
+        "height": null,
+        "width": null,
+        "metadata": null,
+        "options": [
+          {
+            "id": "optval_01HZQ6B404QREAKT5004XPMEX5",
+            "created_at": "2024-06-06T16:33:04.415Z",
+            "updated_at": "2024-06-06T16:33:04.415Z",
+            "deleted_at": null,
+            "value": "S",
+            "option_id": "opt_01HZQ6B3YT69FP4Y05G1WXM75Q",
+            "variant_id": "variant_01HZQ6B404GAHDD77EAEF19NXS",
+            "metadata": null
+          },
+          {
+            "id": "optval_01HZQ6B404111HSNB4PV72Y4EY",
+            "created_at": "2024-06-06T16:33:04.415Z",
+            "updated_at": "2024-06-06T16:33:04.415Z",
+            "deleted_at": null,
+            "value": "Black",
+            "option_id": "opt_01HZQ6B3YVVVNH2717RR4CK41E",
+            "variant_id": "variant_01HZQ6B404GAHDD77EAEF19NXS",
+            "metadata": null
+          }
+        ],
+        "prices": [
+          {
+            "id": "ma_01HZQ6B41FH7N178TZCJH7KMHB",
+            "created_at": "2024-06-06T16:33:04.415Z",
+            "updated_at": "2024-06-06T16:33:04.415Z",
+            "deleted_at": null,
+            "currency_code": "usd",
+            "amount": 2200,
+            "min_quantity": null,
+            "max_quantity": null,
+            "price_list_id": null,
+            "region_id": null,
+            "price_list": null,
+            "variant_id": "variant_01HZQ6B404GAHDD77EAEF19NXS"
+          },
+          {
+            "id": "ma_01HZQ6B41G9HCSC0YT7YRSC8G5",
+            "created_at": "2024-06-06T16:33:04.415Z",
+            "updated_at": "2024-06-06T16:33:04.415Z",
+            "deleted_at": null,
+            "currency_code": "eur",
+            "amount": 2200,
+            "min_quantity": null,
+            "max_quantity": null,
+            "price_list_id": null,
+            "region_id": null,
+            "price_list": null,
+            "variant_id": "variant_01HZQ6B404GAHDD77EAEF19NXS"
+          }
+        ],
+        "original_price": null,
+        "calculated_price": null,
+        "original_price_incl_tax": null,
+        "calculated_price_incl_tax": null,
+        "original_tax": null,
+        "calculated_tax": null,
+        "tax_rates": null
+      },
+      {
+        "id": "variant_01HZQ6B4056P3R8M7KT78C85BQ",
+        "created_at": "2024-06-06T16:33:04.415Z",
+        "updated_at": "2024-06-06T16:33:04.415Z",
+        "deleted_at": null,
+        "title": "S / White",
+        "product_id": "prod_01HZQ6B3Y0FCXDY1D0ZGZBND9F",
+        "sku": null,
+        "barcode": null,
+        "ean": null,
+        "upc": null,
+        "variant_rank": 1,
+        "inventory_quantity": 100,
+        "allow_backorder": false,
+        "manage_inventory": true,
+        "hs_code": null,
+        "origin_country": null,
+        "mid_code": null,
+        "material": null,
+        "weight": null,
+        "length": null,
+        "height": null,
+        "width": null,
+        "metadata": null,
+        "options": [
+          {
+            "id": "optval_01HZQ6B405B95BY6ZTR1R2NKRV",
+            "created_at": "2024-06-06T16:33:04.415Z",
+            "updated_at": "2024-06-06T16:33:04.415Z",
+            "deleted_at": null,
+            "value": "S",
+            "option_id": "opt_01HZQ6B3YT69FP4Y05G1WXM75Q",
+            "variant_id": "variant_01HZQ6B4056P3R8M7KT78C85BQ",
+            "metadata": null
+          },
+          {
+            "id": "optval_01HZQ6B405KSH289GBW0B02EQ9",
+            "created_at": "2024-06-06T16:33:04.415Z",
+            "updated_at": "2024-06-06T16:33:04.415Z",
+            "deleted_at": null,
+            "value": "White",
+            "option_id": "opt_01HZQ6B3YVVVNH2717RR4CK41E",
+            "variant_id": "variant_01HZQ6B4056P3R8M7KT78C85BQ",
+            "metadata": null
+          }
+        ],
+        "prices": [
+          {
+            "id": "ma_01HZQ6B41GHM2T7B7PBJWP3YVK",
+            "created_at": "2024-06-06T16:33:04.415Z",
+            "updated_at": "2024-06-06T16:33:04.415Z",
+            "deleted_at": null,
+            "currency_code": "usd",
+            "amount": 2200,
+            "min_quantity": null,
+            "max_quantity": null,
+            "price_list_id": null,
+            "region_id": null,
+            "price_list": null,
+            "variant_id": "variant_01HZQ6B4056P3R8M7KT78C85BQ"
+          },
+          {
+            "id": "ma_01HZQ6B41GZPEPMA03JEM69TYG",
+            "created_at": "2024-06-06T16:33:04.415Z",
+            "updated_at": "2024-06-06T16:33:04.415Z",
+            "deleted_at": null,
+            "currency_code": "eur",
+            "amount": 2200,
+            "min_quantity": null,
+            "max_quantity": null,
+            "price_list_id": null,
+            "region_id": null,
+            "price_list": null,
+            "variant_id": "variant_01HZQ6B4056P3R8M7KT78C85BQ"
+          }
+        ],
+        "original_price": null,
+        "calculated_price": null,
+        "original_price_incl_tax": null,
+        "calculated_price_incl_tax": null,
+        "original_tax": null,
+        "calculated_tax": null,
+        "tax_rates": null
+      },
+      {
+        "id": "variant_01HZQ6B406530MW781DWT2R75D",
+        "created_at": "2024-06-06T16:33:04.415Z",
+        "updated_at": "2024-06-06T16:33:04.415Z",
+        "deleted_at": null,
+        "title": "M / Black",
+        "product_id": "prod_01HZQ6B3Y0FCXDY1D0ZGZBND9F",
+        "sku": null,
+        "barcode": null,
+        "ean": null,
+        "upc": null,
+        "variant_rank": 2,
+        "inventory_quantity": 100,
+        "allow_backorder": false,
+        "manage_inventory": true,
+        "hs_code": null,
+        "origin_country": null,
+        "mid_code": null,
+        "material": null,
+        "weight": null,
+        "length": null,
+        "height": null,
+        "width": null,
+        "metadata": null,
+        "options": [
+          {
+            "id": "optval_01HZQ6B406HKHFEJ93JB4RNREY",
+            "created_at": "2024-06-06T16:33:04.415Z",
+            "updated_at": "2024-06-06T16:33:04.415Z",
+            "deleted_at": null,
+            "value": "M",
+            "option_id": "opt_01HZQ6B3YT69FP4Y05G1WXM75Q",
+            "variant_id": "variant_01HZQ6B406530MW781DWT2R75D",
+            "metadata": null
+          },
+          {
+            "id": "optval_01HZQ6B4065T5Z74X09KDYCYF5",
+            "created_at": "2024-06-06T16:33:04.415Z",
+            "updated_at": "2024-06-06T16:33:04.415Z",
+            "deleted_at": null,
+            "value": "Black",
+            "option_id": "opt_01HZQ6B3YVVVNH2717RR4CK41E",
+            "variant_id": "variant_01HZQ6B406530MW781DWT2R75D",
+            "metadata": null
+          }
+        ],
+        "prices": [
+          {
+            "id": "ma_01HZQ6B41GMZCK2KDV3QQYQQ9V",
+            "created_at": "2024-06-06T16:33:04.415Z",
+            "updated_at": "2024-06-06T16:33:04.415Z",
+            "deleted_at": null,
+            "currency_code": "usd",
+            "amount": 2200,
+            "min_quantity": null,
+            "max_quantity": null,
+            "price_list_id": null,
+            "region_id": null,
+            "price_list": null,
+            "variant_id": "variant_01HZQ6B406530MW781DWT2R75D"
+          },
+          {
+            "id": "ma_01HZQ6B41GREE4F5HAX9BMKG6N",
+            "created_at": "2024-06-06T16:33:04.415Z",
+            "updated_at": "2024-06-06T16:33:04.415Z",
+            "deleted_at": null,
+            "currency_code": "eur",
+            "amount": 2200,
+            "min_quantity": null,
+            "max_quantity": null,
+            "price_list_id": null,
+            "region_id": null,
+            "price_list": null,
+            "variant_id": "variant_01HZQ6B406530MW781DWT2R75D"
+          }
+        ],
+        "original_price": null,
+        "calculated_price": null,
+        "original_price_incl_tax": null,
+        "calculated_price_incl_tax": null,
+        "original_tax": null,
+        "calculated_tax": null,
+        "tax_rates": null
+      },
+      {
+        "id": "variant_01HZQ6B4061GFSAATS0VJ0EF01",
+        "created_at": "2024-06-06T16:33:04.415Z",
+        "updated_at": "2024-06-06T16:33:04.415Z",
+        "deleted_at": null,
+        "title": "M / White",
+        "product_id": "prod_01HZQ6B3Y0FCXDY1D0ZGZBND9F",
+        "sku": null,
+        "barcode": null,
+        "ean": null,
+        "upc": null,
+        "variant_rank": 3,
+        "inventory_quantity": 100,
+        "allow_backorder": false,
+        "manage_inventory": true,
+        "hs_code": null,
+        "origin_country": null,
+        "mid_code": null,
+        "material": null,
+        "weight": null,
+        "length": null,
+        "height": null,
+        "width": null,
+        "metadata": null,
+        "options": [
+          {
+            "id": "optval_01HZQ6B406DEQ1T4MMPE5FCMF3",
+            "created_at": "2024-06-06T16:33:04.415Z",
+            "updated_at": "2024-06-06T16:33:04.415Z",
+            "deleted_at": null,
+            "value": "M",
+            "option_id": "opt_01HZQ6B3YT69FP4Y05G1WXM75Q",
+            "variant_id": "variant_01HZQ6B4061GFSAATS0VJ0EF01",
+            "metadata": null
+          },
+          {
+            "id": "optval_01HZQ6B4064Q755XK8B4W5BE12",
+            "created_at": "2024-06-06T16:33:04.415Z",
+            "updated_at": "2024-06-06T16:33:04.415Z",
+            "deleted_at": null,
+            "value": "White",
+            "option_id": "opt_01HZQ6B3YVVVNH2717RR4CK41E",
+            "variant_id": "variant_01HZQ6B4061GFSAATS0VJ0EF01",
+            "metadata": null
+          }
+        ],
+        "prices": [
+          {
+            "id": "ma_01HZQ6B41G37HNY52KK1BN7Z5W",
+            "created_at": "2024-06-06T16:33:04.415Z",
+            "updated_at": "2024-06-06T16:33:04.415Z",
+            "deleted_at": null,
+            "currency_code": "usd",
+            "amount": 2200,
+            "min_quantity": null,
+            "max_quantity": null,
+            "price_list_id": null,
+            "region_id": null,
+            "price_list": null,
+            "variant_id": "variant_01HZQ6B4061GFSAATS0VJ0EF01"
+          },
+          {
+            "id": "ma_01HZQ6B41G3P82ZT68QDWNKNT1",
+            "created_at": "2024-06-06T16:33:04.415Z",
+            "updated_at": "2024-06-06T16:33:04.415Z",
+            "deleted_at": null,
+            "currency_code": "eur",
+            "amount": 2200,
+            "min_quantity": null,
+            "max_quantity": null,
+            "price_list_id": null,
+            "region_id": null,
+            "price_list": null,
+            "variant_id": "variant_01HZQ6B4061GFSAATS0VJ0EF01"
+          }
+        ],
+        "original_price": null,
+        "calculated_price": null,
+        "original_price_incl_tax": null,
+        "calculated_price_incl_tax": null,
+        "original_tax": null,
+        "calculated_tax": null,
+        "tax_rates": null
+      },
+      {
+        "id": "variant_01HZQ6B407B0FXEK8ECF93A9PK",
+        "created_at": "2024-06-06T16:33:04.415Z",
+        "updated_at": "2024-06-06T16:33:04.415Z",
+        "deleted_at": null,
+        "title": "L / Black",
+        "product_id": "prod_01HZQ6B3Y0FCXDY1D0ZGZBND9F",
+        "sku": null,
+        "barcode": null,
+        "ean": null,
+        "upc": null,
+        "variant_rank": 4,
+        "inventory_quantity": 100,
+        "allow_backorder": false,
+        "manage_inventory": true,
+        "hs_code": null,
+        "origin_country": null,
+        "mid_code": null,
+        "material": null,
+        "weight": null,
+        "length": null,
+        "height": null,
+        "width": null,
+        "metadata": null,
+        "options": [
+          {
+            "id": "optval_01HZQ6B407WJA0WZ5KH963F2BG",
+            "created_at": "2024-06-06T16:33:04.415Z",
+            "updated_at": "2024-06-06T16:33:04.415Z",
+            "deleted_at": null,
+            "value": "L",
+            "option_id": "opt_01HZQ6B3YT69FP4Y05G1WXM75Q",
+            "variant_id": "variant_01HZQ6B407B0FXEK8ECF93A9PK",
+            "metadata": null
+          },
+          {
+            "id": "optval_01HZQ6B407Y77MZT2EHS2FM35G",
+            "created_at": "2024-06-06T16:33:04.415Z",
+            "updated_at": "2024-06-06T16:33:04.415Z",
+            "deleted_at": null,
+            "value": "Black",
+            "option_id": "opt_01HZQ6B3YVVVNH2717RR4CK41E",
+            "variant_id": "variant_01HZQ6B407B0FXEK8ECF93A9PK",
+            "metadata": null
+          }
+        ],
+        "prices": [
+          {
+            "id": "ma_01HZQ6B41GVY751TC0922MZDY5",
+            "created_at": "2024-06-06T16:33:04.415Z",
+            "updated_at": "2024-06-06T16:33:04.415Z",
+            "deleted_at": null,
+            "currency_code": "usd",
+            "amount": 2200,
+            "min_quantity": null,
+            "max_quantity": null,
+            "price_list_id": null,
+            "region_id": null,
+            "price_list": null,
+            "variant_id": "variant_01HZQ6B407B0FXEK8ECF93A9PK"
+          },
+          {
+            "id": "ma_01HZQ6B41GRGT512SERC17D16E",
+            "created_at": "2024-06-06T16:33:04.415Z",
+            "updated_at": "2024-06-06T16:33:04.415Z",
+            "deleted_at": null,
+            "currency_code": "eur",
+            "amount": 2200,
+            "min_quantity": null,
+            "max_quantity": null,
+            "price_list_id": null,
+            "region_id": null,
+            "price_list": null,
+            "variant_id": "variant_01HZQ6B407B0FXEK8ECF93A9PK"
+          }
+        ],
+        "original_price": null,
+        "calculated_price": null,
+        "original_price_incl_tax": null,
+        "calculated_price_incl_tax": null,
+        "original_tax": null,
+        "calculated_tax": null,
+        "tax_rates": null
+      },
+      {
+        "id": "variant_01HZQ6B407GP2J118NERJZ7M23",
+        "created_at": "2024-06-06T16:33:04.415Z",
+        "updated_at": "2024-06-06T16:33:04.415Z",
+        "deleted_at": null,
+        "title": "L / White",
+        "product_id": "prod_01HZQ6B3Y0FCXDY1D0ZGZBND9F",
+        "sku": null,
+        "barcode": null,
+        "ean": null,
+        "upc": null,
+        "variant_rank": 5,
+        "inventory_quantity": 100,
+        "allow_backorder": false,
+        "manage_inventory": true,
+        "hs_code": null,
+        "origin_country": null,
+        "mid_code": null,
+        "material": null,
+        "weight": null,
+        "length": null,
+        "height": null,
+        "width": null,
+        "metadata": null,
+        "options": [
+          {
+            "id": "optval_01HZQ6B407K9M5Y87474X2C8PA",
+            "created_at": "2024-06-06T16:33:04.415Z",
+            "updated_at": "2024-06-06T16:33:04.415Z",
+            "deleted_at": null,
+            "value": "L",
+            "option_id": "opt_01HZQ6B3YT69FP4Y05G1WXM75Q",
+            "variant_id": "variant_01HZQ6B407GP2J118NERJZ7M23",
+            "metadata": null
+          },
+          {
+            "id": "optval_01HZQ6B407TBAAPWER7Y6R53B4",
+            "created_at": "2024-06-06T16:33:04.415Z",
+            "updated_at": "2024-06-06T16:33:04.415Z",
+            "deleted_at": null,
+            "value": "White",
+            "option_id": "opt_01HZQ6B3YVVVNH2717RR4CK41E",
+            "variant_id": "variant_01HZQ6B407GP2J118NERJZ7M23",
+            "metadata": null
+          }
+        ],
+        "prices": [
+          {
+            "id": "ma_01HZQ6B41G1X49SHVRGH6P0C0F",
+            "created_at": "2024-06-06T16:33:04.415Z",
+            "updated_at": "2024-06-06T16:33:04.415Z",
+            "deleted_at": null,
+            "currency_code": "usd",
+            "amount": 2200,
+            "min_quantity": null,
+            "max_quantity": null,
+            "price_list_id": null,
+            "region_id": null,
+            "price_list": null,
+            "variant_id": "variant_01HZQ6B407GP2J118NERJZ7M23"
+          },
+          {
+            "id": "ma_01HZQ6B41GB0JDFP650XRMKHPA",
+            "created_at": "2024-06-06T16:33:04.415Z",
+            "updated_at": "2024-06-06T16:33:04.415Z",
+            "deleted_at": null,
+            "currency_code": "eur",
+            "amount": 2200,
+            "min_quantity": null,
+            "max_quantity": null,
+            "price_list_id": null,
+            "region_id": null,
+            "price_list": null,
+            "variant_id": "variant_01HZQ6B407GP2J118NERJZ7M23"
+          }
+        ],
+        "original_price": null,
+        "calculated_price": null,
+        "original_price_incl_tax": null,
+        "calculated_price_incl_tax": null,
+        "original_tax": null,
+        "calculated_tax": null,
+        "tax_rates": null
+      },
+      {
+        "id": "variant_01HZQ6B408A194B4MM3SKNBCJH",
+        "created_at": "2024-06-06T16:33:04.415Z",
+        "updated_at": "2024-06-06T16:33:04.415Z",
+        "deleted_at": null,
+        "title": "XL / Black",
+        "product_id": "prod_01HZQ6B3Y0FCXDY1D0ZGZBND9F",
+        "sku": null,
+        "barcode": null,
+        "ean": null,
+        "upc": null,
+        "variant_rank": 6,
+        "inventory_quantity": 100,
+        "allow_backorder": false,
+        "manage_inventory": true,
+        "hs_code": null,
+        "origin_country": null,
+        "mid_code": null,
+        "material": null,
+        "weight": null,
+        "length": null,
+        "height": null,
+        "width": null,
+        "metadata": null,
+        "options": [
+          {
+            "id": "optval_01HZQ6B4089KFYY0SRVQHA1NBB",
+            "created_at": "2024-06-06T16:33:04.415Z",
+            "updated_at": "2024-06-06T16:33:04.415Z",
+            "deleted_at": null,
+            "value": "XL",
+            "option_id": "opt_01HZQ6B3YT69FP4Y05G1WXM75Q",
+            "variant_id": "variant_01HZQ6B408A194B4MM3SKNBCJH",
+            "metadata": null
+          },
+          {
+            "id": "optval_01HZQ6B408ERZ685DGBVVA6846",
+            "created_at": "2024-06-06T16:33:04.415Z",
+            "updated_at": "2024-06-06T16:33:04.415Z",
+            "deleted_at": null,
+            "value": "Black",
+            "option_id": "opt_01HZQ6B3YVVVNH2717RR4CK41E",
+            "variant_id": "variant_01HZQ6B408A194B4MM3SKNBCJH",
+            "metadata": null
+          }
+        ],
+        "prices": [
+          {
+            "id": "ma_01HZQ6B41GZVA1H7742DFP3E42",
+            "created_at": "2024-06-06T16:33:04.415Z",
+            "updated_at": "2024-06-06T16:33:04.415Z",
+            "deleted_at": null,
+            "currency_code": "usd",
+            "amount": 2200,
+            "min_quantity": null,
+            "max_quantity": null,
+            "price_list_id": null,
+            "region_id": null,
+            "price_list": null,
+            "variant_id": "variant_01HZQ6B408A194B4MM3SKNBCJH"
+          },
+          {
+            "id": "ma_01HZQ6B41G8E031TEYQAK816V6",
+            "created_at": "2024-06-06T16:33:04.415Z",
+            "updated_at": "2024-06-06T16:33:04.415Z",
+            "deleted_at": null,
+            "currency_code": "eur",
+            "amount": 2200,
+            "min_quantity": null,
+            "max_quantity": null,
+            "price_list_id": null,
+            "region_id": null,
+            "price_list": null,
+            "variant_id": "variant_01HZQ6B408A194B4MM3SKNBCJH"
+          }
+        ],
+        "original_price": null,
+        "calculated_price": null,
+        "original_price_incl_tax": null,
+        "calculated_price_incl_tax": null,
+        "original_tax": null,
+        "calculated_tax": null,
+        "tax_rates": null
+      },
+      {
+        "id": "variant_01HZQ6B4091W1CT1FB6GX42X9Q",
+        "created_at": "2024-06-06T16:33:04.415Z",
+        "updated_at": "2024-06-06T16:33:04.415Z",
+        "deleted_at": null,
+        "title": "XL / White",
+        "product_id": "prod_01HZQ6B3Y0FCXDY1D0ZGZBND9F",
+        "sku": null,
+        "barcode": null,
+        "ean": null,
+        "upc": null,
+        "variant_rank": 7,
+        "inventory_quantity": 100,
+        "allow_backorder": false,
+        "manage_inventory": true,
+        "hs_code": null,
+        "origin_country": null,
+        "mid_code": null,
+        "material": null,
+        "weight": null,
+        "length": null,
+        "height": null,
+        "width": null,
+        "metadata": null,
+        "options": [
+          {
+            "id": "optval_01HZQ6B409YJ5ZAY1CG78E4TEH",
+            "created_at": "2024-06-06T16:33:04.415Z",
+            "updated_at": "2024-06-06T16:33:04.415Z",
+            "deleted_at": null,
+            "value": "XL",
+            "option_id": "opt_01HZQ6B3YT69FP4Y05G1WXM75Q",
+            "variant_id": "variant_01HZQ6B4091W1CT1FB6GX42X9Q",
+            "metadata": null
+          },
+          {
+            "id": "optval_01HZQ6B409G1NBRCWXFAWSYKBD",
+            "created_at": "2024-06-06T16:33:04.415Z",
+            "updated_at": "2024-06-06T16:33:04.415Z",
+            "deleted_at": null,
+            "value": "White",
+            "option_id": "opt_01HZQ6B3YVVVNH2717RR4CK41E",
+            "variant_id": "variant_01HZQ6B4091W1CT1FB6GX42X9Q",
+            "metadata": null
+          }
+        ],
+        "prices": [
+          {
+            "id": "ma_01HZQ6B41GC7T6MZ3Q0X2V56K3",
+            "created_at": "2024-06-06T16:33:04.415Z",
+            "updated_at": "2024-06-06T16:33:04.415Z",
+            "deleted_at": null,
+            "currency_code": "usd",
+            "amount": 2200,
+            "min_quantity": null,
+            "max_quantity": null,
+            "price_list_id": null,
+            "region_id": null,
+            "price_list": null,
+            "variant_id": "variant_01HZQ6B4091W1CT1FB6GX42X9Q"
+          },
+          {
+            "id": "ma_01HZQ6B41GATKEM9EPM0HHRQ3R",
+            "created_at": "2024-06-06T16:33:04.415Z",
+            "updated_at": "2024-06-06T16:33:04.415Z",
+            "deleted_at": null,
+            "currency_code": "eur",
+            "amount": 2200,
+            "min_quantity": null,
+            "max_quantity": null,
+            "price_list_id": null,
+            "region_id": null,
+            "price_list": null,
+            "variant_id": "variant_01HZQ6B4091W1CT1FB6GX42X9Q"
+          }
+        ],
+        "original_price": null,
+        "calculated_price": null,
+        "original_price_incl_tax": null,
+        "calculated_price_incl_tax": null,
+        "original_tax": null,
+        "calculated_tax": null,
+        "tax_rates": null
+      }
+    ]
+  }
+]

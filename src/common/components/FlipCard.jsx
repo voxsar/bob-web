@@ -32,8 +32,8 @@ const FlipCard = ({ title = '', list = [], cardImg, isSmallScreen = false }) => 
                 <Card>
                   <p className='trimester-card-title'>Products</p>
                   <ul className='flip-card-content'>
-                    {list.map((item) => (
-                      <li>{item}</li>
+                    {list.map((item, i) => (
+                      <li key={i}>{item}</li>
                     ))}
                   </ul>
                   <a href='/' className='btn flip-card-button'>Shop Now</a>
@@ -42,7 +42,7 @@ const FlipCard = ({ title = '', list = [], cardImg, isSmallScreen = false }) => 
             </div>
           </div>
         )}
-      <p className='fw-semibold flip-card-title'>{title} {isSmallScreen && <span><i class="fa-solid fa-arrow-right" style={{ color: 'rgb(126 126 126)' }}></i></span>}</p>
+      <p className='fw-semibold flip-card-title'>{title} {isSmallScreen && <span><i className="fa-solid fa-arrow-right" style={{ color: 'rgb(126 126 126)' }}></i></span>}</p>
     </>
   );
 };

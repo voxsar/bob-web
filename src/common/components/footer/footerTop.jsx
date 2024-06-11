@@ -55,10 +55,10 @@ const FooterTop = () => {
                 <Col lg={3}>
                     <Row>
                         <Col className='p-0'>
-                            <p><i class="fa-solid fa-location-arrow"></i> Find Your Store</p>
+                            <p><i className="fa-solid fa-location-arrow"></i> Find Your Store</p>
                         </Col>
                         <Col className='p-0'>
-                            <p><i class="fa-solid fa-ticket"></i>  Gift Cards</p>
+                            <p><i className="fa-solid fa-ticket"></i>  Gift Cards</p>
                         </Col>
                     </Row>
 
@@ -74,22 +74,22 @@ const FooterTop = () => {
 
                                 <Col className="icon-col">
                                     <a href="https://www.spotify.com" target="_blank" rel="noopener noreferrer">
-                                        <i class="fa-brands fa-spotify"></i>
+                                        <i className="fa-brands fa-spotify"></i>
                                     </a>
                                 </Col>
                                 <Col className="icon-col">
                                     <a href="https://www.apple.com" target="_blank" rel="noopener noreferrer">
-                                        <i class="fa-brands fa-apple"></i>
+                                        <i className="fa-brands fa-apple"></i>
                                     </a>
                                 </Col>
                                 <Col className="icon-col">
                                     <a href="https://www.amazon.com" target="_blank" rel="noopener noreferrer">
-                                        <i class="fa-brands fa-amazon"></i>
+                                        <i className="fa-brands fa-amazon"></i>
                                     </a>
                                 </Col>
                                 <Col className="icon-col">
                                     <a href="https://www.audible.com" target="_blank" rel="noopener noreferrer">
-                                        <i class="fa-brands fa-audible"></i>
+                                        <i className="fa-brands fa-audible"></i>
                                     </a>
                                 </Col>
                             </Row>

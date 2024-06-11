@@ -30,7 +30,7 @@ const Drawer = ({ isOpen, onClose }) => {
                                     <li><Link to={'/'}>Nursery Design Center</Link></li>
                                     <li><Link to={'/'}>Registries</Link></li>
                                     <li><Link to={'/'}>BOB Defenders</Link></li>
-                                    <li><Link to={'/'}>Event Spaces</Link></li>
+                                    <li><Link to={'/event-spaces'} onClick={onClose}>Event Spaces</Link></li>
                                     <li><Link to={'/'}>About Us</Link></li>
                                     <li><Link to={'/'}>Contact Us</Link></li>
                                     <li><Link to={'/'}>FAQ</Link></li>
@@ -54,9 +54,9 @@ const Drawer = ({ isOpen, onClose }) => {
                             </Accordion.Item>
                         ))}
                     </Accordion>
-                   <div className='d-flex justify-content-center mt-5'>
-                   <button className='drawer-btn' onClick={onClose}>Close</button>
-                   </div>
+                    <div className='d-flex justify-content-center mt-5'>
+                        <button className='drawer-btn' onClick={onClose}>Close</button>
+                    </div>
                 </div>
             </Offcanvas.Body>
         </Offcanvas>

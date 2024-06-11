@@ -1,3 +1,5 @@
+import moment from 'moment';
+
 export const generateDates = (numDays) => {
     const dates = [];
     const today = new Date();
@@ -10,4 +12,8 @@ export const generateDates = (numDays) => {
     }
 
     return dates;
+};
+
+export const getTodayDate = (format = 'YYYY-MM-DD') => {
+    return moment().format(format);
 };

@@ -165,8 +165,8 @@ const MegaMenu = () => {
           </Row>
 
           <Row className='mega-menu-brand-row'>
-            {BRAND_LOGOS.map((logo, i)=>(
-              <Col><img src={logo} alt='logo' className='menu-brand-logo' height={i ===9 ? '31px' :'66px'}/></Col>
+            {BRAND_LOGOS.map((logo, i) => (
+              <Col key={i}><img src={logo} alt='logo' key={i} className='menu-brand-logo' height={i === 9 ? '31px' : '66px'} /></Col>
             ))}
           </Row>
         </Container>

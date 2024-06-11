@@ -1,0 +1,45 @@
+.star-review {
+    display: flex;
+}
+
+.star {
+    font-size: 20px;
+    color: lightgray;
+    position: relative;
+    margin-right: 4px;
+    width: 27px;
+}
+
+.star.filled {
+    color: gold;
+
+}
+
+.star.half-filled {
+    color: gold;
+    position: relative;
+}
+
+.star.half-filled::before {
+    content: '\f5c0';
+    /* Font Awesome full star */
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    color: lightgray;
+    position: absolute;
+    left: 0;
+    width: 50%;
+    z-index: 1;
+}
+
+.star.half-filled::after {
+    content: '\f5c0';
+    /* Font Awesome full star */
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    color: gold;
+    position: absolute;
+    left: 0;
+    width: 50%;
+    z-index: 2;
+}

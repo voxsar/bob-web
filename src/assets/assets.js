@@ -23,6 +23,24 @@ import header3 from './images/header-img-3.png';
 import header4 from './images/header-img-4.png';
 import header5 from './images/header-img-5.png';
 
+import category1 from './images/shopCategories/babyHealth.webp';
+import category2 from './images/shopCategories/bathpotty.webp';
+import category3 from './images/shopCategories/breastfeed.webp';
+import category4 from './images/shopCategories/clothing.webp';
+import category5 from './images/shopCategories/gear.webp';
+import category6 from './images/shopCategories/hsa-fsa.webp';
+import category7 from './images/shopCategories/maternity-post.webp';
+import category8 from './images/shopCategories/mealtime.webp';
+import category9 from './images/shopCategories/nursery-furni.webp';
+import category10 from './images/shopCategories/toysplay.webp';
+
+import tri1 from './images/trimesters/img1.webp';
+import tri2 from './images/trimesters/img2.webp';
+import tri3 from './images/trimesters/img3.webp';
+import tri4 from './images/trimesters/img4.webp';
+import tri5 from './images/trimesters/img5.webp';
+
+
 
 export const BRAND_LOGOS = [
     logo1,
@@ -51,4 +69,25 @@ export const HEADER_IMAGES = {
     header3,
     header4,
     header5,
+}
+
+export const CATEGORY_IMAGES = {
+    category1,
+    category2,
+    category3,
+    category4,
+    category5,
+    category6,
+    category7,
+    category8,
+    category9,
+    category10
+}
+
+export const TRIMESTER_IMAGES = {
+    tri1,
+    tri2,
+    tri3,
+    tri4,
+    tri5
 }

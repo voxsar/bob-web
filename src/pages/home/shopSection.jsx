@@ -1,10 +1,11 @@
 import { Row, Col } from 'react-bootstrap'
 import FlipCard from '../../common/components/FlipCard';
+import { TRIMESTER_IMAGES } from '../../assets/assets';
 
 const TrimesterData = [
     {
         title: 'First Trimester',
-        image: "https://bobshop-eeebddebdpcubfbv.z03.azurefd.net/wp-content/uploads/2023/12/Untitled-design.png",
+        image: TRIMESTER_IMAGES.tri1,
         list: [
             "Prenatal Vitamins",
             "Comfortable Clothing",
@@ -14,7 +15,7 @@ const TrimesterData = [
     },
     {
         title: 'Second Trimester',
-        image: 'https://bobshop-eeebddebdpcubfbv.z03.azurefd.net/wp-content/uploads/2024/03/Untitled-design-1.png.webp',
+        image: TRIMESTER_IMAGES.tri2,
         list: [
             "Maternity Wear",
             "Body Pillows",
@@ -24,7 +25,7 @@ const TrimesterData = [
     },
     {
         title: 'Third Trimester',
-        image: 'https://bobshop-eeebddebdpcubfbv.z03.azurefd.net/wp-content/uploads/2023/12/Untitled-design-2.png',
+        image: TRIMESTER_IMAGES.tri3,
         list: [
             "Baby Gear",
             "Hospital Bag Essentials",
@@ -36,7 +37,7 @@ const TrimesterData = [
     },
     {
         title: 'Postpartum',
-        image: 'https://bobshop-eeebddebdpcubfbv.z03.azurefd.net/wp-content/uploads/2023/12/Untitled-design-4.png',
+        image: TRIMESTER_IMAGES.tri4,
         list: [
             "Breast Pumps",
             "Postnatal Care Items",
@@ -46,7 +47,7 @@ const TrimesterData = [
     },
     {
         title: 'First Year Essentials',
-        image: 'https://bobshop-eeebddebdpcubfbv.z03.azurefd.net/wp-content/uploads/2023/12/Untitled-design-3.png',
+        image: TRIMESTER_IMAGES.tri5,
         list: [
             "Baby Clothing",
             "Baby Accessories",
@@ -63,9 +64,9 @@ const ShopSection = ({ isSmallScreen }) => {
             <h2>Shop By Trimester</h2>
             <p className='section-description'>Explore carefully selected items tailored for each stage of your journey - from pregnancy to baby's first year. Click to find essentials perfect for you and your little one.</p>
             <Row className='flip-card-row'>
-                {TrimesterData.map((data) => (
-                    <Col className='flip-card-col'>
-                        <FlipCard title={data.title} list={data.list} cardImg={data.image} isSmallScreen={isSmallScreen} />
+                {TrimesterData.map((data, i) => (
+                    <Col key={i} className='flip-card-col'>
+                        <FlipCard key={i} title={data.title} list={data.list} cardImg={data.image} isSmallScreen={isSmallScreen} />
                     </Col>
                 ))}
 

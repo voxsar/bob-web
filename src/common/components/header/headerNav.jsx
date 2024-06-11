@@ -1,7 +1,17 @@
+import React, { useState } from 'react';
 import { Nav, Container, NavDropdown } from 'react-bootstrap';
 import { NavLink } from "react-router-dom";
 
 const HeaderNav = ({ isDesktop = true, toggleDrawer }) => {
+    const [isDropdownVisible, setDropdownVisible] = useState(false);
+
+    const handleMouseEnter = () => {
+        setDropdownVisible(true);
+    };
+
+    const handleMouseLeave = () => {
+        setDropdownVisible(false);
+    };
     return (
 
         <Container style={{ padding: '0px 0px 50px 0px' }}>
@@ -10,46 +20,55 @@ const HeaderNav = ({ isDesktop = true, toggleDrawer }) => {
                     <NavLink to="/" className='nav-link' onClick={toggleDrawer}>Home</NavLink>
 
                 </Nav.Item>
-                <div className="nav-item-hover">
-                    <NavDropdown className='nav-item-main' title="Shop" id="nav-dropdown">
-                        <NavDropdown.Item eventKey="4.1">Baby Health and Safety</NavDropdown.Item>
-                        <NavDropdown.Item eventKey="4.2">Bath and Potty</NavDropdown.Item>
-                        <NavDropdown.Item eventKey="4.3">Breastfeeding</NavDropdown.Item>
-                        <NavDropdown.Item eventKey="4.4">Clothing and Accessories</NavDropdown.Item>
-                        <NavDropdown.Item eventKey="4.5">Gear</NavDropdown.Item>
-                        <NavDropdown.Item eventKey="4.6">HSA/FSA Approved Items</NavDropdown.Item>
-                        <NavDropdown.Item eventKey="4.7">Maternity and Postpartum</NavDropdown.Item>
-                        <NavDropdown.Item eventKey="4.8">Meal Time</NavDropdown.Item>
-                        <NavDropdown.Item eventKey="4.9">Nursery Furniture and Sleep</NavDropdown.Item>
-                        <NavDropdown.Item eventKey="4.10">Toys and Play</NavDropdown.Item>
-                    </NavDropdown>
+                <div
+                    className="nav-item"
+                    onMouseEnter={handleMouseEnter}
+                    onMouseLeave={handleMouseLeave}
+                >
+                    <a className="nav-link" href="/test">Shop <i className="fa-solid fa-caret-down ms-1"></i></a>
+                    {isDropdownVisible && (
+                        <div className="shop-dropdown-menu">
+                            <ul>
+                                <li><a href="/test">Baby Health and Safety</a></li>
+                                <li><a href="/test">Bath and Potty</a></li>
+                                <li><a href="/test">Breastfeeding</a></li>
+                                <li><a href="/test">Clothing and Accessories</a></li>
+                                <li><a href="/test">Gear</a></li>
+                                <li><a href="/test">HSA/FSA Approved Items</a></li>
+                                <li><a href="/test">Maternity and Postpartum</a></li>
+                                <li><a href="/test">Meal Time</a></li>
+                                <li><a href="/test">Nursery Furniture and Sleep</a></li>
+                                <li><a href="/test">Toys and Play</a></li>
+                            </ul>
+                        </div>
+                    )}
                 </div>
                 <Nav.Item>
-                    <NavLink to="/serviceAreas" className='nav-link' onClick={toggleDrawer}>FSA/HSA Approved Items</NavLink>
+                    <NavLink to="/test" className='nav-link' onClick={toggleDrawer}>FSA/HSA Approved Items</NavLink>
                 </Nav.Item>
                 <Nav.Item>
-                    <NavLink to="/Nursery" className='nav-link' onClick={toggleDrawer}>Nursery Design Center</NavLink>
+                    <NavLink to="/nursery" className='nav-link' onClick={toggleDrawer}>Nursery Design Center</NavLink>
                 </Nav.Item>
                 <Nav.Item>
                     <NavLink to="/contactUs" className='nav-link' onClick={toggleDrawer}>REGISTRIES</NavLink>
                 </Nav.Item>
                 <Nav.Item>
-                    <NavLink to="/blogs" className='nav-link' onClick={toggleDrawer}>BOB Defenders</NavLink>
+                    <NavLink to="/test" className='nav-link' onClick={toggleDrawer}>BOB Defenders</NavLink>
                 </Nav.Item>
                 <Nav.Item>
                     <NavLink to="/event-spaces" className='nav-link' onClick={toggleDrawer}>event spaces</NavLink>
                 </Nav.Item>
                 <Nav.Item>
-                    <NavLink to="/AboutUs" className='nav-link' onClick={toggleDrawer}>About us</NavLink>
+                    <NavLink to="/about" className='nav-link' onClick={toggleDrawer}>About us</NavLink>
                 </Nav.Item>
                 <Nav.Item>
-                    <NavLink to="/ContactUs" className='nav-link' onClick={toggleDrawer}>Contact us</NavLink>
+                    <NavLink to="/contact" className='nav-link' onClick={toggleDrawer}>Contact us</NavLink>
                 </Nav.Item>
                 <Nav.Item>
-                    <NavLink to="/Faq" className='nav-link' onClick={toggleDrawer}>FAQ</NavLink>
+                    <NavLink to="/faq" className='nav-link' onClick={toggleDrawer}>FAQ</NavLink>
                 </Nav.Item>
                 <Nav.Item>
-                    <NavLink to="/estimateTow" className='nav-link' onClick={toggleDrawer}>Blog</NavLink>
+                    <NavLink to="/test" className='nav-link' onClick={toggleDrawer}>Blog</NavLink>
                 </Nav.Item>
             </Nav>
         </Container>

@@ -13,8 +13,8 @@ const EventSpaces = () => {
 
     return (
         <div className='event-space-page-wrapper'>
-            <div class="top-divider-container">
-                <div class="top-divider"></div>
+            <div className="top-divider-container">
+                <div className="top-divider"></div>
             </div>
             <div className='event-space-top-header'>
                 <h2 className='mb-3 fadeInLeft'>Baby's on Broadway - Event Spaces</h2>
@@ -22,17 +22,17 @@ const EventSpaces = () => {
                 <Container className='m-0 p-2 vw-full'>
                     <Row className='event-space-top-row w-100'>
                         <Col lg={4}>
-                            <i class="fa-regular fa-image"></i>
+                            <i className="fa-regular fa-image"></i>
                             <h3 className='event-space-step-title'>Explore Our Spaces</h3>
                             <p className='event-space-step-desc'>Browse our Little Falls and St. Cloud locations. Find the perfect setting for your special day.</p>
                         </Col>
                         <Col lg={4}>
-                            <i class="fa-regular fa-calendar-check"></i>
+                            <i className="fa-regular fa-calendar-check"></i>
                             <h3 className='event-space-step-title'>Reserve Your Date</h3>
                             <p className='event-space-step-desc'>Choose a date and reserve your preferred location. Begin the journey to a memorable celebration.</p>
                         </Col>
                         <Col lg={4}>
-                            <i class="fa-solid fa-phone"></i>
+                            <i className="fa-solid fa-phone"></i>
                             <h3 className='event-space-step-title'>Personalized Assistance</h3>
                             <p className='event-space-step-desc'>Expect a call from our team. We'll discuss details and tailor your baby shower experience.</p>
                         </Col>
@@ -160,7 +160,7 @@ const EventSpaces = () => {
                                     <a href="http://arroymn.com/" target="_blank"><span>Arroy - Thai &amp; Filipino Restaurant</span></a>
                                 </li>
                                 <li>
-                                    <a href="https://shortstopcustomcatering.com/" target="_blank"><span class="elementor-icon-list-text">Custom Catering by Short Stop</span>
+                                    <a href="https://shortstopcustomcatering.com/" target="_blank"><span className="elementor-icon-list-text">Custom Catering by Short Stop</span>
                                     </a>
                                 </li>
                                 <li>

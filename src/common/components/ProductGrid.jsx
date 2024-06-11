@@ -5,7 +5,7 @@ import './styles/ProductGrid.css'
 const ProductGrid = ({ products, isSmallScreen }) => {
   return (
     <div className='mt-5'>
-      <div className='d-flex flex-row align-items-center justify-content-lg-between justify-content-center mb-2' style={{ padding: '0px 70px' }}>
+      <div className='d-flex flex-row align-items-center justify-content-lg-between mb-2' style={{ padding: '0px 70px' }}>
         <div></div>
         <h2 className='ps-lg-5 pb-lg-5'>You May Also Like</h2>
         <a href='/' className='shop-all-btn'>
@@ -14,7 +14,7 @@ const ProductGrid = ({ products, isSmallScreen }) => {
       </div>
 
       <div className='product-grid-container'>
-        <Row>
+        <Row className='justify-content-center'>
           <Col lg={3} className='grid-column'>
             <Card className='mb-5'>
               <Card.Img variant="top" src={products[0]?.image} />

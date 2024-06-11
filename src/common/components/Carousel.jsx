@@ -15,7 +15,6 @@ const Carousel = ({
   imgStyle,
   textStyle,
   subTextStyle,
-  isSmallScreen = false,
   slideWrapperStyle,
   centeredSlides,
   content = [],
@@ -31,7 +30,6 @@ const Carousel = ({
   } : false;
   return (
     <Swiper
-      isSmallScreen={isSmallScreen}
       centeredSlides={centeredSlides}
       navigation={isNavigation}
       loop={true}
@@ -48,13 +46,13 @@ const Carousel = ({
       className={containerStyle}
     >
       {content.map((slide, i) => (
-        <SwiperSlide key={slide.slideId} className={slideStyle} >
+        <SwiperSlide key={i} className={slideStyle} >
           {isTitled ? <div className={`d-flex flex-column ${slideWrapperStyle ? slideWrapperStyle : ''}`}>
-            <a href={slide?.navLink}><img key={i} src={slide.imageURL} className={imgStyle} alt='slider content' /></a>
+            <a href={slide?.navLink}><img src={slide.imageURL} className={imgStyle} alt='slider content' /></a>
             <p className={textStyle}>{slide?.slideTitle}</p>
             {slide?.slideSubTitle ? <p className={subTextStyle}>{slide?.slideSubTitle}</p> : ''}
             {customComponent}
-          </div> : (<a href={slide?.navLink}><img key={i} src={slide.imageURL} alt='slider content' /></a>)}
+          </div> : (<a href={slide?.navLink}><img src={slide.imageURL} alt='slider content' /></a>)}
         </SwiperSlide>
       ))}
     </Swiper>
