@@ -47,8 +47,8 @@ const EventSpaces = () => {
                     onSelect={(k) => setKey(k)}
                     className="mb-3 mt-5 d-flex justify-content-center border-0"
                 >
-                    {eventSpaceImgGallery.map((eventSpace) => (
-                        <Tab eventKey={eventSpace.titleId} title={eventSpace.title}>
+                    {eventSpaceImgGallery.map((eventSpace, i) => (
+                        <Tab eventKey={eventSpace.titleId} key={i} title={eventSpace.title}>
                             <Container>
                                 <GalleryGrid imageList={eventSpace.images} />
                             </Container>

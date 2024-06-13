@@ -119,9 +119,20 @@ a {
     transform: none !important;
 }
 
-.form-check-input:focus {
+.form-check-input:focus,
+.form-select:focus,
+.form-control:focus {
     border-color: #dee2e6;
     box-shadow: none;
+}
+
+.form-select,
+.form-control {
+    font-size: 14px;
+}
+
+.custom-select option:disabled {
+    background-color: #ebebeb !important;
 }
 
 .form-check-input:checked {

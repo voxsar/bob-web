@@ -16,7 +16,7 @@ import lgFullscreen from 'lightgallery/plugins/fullscreen';
 
 const GalleryGrid = ({ imageList, tabKey }) => {
     const onInit = () => {
-        console.log('lightGallery has been initialized');
+
     };
 
     return (
@@ -36,8 +36,9 @@ const GalleryGrid = ({ imageList, tabKey }) => {
                     rotate: false,
                 }}
             >
-                {imageList.map((image) => (
+                {imageList.map((image, i) => (
                     <a href={image}
+                        key={i}
                     // data-pinterest-text="Pin it"
                     // data-tweet-text="lightGallery slide  2"
                     >
