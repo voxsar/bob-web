@@ -1586,3 +1586,58 @@ export const productList = [
     ]
   }
 ]
+
+export const timeData = [
+  {
+    value: "10:00:00",
+    title: "10:00 am"
+  },
+  {
+    value: "11:00:00",
+    title: "11:00 am"
+  },
+  {
+    value: "12:00:00",
+    title: "12:00 pm"
+  },
+  {
+    value: "13:00:00",
+    title: "01:00 pm"
+  },
+  {
+    value: "14:00:00",
+    title: "02:00 pm"
+  },
+  {
+    value: "15:00:00",
+    title: "03:00 pm"
+  },
+  {
+    value: "16:00:00",
+    title: "04:00 pm"
+  },
+  {
+    value: "17:00:00",
+    title: "05:00 pm"
+  }
+];
+
+export const eventSpacePrice = [
+  {
+    id: "St Cloud Event Space",
+    price: 200
+  },
+  {
+    id: "St Cloud Event Space with Cleaning Service",
+    price: 300
+  },
+  {
+    id: "Little Falls Event Space with Cleaning Service",
+    price: 200
+  },
+  {
+    id: 'Little Falls Event Space',
+    price: 100
+  }
+
+]
