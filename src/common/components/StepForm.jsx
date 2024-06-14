@@ -4,7 +4,7 @@ import './styles/StepForm.css';
 
 import { PhoneInput } from 'react-international-phone';
 import { PhoneNumberUtil } from 'google-libphonenumber';
-import DatePicker, { setDefaultLocale } from 'react-datepicker';
+import DatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
 
 import { useForm, Controller } from 'react-hook-form';
@@ -257,7 +257,7 @@ const StepForm = () => {
         </div>
       ) : fetchError ? (
         <div className='d-flex align-items-center justify-content-center'>
-          <p style={{ padding: '80px 0px' }}><i class="fa-solid fa-circle-exclamation me-2"></i>{'Something went wrong. Please try again'}</p>
+          <p style={{ padding: '80px 0px' }}><i className="fa-solid fa-circle-exclamation me-2"></i>{'Something went wrong. Please try again'}</p>
         </div>
       ) :
         (
