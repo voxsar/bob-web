@@ -4,7 +4,7 @@ import './styles/StepForm.css';
 
 import { PhoneInput } from 'react-international-phone';
 import { PhoneNumberUtil } from 'google-libphonenumber';
-import DatePicker from 'react-datepicker';
+import DatePicker, { setDefaultLocale } from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
 
 import { useForm, Controller } from 'react-hook-form';
@@ -38,6 +38,7 @@ const stepSchemas = [
 
 const StepForm = () => {
   const [bookings, setBookings] = useState([]);
+  const [refresh, setRefresh] = useState(false);
   const [bookedDates, setBookedDates] = useState([]);
   const [bookingObj, setBookingObj] = useState();
   const steps = ['Event Space', 'Day of Event', 'Details', 'Payment', 'Done'];
@@ -130,8 +131,18 @@ const StepForm = () => {
   };
 
   const handleStartOver = () => {
+    setLoading(true);
+    // reset form fields
     reset();
+
+    // reset binded form fields
+    setPhone('');
+    setDateRange([null, null]);
     setActiveStep(0);
+    setLoading(false);
+
+    // refresh booking details
+    setRefresh((refresh) => !refresh)
   };
 
 
@@ -186,13 +197,22 @@ const StepForm = () => {
       details: data?.details ? data?.details : ''
     }
 
-    const url = BOB_BACKEND.booking;
-    const res = await postData(url, body);
 
-    if (res?.success) {
-      setBookingObj(body)
-      handleNext();
+    try {
+      setLoading(true)
+      const url = BOB_BACKEND.booking;
+      const res = await postData(url, body);
+
+      if (res?.success) {
+        setBookingObj(body)
+        handleNext();
+      }
+    } catch (error) {
+      setFetchError(error);
+    } finally {
+      setLoading(false)
     }
+
   };
 
   useEffect(() => {
@@ -225,7 +245,7 @@ const StepForm = () => {
     };
 
     fetchbookedDates();
-  }, []);
+  }, [refresh]);
 
 
 
@@ -323,7 +343,7 @@ const StepForm = () => {
               )}
               {activeStep === 2 && (
                 <div>
-                  <p>You have selected a booking for the <b>{getValues("eventSpace")}</b> by <b>Adelle Starin</b>
+                  <p>You have selected a booking for the <b>{getValues("eventSpace")}</b> by <b>Adelle Starin </b>
                     {dateRange[1] !== null ? (
                       <>
                         from <b>{formatDateString(dateRange[0])}</b> to <b>{formatDateString(dateRange[1])}</b>
