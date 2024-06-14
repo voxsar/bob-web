@@ -13,6 +13,7 @@
     "axios": "^1.7.2",
     "bootstrap": "^5.3.3",
     "google-libphonenumber": "^3.2.34",
+    "js-cookie": "^3.0.5",
     "lightgallery": "^2.7.2",
     "medusa-react": "^9.0.17",
     "moment": "^2.30.1",
