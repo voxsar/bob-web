@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Container, Navbar, Nav, NavDropdown, Col } from 'react-bootstrap';
 import '../styles/Header.css';
 import HeaderSearch from './headerSearch';
@@ -12,9 +12,9 @@ import useIsSmallScreen from '../../../hooks/useIsSmallScreen';
 import { useFusionAuth } from "@fusionauth/react-sdk";
 
 const Header = () => {
+  const { startLogout, startLogin, userInfo, error, isLoggedIn } = useFusionAuth();
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
   const isSmallScreen = useIsSmallScreen();
-  const { startLogout, startLogin } = useFusionAuth();
 
   const toggleDrawer = () => {
     setIsDrawerOpen(!isDrawerOpen);
@@ -49,8 +49,17 @@ const Header = () => {
             <Nav.Link href="#"><i className="fas fa-gift"></i>Gift Cards</Nav.Link>
             <Nav.Link href="#"><i className="fas fa-map-marker-alt"></i>Track Your Order</Nav.Link>
             <Nav.Link href="#"><i className="fas fa-store"></i>Store Locations</Nav.Link>
-            <Nav.Link onClick={() => startLogin()}><i className="fas fa-user-circle"></i>Sign In</Nav.Link>
-            {/* <Nav.Link onClick={() => startLogout()}>log out</Nav.Link> */}
+
+            {
+              !error && isLoggedIn ? (
+                <NavDropdown title={`Hi, ${userInfo?.name}`} className='profile-nav-dropdown' id="profile-nav-dropdown">
+                  <NavDropdown.Item onClick={() => { }}>My account</NavDropdown.Item>
+                  <NavDropdown.Item onClick={() => startLogout()}>Logout</NavDropdown.Item>
+                </NavDropdown>
+              ) : (
+                <Nav.Link onClick={() => startLogin()}><i className="fas fa-user-circle"></i>Sign In</Nav.Link>
+              )
+            }
           </Nav>
         </Container>
       </Navbar>

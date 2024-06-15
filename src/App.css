@@ -40,6 +40,9 @@ h3 {
     display: flex;
 }
 
+.error-boundary-container {
+    height: 100vh;
+}
 
 .main-btn {
     margin: 30px 0px;

@@ -16,7 +16,7 @@ const Faq = lazy(() => import('./pages/faq/Faq'));
 const ProductView = lazy(() => import('./pages/product/ProductView'));
 const EventSpaces = lazy(() => import('./pages/eventSpaces/EventSpaces'));
 // const LoginPage = lazy(() => import('./pages/login/LoginPage'));
-const Callback = lazy(() => import('./pages/login/CallBack'));
+const Callback = lazy(() => import('./pages/login/Callback'));
 
 
 const config = {

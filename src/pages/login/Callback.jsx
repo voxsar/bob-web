@@ -3,17 +3,18 @@ import { useFusionAuth } from '@fusionauth/react-sdk';
 import { useNavigate } from 'react-router-dom';
 
 const Callback = () => {
-    const { handleLoginCallback } = useFusionAuth();
+    const { isLoggedIn, error } = useFusionAuth();
     const navigate = useNavigate();
 
     useEffect(() => {
-        handleLoginCallback().then(() => {
-            // Redirect to the home page or desired page after successful login
+        if (isLoggedIn) {
             navigate('/');
-        }).catch(error => {
-            console.error('Error handling login callback:', error);
-        });
-    }, [handleLoginCallback, navigate]);
+        } else if (error) {
+            throw new Error('Login error: ' + error.message);
+        } else {
+            navigate('/');
+        }
+    }, [isLoggedIn, error, navigate]);
 
     return <div>Loading...</div>;
 };
