@@ -9,10 +9,12 @@ import Carousel from '../Carousel';
 import { headerImages } from '../../data';
 import Drawer from '../Drawer';
 import useIsSmallScreen from '../../../hooks/useIsSmallScreen';
+import { useFusionAuth } from "@fusionauth/react-sdk";
 
 const Header = () => {
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
   const isSmallScreen = useIsSmallScreen();
+  const { startLogout, startLogin } = useFusionAuth();
 
   const toggleDrawer = () => {
     setIsDrawerOpen(!isDrawerOpen);
@@ -47,7 +49,8 @@ const Header = () => {
             <Nav.Link href="#"><i className="fas fa-gift"></i>Gift Cards</Nav.Link>
             <Nav.Link href="#"><i className="fas fa-map-marker-alt"></i>Track Your Order</Nav.Link>
             <Nav.Link href="#"><i className="fas fa-store"></i>Store Locations</Nav.Link>
-            <Nav.Link href="#"><i className="fas fa-user-circle"></i>Sign In</Nav.Link>
+            <Nav.Link onClick={() => startLogin()}><i className="fas fa-user-circle"></i>Sign In</Nav.Link>
+            {/* <Nav.Link onClick={() => startLogout()}>log out</Nav.Link> */}
           </Nav>
         </Container>
       </Navbar>
