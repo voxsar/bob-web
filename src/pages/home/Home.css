@@ -633,7 +633,7 @@
     }
 
     .flip-card-row {
-        width: 100%;
+        width: 90% !important;
         justify-content: center;
         height: 700px !important;
     }

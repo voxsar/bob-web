@@ -65,7 +65,7 @@ const ShopSection = ({ isSmallScreen }) => {
             <p className='section-description'>Explore carefully selected items tailored for each stage of your journey - from pregnancy to baby's first year. Click to find essentials perfect for you and your little one.</p>
             <Row className='flip-card-row'>
                 {TrimesterData.map((data, i) => (
-                    <Col key={i} className='flip-card-col'>
+                    <Col key={i} className='flip-card-col d-flex flex-column align-items-center'>
                         <FlipCard key={i} title={data.title} list={data.list} cardImg={data.image} isSmallScreen={isSmallScreen} />
                     </Col>
                 ))}
