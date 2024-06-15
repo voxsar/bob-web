@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Offcanvas, Accordion } from 'react-bootstrap';
 import logo from '../../assets/bob-logo.png';
 import "./styles/Drawer.css";
-import HeaderNavBottom from './header/headerNavBottom';
+import HeaderNavBottom from './Header/headerNavBottom';
 import { Link } from 'react-router-dom';
 import { menuData } from '../data';
 // import { FaArrowCircleUp } from "react-icons/fa";

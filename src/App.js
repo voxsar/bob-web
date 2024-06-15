@@ -7,16 +7,15 @@ import ScrollToPosition from './common/components/ScrollToPosition';
 import ErrorBoundary from './pages/ErrorBoundary';
 import { FusionAuthProvider } from '@fusionauth/react-sdk';
 
-const Header = lazy(() => import('./common/components/header/Header'));
-const Home = lazy(() => import('./pages/home/Home'));
-const Footer = lazy(() => import('./common/components/footer/Footer'));
-const AboutUs = lazy(() => import('./pages/aboutUs/AboutUs'));
-const ContactUs = lazy(() => import('./pages/contactUs/ContactUs'));
-const Faq = lazy(() => import('./pages/faq/Faq'));
-const ProductView = lazy(() => import('./pages/product/ProductView'));
-const EventSpaces = lazy(() => import('./pages/eventSpaces/EventSpaces'));
-// const LoginPage = lazy(() => import('./pages/login/LoginPage'));
-const Callback = lazy(() => import('./pages/login/Callback'));
+const Header = lazy(() => import('./common/components/Header/Header'));
+const Home = lazy(() => import('./pages/Home/Home'));
+const Footer = lazy(() => import('./common/components/Footer/Footer'));
+const AboutUs = lazy(() => import('./pages/AboutUs/AboutUs'));
+const ContactUs = lazy(() => import('./pages/ContactUs/ContactUs'));
+const Faq = lazy(() => import('./pages/Faq/Faq'));
+const ProductView = lazy(() => import('./pages/Product/ProductView'));
+const EventSpaces = lazy(() => import('./pages/EventSpaces/EventSpaces'));
+const Callback = lazy(() => import('./pages/Login/Callback'));
 
 
 const config = {
@@ -45,7 +44,6 @@ function App() {
               <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/about" element={<AboutUs />} />
-                {/* <Route path="/login" element={<LoginPage />} /> */}
                 <Route path="/callback" element={<Callback />} />
                 <Route path="/contact" element={<ContactUs />} />
                 <Route path="/faq" element={<Faq />} />

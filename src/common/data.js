@@ -645,7 +645,7 @@ export const eventSpaceImgGallery = [
 // sample fetched data from Medusa remove after integration
 export const productList = [
   {
-    "id": "babyzen",
+    "id": "babyZen",
     "created_at": "2024-06-06T16:33:04.415Z",
     "updated_at": "2024-06-06T16:33:04.415Z",
     "deleted_at": null,

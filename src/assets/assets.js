@@ -42,7 +42,8 @@ import tri5 from './images/trimesters/img5.webp';
 
 
 import testImg from './images/test/gallery.jpg';
-
+import variantImg from './images/product/var1.jpg';
+import productImg from './images/product/var2.jpg';
 
 export const BRAND_LOGOS = [
     logo1,
@@ -95,3 +96,6 @@ export const TRIMESTER_IMAGES = {
 }
 
 export const TEST_GALLERY_IMG = testImg;
+
+export const TEST_PRODUCT_VAR = variantImg;
+export const TEST_PROD_IMG = productImg;

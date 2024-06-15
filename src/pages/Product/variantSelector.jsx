@@ -1,4 +1,5 @@
 import React from "react";
+import { TEST_PRODUCT_VAR } from "../../assets/assets";
 
 const VariantSelector = ({ orientation = 'horizontal', variantList = [], setVariant }) => {
 
@@ -7,11 +8,12 @@ const VariantSelector = ({ orientation = 'horizontal', variantList = [], setVari
             {
                 orientation === 'vertical' && (
                     <div className="d-flex flex-column variant-thumbnail-container">
-                        {variantList.map((variant) => (
-                            <img src={"https://babysonbroadway.com/wp-content/uploads/2023/12/1333544353.jpg"}
+                        {variantList.map((variant, i) => (
+                            <img src={TEST_PRODUCT_VAR}
                                 alt={variant?.altText}
+                                key={i}
                                 className="variant-thumbnail"
-                                onClick={() => setVariant({ variantId: '2', variantURL: "https://babysonbroadway.com/wp-content/uploads/2023/12/1333544353.jpg" })} />
+                                onClick={() => setVariant({ variantId: '2', variantURL: TEST_PRODUCT_VAR })} />
                         ))}
                     </div>
 
@@ -21,11 +23,12 @@ const VariantSelector = ({ orientation = 'horizontal', variantList = [], setVari
             {
                 orientation === 'horizontal' && (
                     <div className="product_variations-row">
-                        {variantList.map((variant) => (
-                            <img src={"https://babysonbroadway.com/wp-content/uploads/2023/12/1333544353.jpg"}
+                        {variantList.map((variant, i) => (
+                            <img src={TEST_PRODUCT_VAR}
                                 alt={variant?.altText}
+                                key={i}
                                 className="row-variant-thumbnail"
-                                onClick={() => setVariant({ variantId: '3', variantURL: "https://babysonbroadway.com/wp-content/uploads/2023/12/1333544353.jpg" })}
+                                onClick={() => setVariant({ variantId: '3', variantURL: TEST_PRODUCT_VAR })}
                             />
                         ))}
                     </div>

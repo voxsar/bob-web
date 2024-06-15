@@ -3,7 +3,7 @@ import './ProductView.css';
 import { Container, Row, Col, Accordion, Modal, Form, Button } from "react-bootstrap";
 import VariantSelector from "./variantSelector";
 import { useParams } from 'react-router-dom';
-import { productList, recProd, recProdMob, recommendedProd } from "../../common/data";
+import { productList, recProd, recProdMob } from "../../common/data";
 import StarReview from "../../common/components/StarReview";
 import modalImg from '../../assets/images/share-photo-bg.png'
 
@@ -12,6 +12,7 @@ import { yupResolver } from '@hookform/resolvers/yup';
 import * as yup from 'yup';
 import useIsSmallScreen from "../../hooks/useIsSmallScreen";
 import Carousel from "../../common/components/Carousel";
+import { TEST_PROD_IMG } from "../../assets/assets";
 
 const schema = yup.object().shape({
     file: yup
@@ -66,7 +67,7 @@ const ProductView = () => {
         setProduct(selectedProduct);
         setVariant({
             variantId: '001',
-            variantURL: 'https://babysonbroadway.com/wp-content/uploads/2023/12/1333543588.jpg'
+            variantURL: TEST_PROD_IMG
         });
     }, [productId])
 
@@ -111,15 +112,15 @@ const ProductView = () => {
                                 <p className="m-0">Fullfillment Type *</p></div>
                             <div>
                                 <input type="radio" name="fullfillment" />
-                                <label for="radioButton">Delivery</label>
+                                <label htmlFor="radioButton">Delivery</label>
                             </div>
                             <div>
                                 <input type="radio" name="fullfillment" />
-                                <label for="radioButton">St Cloud</label>
+                                <label htmlFor="radioButton">St Cloud</label>
                             </div>
                             <div>
                                 <input type="radio" name="fullfillment" />
-                                <label for="radioButton">Little Falls</label>
+                                <label htmlFor="radioButton">Little Falls</label>
                             </div>
                         </div>
                     </div>
@@ -191,8 +192,8 @@ const ProductView = () => {
                                 textStyle={'most-loved-slide-txt'}
                                 isTitled={true} />
 
-                        ) : recProd.map((prod) => (
-                            <div className="recommended-prod-card">
+                        ) : recProd.map((prod, i) => (
+                            <div className="recommended-prod-card" key={i}>
                                 <a href="/">
                                     <img src="https://babysonbroadway.com/wp-content/uploads/2023/12/Liki_Premium_Storage_Bag_28Feb2019.webp" className="recommened-img-prod-view" />
                                 </a>
