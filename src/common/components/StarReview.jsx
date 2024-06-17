@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import './styles/StarReview.css'; // Import the CSS file for styling
+import './styles/StarReview.css';
 
 const StarReview = ({ rating }) => {
     const stars = Array.from({ length: 5 }, (_, index) => {

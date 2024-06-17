@@ -1,0 +1,648 @@
+/* Top carousel */
+.top-carousel-container {
+    height: 700;
+    padding: 10px;
+}
+
+.top-carousel-wrapper {
+    padding: 10px 50px;
+}
+
+/* Shop All styles */
+
+.shop-all-btn {
+    margin: 30px 0px;
+    padding: 12px 24px;
+    fill: #3b3b3b !important;
+    color: #3b3b3b !important;
+    background-color: #fff !important;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #3b3b3b !important;
+    border-radius: 3px;
+    box-shadow: none;
+    text-decoration: none;
+    transition: 0.3s ease-in-out;
+}
+
+.shop-all-btn:hover {
+    color: white !important;
+    background-color: #3b3b3b !important;
+}
+
+.shop-category {
+    text-decoration: none;
+    color: inherit;
+    text-align: center;
+}
+
+.shop-category img {
+    transition: all 0.4s;
+}
+
+.shop-category:hover img {
+    opacity: 0.7;
+}
+
+.shop-category h4 {
+    margin-top: 10px;
+}
+
+.shop-category-container {
+    margin: 90px 0px;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 31px;
+    align-items: center;
+}
+
+.shop-category-container-mobile {
+    height: 498px !important;
+}
+
+.shop-category-container-mobile p {
+    font-size: 14px;
+    margin-top: 12px;
+}
+
+.shop-category-container-mobile .swiper-button-prev,
+.shop-category-container-mobile .swiper-button-next {
+    top: 41%;
+    background-color: white;
+    border-radius: 90px;
+    padding: 10px 22px;
+    transform: scale(0.6);
+}
+
+.shop-category-container-mobile .swiper-button-prev {
+    left: 11%;
+}
+
+.shop-category-container-mobile .swiper-button-next {
+    right: 11%;
+}
+
+.shop-category-container-mobile .swiper-button-prev::after,
+.shop-category-container-mobile .swiper-button-next::after {
+    color: #3b3b3b;
+}
+
+
+/* Shop by trimester styles */
+
+.shop-trimester-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+/* Nursery in a box styles */
+.nursery-box-container {
+    max-height: 870px;
+    padding: 50px 70px;
+}
+
+.nursery-box-top-div {
+    background-color: #C49B87;
+    color: white;
+    font-size: 28px;
+    font-weight: 500;
+    padding: 20px;
+    text-align: center;
+    border-radius: 15px 15px 0 0;
+}
+
+.video-background-container {
+    border-radius: 0 0 15px 15px;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.video-background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.shop-nursery-btn {
+    position: relative;
+    z-index: 1;
+    font-size: 25px;
+    font-weight: 400;
+    text-transform: none;
+    line-height: 1em;
+    letter-spacing: 1px;
+    color: #cd9595;
+    background-color: #e8d3ca;
+    border-style: none;
+    border-radius: 20px;
+    padding: 20px;
+    align-self: flex-end;
+    margin-bottom: 4%;
+    transition: 0.3s ease;
+}
+
+.shop-nursery-btn:hover {
+    color: #fff;
+    background-color: #cd9595;
+}
+
+/* featured product carousel */
+
+.featured-prod-container {
+    padding: 30px 70px;
+    background-color: #F8F8F8;
+    margin-bottom: 60px;
+}
+
+.featured-logo {
+    transform: scale(0.8);
+    display: flex;
+    justify-content: flex-start;
+    margin-top: -64px;
+}
+
+.featured-carousel-container {
+    height: 444px !important;
+    padding: 10px
+}
+
+.featured-carousel-img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    object-position: center center;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 50px 0 50px 50px;
+    margin-bottom: 20px;
+    transition: 0.4s ease-out;
+}
+
+.featured-carousel-img:hover {
+    transform: translateY(-8px);
+}
+
+.featured-carousel-slide {
+    padding-top: 20px;
+}
+
+.featured-carousel-txt {
+    font-size: 15px;
+    margin-bottom: 8px;
+}
+
+.featured-carousel-sub-txt {
+    font-size: 15px;
+    color: #9d9d9d;
+}
+
+/* brands section styles */
+
+.brands-carousel-img {
+    height: auto;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+.brand-section-container .swiper-pagination {
+    display: none;
+}
+
+/* bob most loved products */
+.most-loved-prod-container {
+    padding: 30px 70px;
+    background-color: #E8D3CA;
+    color: #5c5c5c;
+}
+
+.most-loved-carousel-container .swiper-button-prev,
+.most-loved-carousel-container .swiper-button-next {
+    top: 40% !important;
+}
+
+.most-loved-carousel-container {
+    height: 382px !important;
+    margin: 20px 0px;
+    padding: 10px
+}
+
+.most-loved-carousel-slide,
+.featured-carousel-slide {
+    background: transparent !important;
+}
+
+.most-loved-carousel-img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    object-position: center center;
+    border-style: solid;
+    border-color: #ccc;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+/* Best selling products styles */
+
+.best-selling-carousel-img {
+    width: 314px;
+    max-width: 350px;
+    height: 314px !important;
+    object-fit: cover;
+    object-position: center center;
+    border-style: none;
+}
+
+.best-selling-carousel-text {
+    margin-top: 20px;
+}
+
+.best-selling-carousel-container {
+    height: 400px !important;
+    margin: 20px 0px;
+    padding: 10px;
+}
+
+.best-selling-carousel-container .swiper-button-prev,
+.best-selling-carousel-container .swiper-button-next {
+    top: 40%;
+}
+
+/* recommended section styles */
+.recommended-prod-container {
+    padding: 30px 70px;
+}
+
+.recommended-img {
+    width: 500px;
+    max-width: 100%;
+    height: 505px;
+    object-fit: cover;
+    object-position: center center;
+}
+
+.recommended-title {
+    color: #3f3f3f;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.recommended-title:hover {
+    color: #ab989c;
+}
+
+/* More to read */
+
+.more-read-carousel-container {
+    height: 623px !important;
+    margin: 20px 0px;
+    padding: 10px
+}
+
+.more-read-carousel-container .swiper-wrapper {
+    height: auto !important;
+}
+
+.more-read-carousel-img {
+    width: 300px;
+    max-width: 100%;
+    height: 300px;
+    object-fit: cover;
+    object-position: center center;
+}
+
+.more-read-carousel-slide {
+    height: 100%;
+    border: 4px solid white;
+    transition: 0.3 ease;
+    padding: 10px 10px 20px 10px;
+    background-color: transparent !important;
+}
+
+.more-read-carousel-slide:hover {
+    border-color: #cd9595;
+}
+
+.more-read-carousel-wrapper {
+    background-color: #ebe2d7;
+    border: 4px solid white;
+    padding: 20px;
+}
+
+.more-read-carousel-text {
+    color: #868383;
+    font-size: 18px;
+    font-weight: 200;
+    margin-top: 30px;
+}
+
+.more-read-carousel-divider {
+    text-align: center;
+    margin: 20px;
+    border: 1px solid white;
+    height: 0px !important;
+}
+
+.more-read-carousel-button {
+    font-weight: 500;
+    text-transform: none;
+    line-height: 1em;
+    letter-spacing: 1px;
+    fill: #868383;
+    color: #868383;
+    background-color: #ebe2d7;
+    transition: all 0.3s;
+    margin: 30px 0px;
+}
+
+.more-read-carousel-button:hover {
+    color: white;
+}
+
+/* bottom info styles */
+.bottom-info-container p {
+    font-size: 20px;
+}
+
+.shop-category-img {
+    height: 390px;
+    width: 260px;
+}
+
+
+/* test */
+.custom-placeholder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    /* Adjust based on your needs */
+    width: 100px;
+    /* Adjust based on your needs */
+    background-color: #362727;
+}
+
+.spinner-t {
+    border: 4px solid rgba(0, 0, 0, 0.1);
+    border-left-color: #000;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite;
+}
+
+
+.custom-placeholder p {
+    margin-left: 10px;
+    font-size: 16px;
+    color: #555;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@media (max-width: 769px) {
+    .top-carousel-wrapper {
+        padding: 0px;
+    }
+
+    .recommended-prod-container {
+        padding: 20px;
+        margin-top: 20px;
+    }
+
+    .nursery-box-container {
+        padding: 0;
+    }
+
+    .shop-trimester-container {
+        margin-top: 30px;
+        background-color: #F8F8F8;
+        padding: 25px 10px;
+    }
+
+    .featured-prod-container,
+    .most-loved-prod-container {
+        padding: 20px;
+    }
+
+    .nursery-box-container {
+        max-height: inherit !important;
+    }
+
+    .featured-logo {
+        transform: scale(1.2);
+        margin-top: 20px;
+    }
+
+    .featured-carousel-img {
+        width: 105px;
+        height: 115px;
+        object-fit: cover;
+        object-position: center center;
+        border: none;
+        margin-bottom: 20px;
+        border-radius: 0px;
+    }
+
+    .featured-carousel-container {
+        height: 290px !important;
+    }
+
+
+    .featured-logo-col {
+        height: 200px !important;
+    }
+
+    .recommended-img {
+        height: auto !important;
+        padding: 0px 5px !important;
+    }
+
+    .recommended-title {
+        color: #3f3f3f;
+        font-size: 12px;
+        margin-top: 0px !important;
+    }
+
+    .nursery-box-top-div {
+        font-size: 20px !important;
+        border-radius: 0;
+    }
+
+    .shop-nursery-btn {
+        font-size: 10px;
+        padding: 11px;
+    }
+
+    .video-background-container {
+        height: 210px !important;
+        border-radius: 0px;
+    }
+
+    .brand-section-container {
+        margin-bottom: 65px;
+    }
+
+    .shop-all-btn,
+    .gift-card-container {
+        display: none;
+    }
+
+    .most-loved-prod-container .flex-row {
+        justify-content: center;
+        border-top: 1px solid white;
+        border-bottom: 1px solid white;
+        padding: 20px 0;
+        color: black;
+    }
+
+    .most-loved-carousel-img {
+        border-width: 3px;
+        border-radius: 4%;
+    }
+
+    .most-loved-carousel-container {
+        height: 100% !important;
+        padding: 0px 20px;
+    }
+
+    .most-loved-carousel-container .swiper-pagination {
+        margin-top: 20px !important;
+    }
+
+    .most-loved-carousel-slide {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .swiper-button-prev,
+    .swiper-button-next {
+        top: 40% !important;
+        background-color: white;
+        border-radius: 90px;
+        padding: 10px 22px;
+        transform: scale(0.6);
+    }
+
+    .swiper-button-prev {
+        left: 0%;
+    }
+
+    .swiper-button-next {
+        right: 0%;
+    }
+
+    .recommended-prod-container .swiper-button-prev {
+        left: 2%;
+    }
+
+    .recommended-prod-container .swiper-button-next {
+        right: 2%;
+    }
+
+    .swiper-button-prev::after,
+    .swiper-button-next::after {
+        color: #3b3b3b;
+    }
+
+    .most-loved-slide-txt {
+        font-size: 15px !important;
+        margin-bottom: 50px;
+    }
+
+    .best-selling-carousel-text {
+        font-size: 14px !important;
+    }
+
+    .recommended-prod-row {
+        margin-top: 30px;
+    }
+
+    .bottom-info-container .row {
+        gap: 50px;
+    }
+
+    .top-carousel-container .swiper-button-next,
+    .top-carousel-container .swiper-button-prev {
+        display: none;
+    }
+
+    .more-read-carousel-container {
+        height: 680px !important;
+    }
+
+}
+
+@media (min-width: 1242px) and (max-width: 2000px) {
+    .nursery-box-container {
+        max-height: 978px !important;
+    }
+
+    .more-read-carousel-container {
+        height: 715px !important;
+    }
+
+    .most-loved-carousel-container {
+        height: 438px !important;
+    }
+}
+
+@media (min-width: 1023px) and (max-width: 1300px) {
+    .shop-category-img {
+        height: 250px;
+        width: 167px;
+    }
+
+    .shop-category h4 {
+        font-size: 12px !important;
+    }
+
+    .nursery-box-container {
+        max-height: 995px;
+        padding: 50px 17px;
+    }
+
+    .recommended-prod-container,
+    .most-loved-prod-container {
+        padding: 30px 17px;
+    }
+
+    .best-selling-carousel-container {
+        height: 453px !important;
+    }
+
+    .flip-card-row {
+        width: 90% !important;
+        justify-content: center;
+        height: 700px !important;
+    }
+
+    .flip-card-row .flip-card-col {
+        max-width: fit-content;
+    }
+
+    .featured-carousel-container {
+        height: 356px !important;
+    }
+}

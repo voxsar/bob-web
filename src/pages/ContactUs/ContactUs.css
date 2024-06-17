@@ -1,7 +1,6 @@
 .heading-section {
     display: flex;
     justify-content: center;
-    font-family: "Poppins", Poppins;
     padding: 6%;
     font-size: 32px;
     font-weight: 500
@@ -23,8 +22,6 @@
 .social-section {
     padding-top: 8%;
     display: flex;
-
-
 }
 
 .header-social {

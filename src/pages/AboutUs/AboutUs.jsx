@@ -34,15 +34,15 @@ function AboutUs() {
                 height="auto"
                 src="https://bobshop-eeebddebdpcubfbv.z03.azurefd.net/wp-content/uploads/2023/11/Adelle-With-Her-Boys-684x1024.jpg.webp"
                 alt=""
-                srcset="https://bobshop-eeebddebdpcubfbv.z03.azurefd.net/wp-content/uploads/2023/11/Adelle-With-Her-Boys-684x1024.jpg.webp 684w, https://bobshop-eeebddebdpcubfbv.z03.azurefd.net/wp-content/uploads/2023/11/Adelle-With-Her-Boys-800x1199.jpg.webp 800w, https://bobshop-eeebddebdpcubfbv.z03.azurefd.net/wp-content/uploads/2023/11/Adelle-With-Her-Boys-200x300.jpg 200w, https://bobshop-eeebddebdpcubfbv.z03.azurefd.net/wp-content/uploads/2023/11/Adelle-With-Her-Boys-768x1151.jpg.webp 768w, https://bobshop-eeebddebdpcubfbv.z03.azurefd.net/wp-content/uploads/2023/11/Adelle-With-Her-Boys-1025x1536.jpg.webp 1025w, https://bobshop-eeebddebdpcubfbv.z03.azurefd.net/wp-content/uploads/2023/11/Adelle-With-Her-Boys-1320x1978.jpg.webp 1320w, https://bobshop-eeebddebdpcubfbv.z03.azurefd.net/wp-content/uploads/2023/11/Adelle-With-Her-Boys.jpg.webp 1367w"
+                srcSet="https://bobshop-eeebddebdpcubfbv.z03.azurefd.net/wp-content/uploads/2023/11/Adelle-With-Her-Boys-684x1024.jpg.webp 684w, https://bobshop-eeebddebdpcubfbv.z03.azurefd.net/wp-content/uploads/2023/11/Adelle-With-Her-Boys-800x1199.jpg.webp 800w, https://bobshop-eeebddebdpcubfbv.z03.azurefd.net/wp-content/uploads/2023/11/Adelle-With-Her-Boys-200x300.jpg 200w, https://bobshop-eeebddebdpcubfbv.z03.azurefd.net/wp-content/uploads/2023/11/Adelle-With-Her-Boys-768x1151.jpg.webp 768w, https://bobshop-eeebddebdpcubfbv.z03.azurefd.net/wp-content/uploads/2023/11/Adelle-With-Her-Boys-1025x1536.jpg.webp 1025w, https://bobshop-eeebddebdpcubfbv.z03.azurefd.net/wp-content/uploads/2023/11/Adelle-With-Her-Boys-1320x1978.jpg.webp 1320w, https://bobshop-eeebddebdpcubfbv.z03.azurefd.net/wp-content/uploads/2023/11/Adelle-With-Her-Boys.jpg.webp 1367w"
               />
             </div>
           </Col>
           <Col>
             <div className="ajourney-paragraph">
               <div>
-                <div class="elementor-widget-container">
-                  <h3 class="elementor-heading-title elementor-size-default">
+                <div className="elementor-widget-container">
+                  <h3 className="elementor-heading-title elementor-size-default">
                     A Journey from Heartfelt Dreams to Honest Realities
                   </h3>
                 </div>
@@ -61,8 +61,8 @@ function AboutUs() {
                 </div>
               </div>
               <div>
-                <div class="elementor-widget-container">
-                  <h3 class="elementor-heading-title elementor-size-default">
+                <div className="elementor-widget-container">
+                  <h3 className="elementor-heading-title elementor-size-default">
                     The Unvarnished Beginning
                   </h3>
                 </div>
@@ -83,8 +83,8 @@ function AboutUs() {
                 </div>
               </div>
               <div>
-                <div class="elementor-widget-container">
-                  <h3 class="elementor-heading-title elementor-size-default">
+                <div className="elementor-widget-container">
+                  <h3 className="elementor-heading-title elementor-size-default">
                     A Sanctuary of Truth and Care
                   </h3>
                 </div>
@@ -113,10 +113,10 @@ function AboutUs() {
         <Row>
           <Col>
             <div className="acommunity-paragraph">
-              <div class="elementor-widget-wrap elementor-element-populated">
+              <div className="elementor-widget-wrap elementor-element-populated">
                 <div>
-                  <div class="elementor-widget-container">
-                    <h2 class="elementor-heading-title elementor-size-default">
+                  <div className="elementor-widget-container">
+                    <h2 className="elementor-heading-title elementor-size-default">
                       A Community Built on Authenticity
                     </h2>
                   </div>
@@ -137,8 +137,8 @@ function AboutUs() {
                   </div>
                 </div>
                 <div>
-                  <div class="elementor-widget-container">
-                    <h2 class="elementor-heading-title elementor-size-default">
+                  <div className="elementor-widget-container">
+                    <h2 className="elementor-heading-title elementor-size-default">
                       Join Our Honest Journey
                     </h2>
                   </div>
@@ -167,7 +167,7 @@ function AboutUs() {
                 height="auto"
                 src="https://bobshop-eeebddebdpcubfbv.z03.azurefd.net/wp-content/uploads/2023/11/Untitled-design-1.png.webp"
                 alt=""
-                srcset="https://bobshop-eeebddebdpcubfbv.z03.azurefd.net/wp-content/uploads/2023/11/Untitled-design-1.png.webp 1000w, https://bobshop-eeebddebdpcubfbv.z03.azurefd.net/wp-content/uploads/2023/11/Untitled-design-1-800x800.png.webp 800w, https://bobshop-eeebddebdpcubfbv.z03.azurefd.net/wp-content/uploads/2023/11/Untitled-design-1-300x300.png.webp 300w, https://bobshop-eeebddebdpcubfbv.z03.azurefd.net/wp-content/uploads/2023/11/Untitled-design-1-150x150.png.webp 150w, https://bobshop-eeebddebdpcubfbv.z03.azurefd.net/wp-content/uploads/2023/11/Untitled-design-1-768x768.png.webp 768w, https://bobshop-eeebddebdpcubfbv.z03.azurefd.net/wp-content/uploads/2023/11/Untitled-design-1-570x570.png.webp 570w, https://bobshop-eeebddebdpcubfbv.z03.azurefd.net/wp-content/uploads/2023/11/Untitled-design-1-820x820.png.webp 820w, https://bobshop-eeebddebdpcubfbv.z03.azurefd.net/wp-content/uploads/2023/11/Untitled-design-1-270x270.png.webp 270w, https://bobshop-eeebddebdpcubfbv.z03.azurefd.net/wp-content/uploads/2023/11/Untitled-design-1-430x430.png.webp 430w"
+                srcSet="https://bobshop-eeebddebdpcubfbv.z03.azurefd.net/wp-content/uploads/2023/11/Untitled-design-1.png.webp 1000w, https://bobshop-eeebddebdpcubfbv.z03.azurefd.net/wp-content/uploads/2023/11/Untitled-design-1-800x800.png.webp 800w, https://bobshop-eeebddebdpcubfbv.z03.azurefd.net/wp-content/uploads/2023/11/Untitled-design-1-300x300.png.webp 300w, https://bobshop-eeebddebdpcubfbv.z03.azurefd.net/wp-content/uploads/2023/11/Untitled-design-1-150x150.png.webp 150w, https://bobshop-eeebddebdpcubfbv.z03.azurefd.net/wp-content/uploads/2023/11/Untitled-design-1-768x768.png.webp 768w, https://bobshop-eeebddebdpcubfbv.z03.azurefd.net/wp-content/uploads/2023/11/Untitled-design-1-570x570.png.webp 570w, https://bobshop-eeebddebdpcubfbv.z03.azurefd.net/wp-content/uploads/2023/11/Untitled-design-1-820x820.png.webp 820w, https://bobshop-eeebddebdpcubfbv.z03.azurefd.net/wp-content/uploads/2023/11/Untitled-design-1-270x270.png.webp 270w, https://bobshop-eeebddebdpcubfbv.z03.azurefd.net/wp-content/uploads/2023/11/Untitled-design-1-430x430.png.webp 430w"
               />
             </div>
           </Col>
@@ -177,7 +177,7 @@ function AboutUs() {
         <Row>
           <Col>
             <div className="rolling-img">
-              <div class="elementor-widget-container">
+              <div className="elementor-widget-container">
                 <img
                   loading="lazy"
                   decoding="async"
@@ -185,7 +185,7 @@ function AboutUs() {
                   height="auto"
                   src="https://bobshop-eeebddebdpcubfbv.z03.azurefd.net/wp-content/uploads/2023/11/PodcastCover-1024x1024.png.webp"
                   alt=""
-                  srcset="https://bobshop-eeebddebdpcubfbv.z03.azurefd.net/wp-content/uploads/2023/11/PodcastCover-1024x1024.png.webp 1024w, https://bobshop-eeebddebdpcubfbv.z03.azurefd.net/wp-content/uploads/2023/11/PodcastCover-800x800.png.webp 800w, https://bobshop-eeebddebdpcubfbv.z03.azurefd.net/wp-content/uploads/2023/11/PodcastCover-300x300.png.webp 300w, https://bobshop-eeebddebdpcubfbv.z03.azurefd.net/wp-content/uploads/2023/11/PodcastCover-150x150.png.webp 150w, https://bobshop-eeebddebdpcubfbv.z03.azurefd.net/wp-content/uploads/2023/11/PodcastCover-768x768.png.webp 768w, https://bobshop-eeebddebdpcubfbv.z03.azurefd.net/wp-content/uploads/2023/11/PodcastCover-1536x1536.png.webp 1536w, https://bobshop-eeebddebdpcubfbv.z03.azurefd.net/wp-content/uploads/2023/11/PodcastCover-2048x2048.png.webp 2048w, https://bobshop-eeebddebdpcubfbv.z03.azurefd.net/wp-content/uploads/2023/11/PodcastCover-570x570.png.webp 570w, https://bobshop-eeebddebdpcubfbv.z03.azurefd.net/wp-content/uploads/2023/11/PodcastCover-820x820.png.webp 820w, https://bobshop-eeebddebdpcubfbv.z03.azurefd.net/wp-content/uploads/2023/11/PodcastCover-270x270.png.webp 270w, https://bobshop-eeebddebdpcubfbv.z03.azurefd.net/wp-content/uploads/2023/11/PodcastCover-430x430.png.webp 430w, https://bobshop-eeebddebdpcubfbv.z03.azurefd.net/wp-content/uploads/2023/11/PodcastCover-1320x1320.png.webp 1320w"
+                  srcSet="https://bobshop-eeebddebdpcubfbv.z03.azurefd.net/wp-content/uploads/2023/11/PodcastCover-1024x1024.png.webp 1024w, https://bobshop-eeebddebdpcubfbv.z03.azurefd.net/wp-content/uploads/2023/11/PodcastCover-800x800.png.webp 800w, https://bobshop-eeebddebdpcubfbv.z03.azurefd.net/wp-content/uploads/2023/11/PodcastCover-300x300.png.webp 300w, https://bobshop-eeebddebdpcubfbv.z03.azurefd.net/wp-content/uploads/2023/11/PodcastCover-150x150.png.webp 150w, https://bobshop-eeebddebdpcubfbv.z03.azurefd.net/wp-content/uploads/2023/11/PodcastCover-768x768.png.webp 768w, https://bobshop-eeebddebdpcubfbv.z03.azurefd.net/wp-content/uploads/2023/11/PodcastCover-1536x1536.png.webp 1536w, https://bobshop-eeebddebdpcubfbv.z03.azurefd.net/wp-content/uploads/2023/11/PodcastCover-2048x2048.png.webp 2048w, https://bobshop-eeebddebdpcubfbv.z03.azurefd.net/wp-content/uploads/2023/11/PodcastCover-570x570.png.webp 570w, https://bobshop-eeebddebdpcubfbv.z03.azurefd.net/wp-content/uploads/2023/11/PodcastCover-820x820.png.webp 820w, https://bobshop-eeebddebdpcubfbv.z03.azurefd.net/wp-content/uploads/2023/11/PodcastCover-270x270.png.webp 270w, https://bobshop-eeebddebdpcubfbv.z03.azurefd.net/wp-content/uploads/2023/11/PodcastCover-430x430.png.webp 430w, https://bobshop-eeebddebdpcubfbv.z03.azurefd.net/wp-content/uploads/2023/11/PodcastCover-1320x1320.png.webp 1320w"
                 />
               </div>
             </div>
@@ -193,8 +193,8 @@ function AboutUs() {
           <Col>
             <div className="rolling-paragraph">
               <div>
-                <div class="elementor-widget-container">
-                  <h2 class="elementor-heading-title elementor-size-default">
+                <div className="elementor-widget-container">
+                  <h2 className="elementor-heading-title elementor-size-default">
                     "Rolling in the Deep" Podcast: Unfiltered Conversations on
                     Parenthood
                   </h2>
@@ -215,8 +215,8 @@ function AboutUs() {
                 </div>
               </div>
               <div>
-                <div class="elementor-widget-container">
-                  <h2 class="elementor-heading-title elementor-size-default">
+                <div className="elementor-widget-container">
+                  <h2 className="elementor-heading-title elementor-size-default">
                     A Platform for Honest Dialogue
                   </h2>
                 </div>
@@ -239,7 +239,7 @@ function AboutUs() {
                 </div>
               </div>
               <div>
-                <div class="e-con-inner">
+                <div className="e-con-inner">
                   <Row>
                     <Col lg={6} className="d-flex align-items-center">
                       <p className="m-0">Listen to the Rolling In the Deep Podcast</p>
@@ -252,7 +252,7 @@ function AboutUs() {
                             target="_blank"
                             rel="noopener noreferrer"
                           >
-                            <i class="fa-brands fa-spotify"></i>
+                            <i className="fa-brands fa-spotify"></i>
                           </a>
                         </Col>
                         <Col className="icon-col">
@@ -261,7 +261,7 @@ function AboutUs() {
                             target="_blank"
                             rel="noopener noreferrer"
                           >
-                            <i class="fa-brands fa-apple"></i>
+                            <i className="fa-brands fa-apple"></i>
                           </a>
                         </Col>
                         <Col className="icon-col">
@@ -270,7 +270,7 @@ function AboutUs() {
                             target="_blank"
                             rel="noopener noreferrer"
                           >
-                            <i class="fa-brands fa-amazon"></i>
+                            <i className="fa-brands fa-amazon"></i>
                           </a>
                         </Col>
                         <Col className="icon-col">
@@ -279,7 +279,7 @@ function AboutUs() {
                             target="_blank"
                             rel="noopener noreferrer"
                           >
-                            <i class="fa-brands fa-audible"></i>
+                            <i className="fa-brands fa-audible"></i>
                           </a>
                         </Col>
                       </Row>

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { generateDates } from '../../utils/dateUtils';
+import { formatDateString, generateDates } from '../../utils/dateUtils';
 import './styles/SlotCalendar.css';
 import { Carousel } from 'react-bootstrap';
 
@@ -8,6 +8,7 @@ const months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "
 const SlotCarousel = () => {
     const [selectedDate, setSelectedDate] = useState(null);
     const [days, setDays] = useState([]);
+
 
     useEffect(() => {
         // Generate dates for the next 365 days
@@ -19,12 +20,6 @@ const SlotCarousel = () => {
         setSelectedDate(date);
     };
 
-    const formatDate = (date) => {
-        const day = date.getDate();
-        const month = date.toLocaleString('en-US', { month: 'short' });
-        const weekday = date.toLocaleString('en-US', { weekday: 'short' });
-        return `${weekday}, ${month} ${day}`;
-    };
 
     const groupDatesByMonth = () => {
         const monthsMap = {};
@@ -49,15 +44,18 @@ const SlotCarousel = () => {
                 <div className="month-header">{monthData.month}</div>
                 <div className='month-grid-container'>
                     <div className="month-grid">
-                        {monthData.days.map((day, dayIndex) => (
-                            <button
-                                key={dayIndex}
-                                className={`day-button ${selectedDate && selectedDate.getTime() === day.getTime() ? 'selected' : ''}`}
-                                onClick={() => handleDateClick(day)}
-                            >
-                                {formatDate(day)}
-                            </button>
-                        ))}
+                        {monthData.days.map((day, dayIndex) => {
+                            return (
+                                <button
+                                    key={dayIndex}
+                                    className={`day-button ${selectedDate && selectedDate.getTime() === day.getTime() ? 'selected' : ''}`}
+                                    onClick={() => handleDateClick(day)}
+                                >
+                                    {formatDateString(day)}
+                                </button>
+                            )
+
+                        })}
                     </div>
                 </div>
 

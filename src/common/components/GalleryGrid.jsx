@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import './styles/GalleryGrid.css';
 import LightGallery from 'lightgallery/react';
 
@@ -6,6 +6,8 @@ import LightGallery from 'lightgallery/react';
 import 'lightgallery/css/lightgallery.css';
 import 'lightgallery/css/lg-zoom.css';
 import 'lightgallery/css/lg-thumbnail.css';
+import 'lightgallery/css/lg-share.css';
+import 'lightgallery/css/lg-fullscreen.css';
 
 // import plugins if you need
 import lgZoom from 'lightgallery/plugins/zoom';
@@ -14,15 +16,9 @@ import lgFullscreen from 'lightgallery/plugins/fullscreen';
 
 const GalleryGrid = ({ imageList, tabKey }) => {
     const onInit = () => {
-        console.log('lightGallery has been initialized');
+
     };
 
-
-    // useEffect(() => {
-
-
-
-    //   }, []);
     return (
         <div className="App">
             <LightGallery
@@ -40,8 +36,9 @@ const GalleryGrid = ({ imageList, tabKey }) => {
                     rotate: false,
                 }}
             >
-                {imageList.map((image) => (
+                {imageList.map((image, i) => (
                     <a href={image}
+                        key={i}
                     // data-pinterest-text="Pin it"
                     // data-tweet-text="lightGallery slide  2"
                     >

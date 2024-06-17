@@ -25,6 +25,7 @@
 
 .step.active span {
   font-weight: bold;
+  font-size: 14px;
 }
 
 .step.active .divider {
@@ -51,6 +52,7 @@
 
 .step-form .form-label {
   font-weight: 600;
+  font-size: 14px;
 }
 
 .react-international-phone-input-container .react-international-phone-input {
@@ -78,4 +80,21 @@
 
 .calendar-button i {
   margin-right: 10px;
+}
+
+.step-form-container .invalid-feedback {
+  display: block;
+}
+
+.step-form-container p b {
+  font-weight: 500;
+}
+
+.step-form-container p {
+  font-size: 14px;
+}
+
+.booking-spinner {
+  width: 35px;
+  height: 35px;
 }
