@@ -1,0 +1,35 @@
+name: CI/CD for ReactJS
+
+on:
+  push:
+    branches:
+      - staging
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Set up Node.js
+      uses: actions/setup-node@v2
+      with:
+        node-version: '14'
+
+    - name: Install dependencies
+      run: npm install
+
+    - name: Build the project
+      run: npm run build
+
+    - name: Deploy to Azure VM
+      env:
+        SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+        SSH_HOST: 172.178.99.19
+        SSH_USERNAME: azureuser
+      run: |
+        ssh -o StrictHostKeyChecking=no -i ~/.ssh/deploy_key $SSH_USERNAME@$SSH_HOST 'rm -rf /var/www/html/*'
+        scp -o StrictHostKeyChecking=no -i ~/.ssh/deploy_key -r build/* $SSH_USERNAME@$SSH_HOST:/var/www/html/
+        ssh -o StrictHostKeyChecking=no -i ~/.ssh/deploy_key $SSH_USERNAME@$SSH_HOST 'sudo systemctl restart nginx'
